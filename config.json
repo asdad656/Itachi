@@ -1,0 +1,24 @@
+{
+    "lqf": {
+        "loggers": [
+             {
+                "name":"fileStream",
+                "level":"info",
+                "type":"FileStream",
+                "FilePath":"/home/lqf/debug",
+                "Formate":"[%n] [%d] [%t] [%l] [%m]"
+            },
+            {
+                "name":"stdStreasm",
+                "level":"debug",
+                "type":"stdStreasm",
+                "Formate":"[%n] [%d] [%t] [%l] [%m]"
+            }
+            ],
+        "Listenport": [8080,8081,8,8,8,8,8,65,342454,32425,89887,34],
+        "Thread":{
+            "ThreadCount": 10,
+            "ThreadDefaultName":"lqfThread"
+        }
+        }
+}

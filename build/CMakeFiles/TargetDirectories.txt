@@ -1,0 +1,9 @@
+/home/lqf/cpp/Itachi/build/CMakeFiles/edit_cache.dir
+/home/lqf/cpp/Itachi/build/CMakeFiles/rebuild_cache.dir
+/home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/edit_cache.dir
+/home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir
+/home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/rebuild_cache.dir
+/home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/ITACHI_BASE.dir
+/home/lqf/cpp/Itachi/build/test/CMakeFiles/edit_cache.dir
+/home/lqf/cpp/Itachi/build/test/CMakeFiles/rebuild_cache.dir
+/home/lqf/cpp/Itachi/build/test/CMakeFiles/config_test.dir
