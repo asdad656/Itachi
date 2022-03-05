@@ -200,6 +200,36 @@ src/logger.cpp.s:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/logger.cpp.s
 .PHONY : src/logger.cpp.s
 
+src/threadpool_c++11.o: src/threadpool_c++11.cpp.o
+
+.PHONY : src/threadpool_c++11.o
+
+# target to build an object file
+src/threadpool_c++11.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/threadpool_c++11.cpp.o
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o
+.PHONY : src/threadpool_c++11.cpp.o
+
+src/threadpool_c++11.i: src/threadpool_c++11.cpp.i
+
+.PHONY : src/threadpool_c++11.i
+
+# target to preprocess a source file
+src/threadpool_c++11.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/threadpool_c++11.cpp.i
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.i
+.PHONY : src/threadpool_c++11.cpp.i
+
+src/threadpool_c++11.s: src/threadpool_c++11.cpp.s
+
+.PHONY : src/threadpool_c++11.s
+
+# target to generate assembly for a file
+src/threadpool_c++11.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/threadpool_c++11.cpp.s
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.s
+.PHONY : src/threadpool_c++11.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -216,6 +246,9 @@ help:
 	@echo "... src/logger.o"
 	@echo "... src/logger.i"
 	@echo "... src/logger.s"
+	@echo "... src/threadpool_c++11.o"
+	@echo "... src/threadpool_c++11.i"
+	@echo "... src/threadpool_c++11.s"
 .PHONY : help
 
 

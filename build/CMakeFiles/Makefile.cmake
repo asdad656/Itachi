@@ -47,6 +47,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/DependInfo.cmake"
   "src/Base/CMakeFiles/ITACHI_BASE.dir/DependInfo.cmake"
+  "test/CMakeFiles/threapool_test.dir/DependInfo.cmake"
   "test/CMakeFiles/logger_test.dir/DependInfo.cmake"
   "test/CMakeFiles/config_test.dir/DependInfo.cmake"
   )
