@@ -3,16 +3,16 @@
         "loggers": [
              {
                 "name":"fileStream",
-                "level":"info",
+                "level":"WARN",
                 "type":"FileStream",
-                "FilePath":"/home/lqf/debug",
-                "Formate":"[%n] [%d] [%t] [%l] [%m]"
+                "filepath":"/home/lqf/cpp/Itachi/log/log1.txt",
+                "formate":"[%f:%l] [%d] [%p]  [%t]  %m%n"
             },
             {
-                "name":"stdStreasm",
+                "name":"stdStream",
                 "level":"debug",
-                "type":"stdStreasm",
-                "Formate":"[%n] [%d] [%t] [%l] [%m]"
+                "type":"stdStream",
+                "formate":"[%f:%l] [%d] [%p]  [%t]  %m%n"
             }
             ],
         "Listenport": [8080,8081,8,8,8,8,8,65,342454,32425,89887,34],

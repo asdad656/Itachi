@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -g -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lqf/cpp/Itachi/test/config_test -I/home/lqf/cpp/Itachi/src/Base/include 
+CXX_INCLUDES = -I/home/lqf/cpp/Itachi/test/config_test -I/home/lqf/cpp/Itachi/src/Base/include -I/home/lqf/cpp/Itachi/test/logger_test 
 

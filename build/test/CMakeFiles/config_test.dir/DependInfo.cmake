@@ -12,6 +12,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../test/config_test"
   "../src/Base/include"
+  "../test/logger_test"
   )
 
 # Targets to which this target links.

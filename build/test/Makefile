@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/logger_test.dir/rule:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/logger_test.dir/rule
+.PHONY : test/CMakeFiles/logger_test.dir/rule
+
+# Convenience name for target.
+logger_test: test/CMakeFiles/logger_test.dir/rule
+
+.PHONY : logger_test
+
+# fast build rule for target.
+logger_test/fast:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/logger_test.dir/build.make test/CMakeFiles/logger_test.dir/build
+.PHONY : logger_test/fast
+
+# Convenience name for target.
 test/CMakeFiles/config_test.dir/rule:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/config_test.dir/rule
 .PHONY : test/CMakeFiles/config_test.dir/rule
@@ -152,6 +167,33 @@ config_test.cpp.s:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/config_test.dir/build.make test/CMakeFiles/config_test.dir/config_test.cpp.s
 .PHONY : config_test.cpp.s
 
+logger_test.o: logger_test.cpp.o
+
+.PHONY : logger_test.o
+
+# target to build an object file
+logger_test.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/logger_test.dir/build.make test/CMakeFiles/logger_test.dir/logger_test.cpp.o
+.PHONY : logger_test.cpp.o
+
+logger_test.i: logger_test.cpp.i
+
+.PHONY : logger_test.i
+
+# target to preprocess a source file
+logger_test.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/logger_test.dir/build.make test/CMakeFiles/logger_test.dir/logger_test.cpp.i
+.PHONY : logger_test.cpp.i
+
+logger_test.s: logger_test.cpp.s
+
+.PHONY : logger_test.s
+
+# target to generate assembly for a file
+logger_test.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/logger_test.dir/build.make test/CMakeFiles/logger_test.dir/logger_test.cpp.s
+.PHONY : logger_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -160,10 +202,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... logger_test"
 	@echo "... config_test"
 	@echo "... config_test.o"
 	@echo "... config_test.i"
 	@echo "... config_test.s"
+	@echo "... logger_test.o"
+	@echo "... logger_test.i"
+	@echo "... logger_test.s"
 .PHONY : help
 
 

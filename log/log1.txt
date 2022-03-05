@@ -1,0 +1,12 @@
+[/home/lqf/cpp/Itachi/test/logger_test.cpp:39] [2022-03-05 15:44:30] [ERROR]  [%t]  Mesasdasdfsage
+
+[/home/lqf/cpp/Itachi/test/logger_test.cpp:45] [2022-03-05 15:44:30] [WARN]  [%t]  Mesasdasdfsage
+
+[/home/lqf/cpp/Itachi/test/logger_test.cpp:49] [2022-03-05 15:44:30] [FATAL]  [%t]  Mesasdasdfsage
+
+[/home/lqf/cpp/Itachi/test/logger_test.cpp:39] [2022-03-05 15:47:53] [ERROR]  [%t]  Mesasdasdfsage
+
+[/home/lqf/cpp/Itachi/test/logger_test.cpp:45] [2022-03-05 15:47:53] [WARN]  [%t]  Mesasdasdfsage
+
+[/home/lqf/cpp/Itachi/test/logger_test.cpp:49] [2022-03-05 15:47:53] [FATAL]  [%t]  Mesasdasdfsage
+

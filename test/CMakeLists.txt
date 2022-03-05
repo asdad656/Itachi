@@ -1,10 +1,30 @@
+message(STATUS "-------------Executable Creating----------------------")
 
-add_executable(config_test ./config_test.cpp)
+aux_source_directory(
+    ./
+    EXECUTABLE_SRC
+)
 
-include_directories(config_test ${PROJECT_SOURCE_DIR}/src/Base/include)
+#生成测试文件
+foreach(val_ ${EXECUTABLE_SRC})
 
-target_link_libraries(config_test ITACHI_BASE)
+    string(REGEX REPLACE ".+/(.+)\\..*" "\\1" FILE_NAME ${val_})
 
-add_dependencies(config_test ITACHI_BASE)
+    add_executable(${FILE_NAME} ${val_})
+
+    include_directories(${FILE_NAME} ${PROJECT_SOURCE_DIR}/src/Base/include)
+
+    target_link_libraries(${FILE_NAME} ITACHI_BASE)
+
+    add_dependencies(${FILE_NAME} ITACHI_BASE)
+endforeach()
+
+
+
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+
+
+
+
+message(STATUS "-------------Executable Create Successful---------------------")
