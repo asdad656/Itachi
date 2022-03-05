@@ -228,7 +228,7 @@ public:
     void fromString(const std::string& string_value)override{
         setVar(FromString()(string_value));
     }
-    void addCallBack(changeCallBack& cb){
+    void addCallBack(const changeCallBack& cb){
         m_cbs[SerialNumbear]=std::move(cb);
     }
     void clearCallBack(){

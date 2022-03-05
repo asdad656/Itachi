@@ -6,4 +6,5 @@
 /home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/ITACHI_BASE.dir
 /home/lqf/cpp/Itachi/build/test/CMakeFiles/edit_cache.dir
 /home/lqf/cpp/Itachi/build/test/CMakeFiles/rebuild_cache.dir
+/home/lqf/cpp/Itachi/build/test/CMakeFiles/logger_test.dir
 /home/lqf/cpp/Itachi/build/test/CMakeFiles/config_test.dir
