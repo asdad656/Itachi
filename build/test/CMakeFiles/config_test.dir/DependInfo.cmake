@@ -13,6 +13,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../test/config_test"
   "../src/Base/include"
   "../test/logger_test"
+  "../test/threapool_test"
   )
 
 # Targets to which this target links.

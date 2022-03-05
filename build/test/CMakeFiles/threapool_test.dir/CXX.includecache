@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/Base/include/threadpool_c++11.h
+mutex
+-
+condition_variable
+-
+thread
+-
+functional
+-
+memory
+-
+queue
+-
+atomic
+-
+vector
+-
+
+/home/lqf/cpp/Itachi/test/threapool_test.cpp
+threadpool_c++11.h
+/home/lqf/cpp/Itachi/test/threadpool_c++11.h
+iostream
+-
+unistd.h
+-
+

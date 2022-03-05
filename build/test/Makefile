@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/threapool_test.dir/rule:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/threapool_test.dir/rule
+.PHONY : test/CMakeFiles/threapool_test.dir/rule
+
+# Convenience name for target.
+threapool_test: test/CMakeFiles/threapool_test.dir/rule
+
+.PHONY : threapool_test
+
+# fast build rule for target.
+threapool_test/fast:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/threapool_test.dir/build.make test/CMakeFiles/threapool_test.dir/build
+.PHONY : threapool_test/fast
+
+# Convenience name for target.
 test/CMakeFiles/logger_test.dir/rule:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/logger_test.dir/rule
 .PHONY : test/CMakeFiles/logger_test.dir/rule
@@ -194,6 +209,33 @@ logger_test.cpp.s:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/logger_test.dir/build.make test/CMakeFiles/logger_test.dir/logger_test.cpp.s
 .PHONY : logger_test.cpp.s
 
+threapool_test.o: threapool_test.cpp.o
+
+.PHONY : threapool_test.o
+
+# target to build an object file
+threapool_test.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/threapool_test.dir/build.make test/CMakeFiles/threapool_test.dir/threapool_test.cpp.o
+.PHONY : threapool_test.cpp.o
+
+threapool_test.i: threapool_test.cpp.i
+
+.PHONY : threapool_test.i
+
+# target to preprocess a source file
+threapool_test.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/threapool_test.dir/build.make test/CMakeFiles/threapool_test.dir/threapool_test.cpp.i
+.PHONY : threapool_test.cpp.i
+
+threapool_test.s: threapool_test.cpp.s
+
+.PHONY : threapool_test.s
+
+# target to generate assembly for a file
+threapool_test.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/threapool_test.dir/build.make test/CMakeFiles/threapool_test.dir/threapool_test.cpp.s
+.PHONY : threapool_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -202,6 +244,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... threapool_test"
 	@echo "... logger_test"
 	@echo "... config_test"
 	@echo "... config_test.o"
@@ -210,6 +253,9 @@ help:
 	@echo "... logger_test.o"
 	@echo "... logger_test.i"
 	@echo "... logger_test.s"
+	@echo "... threapool_test.o"
+	@echo "... threapool_test.i"
+	@echo "... threapool_test.s"
 .PHONY : help
 
 

@@ -57,7 +57,8 @@
         "system_error": "cpp",
         "valarray": "cpp",
         "map": "cpp",
-        "forward_list": "cpp"
+        "forward_list": "cpp",
+        "condition_variable": "cpp"
     },
     "cmake.configureOnOpen": false,
     "C_Cpp.errorSquiggles": "Enabled"

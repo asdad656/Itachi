@@ -137,6 +137,19 @@ ITACHI_BASE/fast:
 .PHONY : ITACHI_BASE/fast
 
 #=============================================================================
+# Target rules for targets named threapool_test
+
+# Build rule for target.
+threapool_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 threapool_test
+.PHONY : threapool_test
+
+# fast build rule for target.
+threapool_test/fast:
+	$(MAKE) -f test/CMakeFiles/threapool_test.dir/build.make test/CMakeFiles/threapool_test.dir/build
+.PHONY : threapool_test/fast
+
+#=============================================================================
 # Target rules for targets named logger_test
 
 # Build rule for target.
@@ -172,6 +185,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ITACHI_BASE_STATIC"
 	@echo "... ITACHI_BASE"
+	@echo "... threapool_test"
 	@echo "... logger_test"
 	@echo "... config_test"
 .PHONY : help
