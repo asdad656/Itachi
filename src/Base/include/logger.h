@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-03 17:09:22
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-05 15:47:26
+ * @LastEditTime: 2022-03-06 12:50:34
  * @Description: 
  */
 #ifndef __LOGGER__H_
@@ -19,6 +19,9 @@
 #include <map>
 #include <list>
 #include <json.hpp>
+#include <thread>
+#include "threadpool_c++11.h"
+
 namespace Itachi
 {
     struct LogLevel
@@ -46,18 +49,20 @@ namespace Itachi
                    int line) : m_level(level),
                                m_file(file),
                                m_line(line),
-                               m_time(time(NULL))
+                               m_time(time(NULL)),
+                               m_threadId(getCurrentThreadId()),
+                               m_threadName(getCurrentThreadName())
         {
         }
         //-----------------------------------getMethod---------------------------------------//
         inline std::ostream &getMessageStream() { return m_message; }
         inline const std::ostream &getMessageStream() const { return m_message; }
-        const std::string getMessage()const{return m_message.str();}
+        const std::string getMessage() const { return m_message.str(); }
         const LogLevel::Level &getLevel() const { return m_level; }
         const char *getFile() const { return m_file; }
         const int &getLine() const { return m_line; }
         const std::string &getThreadName() const { return m_threadName; }
-        const uint64_t &getThreadId() const { return m_threadId; }
+        const std::thread::id &getThreadId() const { return m_threadId; }
         const uint64_t &getFiberId() const { return m_fiberId; }
         const time_t &getTime() const { return m_time; }
         void operator<<(const std::string &message)
@@ -100,7 +105,7 @@ namespace Itachi
         //行号
         int m_line;
         //线程id
-        uint64_t m_threadId;
+        std::thread::id m_threadId;
         //协程id
         uint64_t m_fiberId;
         //线程名字
@@ -221,35 +226,40 @@ namespace Itachi
     class FileStreamAppender : public LogAppender
     {
     public:
-        FileStreamAppender(const std::string &formatter, const std::string &name = "", 
-                                    const std::string &fileName="/home/lqf/cpp/Itachi/log/log.txt") : 
-                                    LogAppender(formatter, name),
-                                    m_fileName(fileName)
-                                   
-        {}
-  
+        FileStreamAppender(const std::string &formatter, const std::string &name = "",
+                           const std::string &fileName = "/home/lqf/cpp/Itachi/log/log.txt") : LogAppender(formatter, name),
+                                                                                               m_fileName(fileName)
+
+        {
+        }
 
         ~FileStreamAppender()
         {
-
         }
         void log(const LogMessage &logMessage) override
         {
-            std::fstream m_fstream;
-            m_fstream.open(m_fileName,std::ios::out|std::ios::app);
-            if(m_fstream.is_open())
-            m_formatter.format(logMessage, m_fstream);
-            m_fstream.close();
+           {
+                std::lock_guard<std::mutex> lock(m_mutex);//
+                reopen();
+                if (m_fstream.is_open())
+                    m_formatter.format(logMessage, m_fstream);
+                else{
+                    std::cout<<"m_fstream not open"<<std::endl;
+                }
+           }
+            //m_fstream.flush();
         }
         void reopen()
         {
-            // m_fstream.close();
-            // m_fstream.open(m_fileName);
+            if(m_fstream.is_open())
+            m_fstream.close();
+            m_fstream.open(m_fileName,std::ios::out|std::ios::app);
         }
 
     private:
+        std::mutex m_mutex;
         std::string m_fileName;
-       // std::fstream m_fstream;
+        std::fstream m_fstream;
     };
 
     class Logger
@@ -365,7 +375,7 @@ namespace Itachi
                 from.at("level").get_to(m_level);
             if (!from["formate"].is_null())
                 from.at("formate").get_to(m_formate);
-            std::transform(m_type.begin(),m_type.end(),m_type.begin(),::tolower);
+            std::transform(m_type.begin(), m_type.end(), m_type.begin(), ::tolower);
         }
 
         std::string ToString() const

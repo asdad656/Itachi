@@ -5,14 +5,14 @@
                 "name":"fileStream",
                 "level":"WARN",
                 "type":"FileStream",
-                "filepath":"/home/lqf/cpp/Itachi/log/log1.txt",
-                "formate":"[%f:%l] [%d] [%p]  [%t]  %m%n"
+                "filepath":"/home/lqf/cpp/Itachi/log/log.txt",
+                "formate":"[%f:%l] [%d] [%p]  [%u : %t]  %m%n"
             },
             {
                 "name":"stdStream",
                 "level":"debug",
                 "type":"stdStream",
-                "formate":"[%f:%l] [%d] [%p]  [%t]  %m%n"
+                "formate":"[%f:%l] [%d] [%p]  [%u : %t]  %m%n"
             }
             ],
         "Listenport": [8080,8081,8,8,8,8,8,65,342454,32425,89887,34],

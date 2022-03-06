@@ -1,1 +1,1 @@
-/usr/bin/c++   -std=c++11 -pthread   CMakeFiles/threapool_test.dir/threapool_test.cpp.o  -o ../../bin/threapool_test -rdynamic ../../lib/libITACHI_BASE.so -Wl,-rpath,/home/lqf/cpp/Itachi/lib 
+/usr/bin/c++   -pthread -g   CMakeFiles/threapool_test.dir/threapool_test.cpp.o  -o ../../bin/threapool_test -rdynamic ../../lib/libITACHI_BASE.so -Wl,-rpath,/home/lqf/cpp/Itachi/lib 

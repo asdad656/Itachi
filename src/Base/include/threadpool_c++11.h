@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-03 17:13:23
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-06 01:16:08
+ * @LastEditTime: 2022-03-06 12:09:42
  * @Description: 
  */
 #ifndef __THREADAPOOL__C11__H__
@@ -65,6 +65,15 @@ namespace Itachi
     {
     public:
         typedef std::shared_ptr<Thread> ptr;
+        enum ThreadState
+        {
+            NEW,
+            READY,
+            EXECUT,
+            IDLE,
+            FINISH,
+            WRONG
+        };
         Thread() : m_id(std::thread::id()),
                    m_thread(nullptr),
                    m_task(nullptr),
@@ -72,14 +81,15 @@ namespace Itachi
         {
         }
         Thread(std::function<void *(void *)> cb, void *args, const std::string &name) : m_task(new Task(cb, args)),
-                                                                                        m_thread(new std::thread(*m_task)),
                                                                                         m_name(name)
         {
+            m_state = NEW;
+            m_thread.reset(new std::thread((*m_task)));
+            m_state = EXECUT;
         }
-        
-        Thread(std::function<void ()> cb,const std::string &name):
-                                                                                        m_thread(new std::thread(cb)),
-                                                                                        m_name(name)
+
+        Thread(std::function<void()> cb, const std::string &name) : m_thread(new std::thread(cb)),
+                                                                    m_name(name)
         {
         }
 
@@ -89,6 +99,7 @@ namespace Itachi
         }
         ~Thread()
         {
+            m_state = FINISH;
             if (m_thread->joinable())
             {
                 m_thread->join();
@@ -109,6 +120,7 @@ namespace Itachi
         }
 
     private:
+        ThreadState m_state;
         std::thread::id m_id;
         Task::unique_ptr m_task;
         std::unique_ptr<std::thread> m_thread;
@@ -117,7 +129,7 @@ namespace Itachi
 
     struct taskQueue_cmp
     {
-        bool operator ()(const std::shared_ptr<Task> &a, const std::shared_ptr<Task> &b) const
+        bool operator()(const std::shared_ptr<Task> &a, const std::shared_ptr<Task> &b) const
         {
             return a.get() > b.get();
         };
@@ -126,36 +138,47 @@ namespace Itachi
     class ThreadPool
     {
     public:
-        ThreadPool(const std::string&name="",int maxThreadCount=10):
-        m_name(name),
-        m_threadMaxCount(maxThreadCount<10?10:maxThreadCount)
+        ThreadPool(const std::string &name = "", int maxThreadCount = 10, bool autoStart = true) : m_name(name),
+                                                                                                   m_threadMaxCount(maxThreadCount < 10 ? 10 : maxThreadCount),
+                                                                                                   m_stop(!autoStart)
         {
-            for(int i=0;i<maxThreadCount;++i){
-                m_threads.push_back(std::make_shared<Thread>(std::bind(&ThreadPool::execuate,this,name+" : "+std::to_string(i)),name+" : "+std::to_string(i)));
-            }
+            m_threads.resize(maxThreadCount);
+            if (autoStart)
+                for (int i = 0; i < maxThreadCount; ++i)
+                {
+                    m_threads[i] = std::make_shared<Thread>(std::bind(&ThreadPool::execuate, this, name + " : " + std::to_string(i)), name + " : " + std::to_string(i));
+                }
         }
-        ~ThreadPool(){
-            m_stop=true;
+        ~ThreadPool()
+        {
+            m_stop = true;
             m_condition_variable.notify_all();
         }
         void addTask(Task *task);
         void addTask(std::function<void *(void *)> cb, void *args, int8_t priority = 0);
+        void start();
+        void stop();
         std::shared_ptr<Task> takeTask();
-        static std::thread::id getCurrentThreadId();
-        static std::string getCurrentThreadName();
+
     private:
-        static void *execuate(void *,const std::string &);
+        static void *execuate(void *, const std::string &);
+
 
     private:
         std::string m_name;
         std::atomic<bool> m_stop{false};
-        std::atomic<int>m_idelThreadCount{0};
+        std::atomic<int> m_idelThreadCount{0};
         uint32_t m_threadMaxCount;
         std::mutex m_mutex;
         std::condition_variable m_condition_variable;
-        std::priority_queue<std::shared_ptr<Task>, std::vector<std::shared_ptr<Task>>,taskQueue_cmp> m_taskQueue;
+        std::priority_queue<std::shared_ptr<Task>, std::vector<std::shared_ptr<Task>>, taskQueue_cmp> m_taskQueue;
         std::vector<Thread::ptr> m_threads;
     };
+
+    std::thread::id getCurrentThreadId();
+    std::string getCurrentThreadName();
+    void setCurrentThreadName(const std::string &);
+    void setCurrentThreadId(const std::thread::id &);
 }
 
 #endif

@@ -3,16 +3,17 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-03 17:09:30
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-05 14:52:35
+ * @LastEditTime: 2022-03-06 12:36:41
  * @Description: 
  */
 #include "../include/logger.h"
 #include <string>
 #include <sstream>
 #include <memory>
-#include<fstream>
+#include <fstream>
 #include <functional>
 #include "config.h"
+#include "threadpool_c++11.h"
 namespace Itachi
 {
 
@@ -96,7 +97,7 @@ namespace Itachi
     public:
         LogTimeFormatter(const std::string &conditionOrformat = "%Y-%m-%d %H:%M:%S") : LogItemFormatter(conditionOrformat)
         {
-            m_conditionOrformat="%Y-%m-%d %H:%M:%S";
+            m_conditionOrformat = "%Y-%m-%d %H:%M:%S";
         }
         /**
      * @description:                                    输出日志的日期
@@ -138,7 +139,7 @@ namespace Itachi
     class LogLineFormatter : public LogFormatter::LogItemFormatter
     {
     public:
-        LogLineFormatter(const std::string &) 
+        LogLineFormatter(const std::string &)
         {
         }
         /**
@@ -154,8 +155,6 @@ namespace Itachi
 
     private:
     };
-
-
 
     class LogCharacterFormatter : public LogFormatter::LogItemFormatter
     {
@@ -180,7 +179,7 @@ namespace Itachi
     class LogNewLineFormatter : public LogFormatter::LogItemFormatter
     {
     public:
-        LogNewLineFormatter(const std::string&)
+        LogNewLineFormatter(const std::string &)
         {
         }
         /**
@@ -191,17 +190,57 @@ namespace Itachi
      */
         void operator()(const LogMessage &logMessage, std::ostream &os) const override
         {
-            os <<std::endl;
+            os << std::endl;
         }
 
     private:
     };
 
+    class LogThreadIdFormatter : public LogFormatter::LogItemFormatter
+    {
+    public:
+        LogThreadIdFormatter(const std::string &)
+        {
+        }
+        /**
+     * @description:                                    输出日志的年份
+     * @param LogMessage&logMessag      日志
+     * @param std::ostream&os                  输出流   
+     * @return void
+     */
+        void operator()(const LogMessage &logMessage, std::ostream &os) const override
+        {
+            os << logMessage.getThreadId();
+        }
+
+    private:
+    };
+
+    class LogThreadNameFormatter : public LogFormatter::LogItemFormatter
+    {
+    public:
+        LogThreadNameFormatter(const std::string &)
+        {
+        }
+        /**
+     * @description:                                    输出日志的年份
+     * @param LogMessage&logMessag      日志
+     * @param std::ostream&os                  输出流   
+     * @return void
+     */
+        void operator()(const LogMessage &logMessage, std::ostream &os) const override
+        {
+            os << logMessage.getThreadName();
+        }
+
+    private:
+    };
     //%m 消息体
     //%p  level
     //%r   启动后的时间
     //%c   分割符号
     //%t    县城id
+    //%u 线程name
     //%n   回车
     //%d   时间戳
     //%f    文件名
@@ -232,18 +271,20 @@ namespace Itachi
                 left += 2;
             }
 
-#define XX(PATTERN, FORMATER_CLASS)                          \
-    if (itemFormatter == #PATTERN || #PATTERN == "%c")       \
-    {                                                        \
+#define XX(PATTERN, FORMATER_CLASS)                                 \
+    if (itemFormatter == #PATTERN || #PATTERN == "%c")           \
+    {                                                                                         \
         addItemFormatter(new FORMATER_CLASS(itemFormatter)); \
-        continue;                                            \
+        continue;                                                                          \
     }
             XX(%f, LogFilePathFormatter)
             XX(%p, LogLevelFormater)
             XX(%m, LogMessageFormatter)
             XX(%l, LogLineFormatter)
             XX(%d, LogTimeFormatter)
-            XX(%n,LogNewLineFormatter)
+            XX(%n, LogNewLineFormatter)
+            XX(%u, LogThreadNameFormatter)
+            XX(%t, LogThreadIdFormatter)
             XX(%c, LogCharacterFormatter)
 #undef XX
         }
@@ -297,7 +338,8 @@ namespace Itachi
         }
     };
 
-    void LogManager::init(){
+    void LogManager::init()
+    {
         vec_loggers->addCallBack(logInitCallBack);
     }
 }
