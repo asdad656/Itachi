@@ -20,10 +20,9 @@ message("PROJECT_BINARY_DIR:${PROJECT_BINARY_DIR}")
 
 
 SET(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-pthread")
-add_definitions("-Wall -g")
 
 if(PROJECT_BINARY_DIR STREQUAL PROJECT_SOURCE_DIR)
-    message(WARNING "PROJECT_BINARY_DIR can not be the same as PROJECT_SOURCE_DIR")
+    message(FATAL "PROJECT_BINARY_DIR can not be the same as PROJECT_SOURCE_DIR")
 endif()
 
 if(NOT CMAKE_BUILD_TYPE)
@@ -31,9 +30,13 @@ if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 else()
     message( "-----------------------BUILD TYPE is ${CMAKE_BUILD_TYPE}-----------------------------")
+    if(${CMAKE_BUILD_TYPE} STREQUAL “Debug”)
+    add_definitions("-Wall -g")
+    endif()
 endif()
 
 # set(CMAKE_CXX_FLAGS 
+
 #     -std=c++11 )
 
 # set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")

@@ -36,3 +36,25 @@
 
 [/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 8 : 140737060521728]  test thread pool:   lqf : 8  :   140737060521728
 
+[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 6 : 140703432832768]  test thread pool:   lqf : 6  :   140703432832768
+
+[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 5 : 140703441225472]  test thread pool:   lqf : 5  :   140703441225472
+
+[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 29 : 140702474278656]  test thread pool:   lqf : 29  :   140702474278656
+
+[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 8 : 140703416047360]  test thread pool:   lqf : 8  :   140703416047360
+
+[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 27 : 140702491064064]  test thread pool:   lqf : 27  :   140702491064064
+
+[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 3 : 140703329941248]  test thread pool:   lqf : 3  :   140703329941248
+
+[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 28 : 140702482671360]  test thread pool:   lqf : 28  :   140702482671360
+
+[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 0 : 140703474796288]  test thread pool:   lqf : 0  :   140703474796288
+
+[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 2 : 140703458010880]  test thread pool:   lqf : 2  :   140703458010880
+
+[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 7 : 140703424440064]  test thread pool:   lqf : 7  :   140703424440064
+
+[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 13 : 140703296370432]  test thread pool:   lqf : 13  :   140703296370432
+
