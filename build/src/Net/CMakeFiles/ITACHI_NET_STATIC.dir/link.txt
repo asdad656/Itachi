@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/libITACHI_NET_STATIC.a  CMakeFiles/ITACHI_NET_STATIC.dir/src/buffer.cpp.o CMakeFiles/ITACHI_NET_STATIC.dir/src/socket.cpp.o
+/usr/bin/ranlib ../../../lib/libITACHI_NET_STATIC.a

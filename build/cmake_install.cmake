@@ -35,6 +35,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/lqf/cpp/Itachi/build/src/Base/cmake_install.cmake")
+  include("/home/lqf/cpp/Itachi/build/src/Net/cmake_install.cmake")
   include("/home/lqf/cpp/Itachi/build/test/cmake_install.cmake")
 
 endif()

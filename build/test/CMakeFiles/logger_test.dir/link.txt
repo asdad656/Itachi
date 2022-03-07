@@ -1,1 +1,1 @@
-/usr/bin/c++   -pthread -g   CMakeFiles/logger_test.dir/logger_test.cpp.o  -o ../../bin/logger_test -rdynamic ../../lib/libITACHI_BASE.so -Wl,-rpath,/home/lqf/cpp/Itachi/lib 
+/usr/bin/c++   -pthread -g   CMakeFiles/logger_test.dir/logger_test.cpp.o  -o ../../bin/logger_test -rdynamic ../../lib/libITACHI_BASE.so ../../lib/libITACHI_NET.so -Wl,-rpath,/home/lqf/cpp/Itachi/lib 

@@ -91,6 +91,7 @@ config_test_EXTERNAL_OBJECTS =
 ../bin/config_test: test/CMakeFiles/config_test.dir/config_test.cpp.o
 ../bin/config_test: test/CMakeFiles/config_test.dir/build.make
 ../bin/config_test: ../lib/libITACHI_BASE.so
+../bin/config_test: ../lib/libITACHI_NET.so
 ../bin/config_test: test/CMakeFiles/config_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/config_test"
 	cd /home/lqf/cpp/Itachi/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/config_test.dir/link.txt --verbose=$(VERBOSE)

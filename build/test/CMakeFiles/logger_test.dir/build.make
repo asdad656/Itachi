@@ -91,6 +91,7 @@ logger_test_EXTERNAL_OBJECTS =
 ../bin/logger_test: test/CMakeFiles/logger_test.dir/logger_test.cpp.o
 ../bin/logger_test: test/CMakeFiles/logger_test.dir/build.make
 ../bin/logger_test: ../lib/libITACHI_BASE.so
+../bin/logger_test: ../lib/libITACHI_NET.so
 ../bin/logger_test: test/CMakeFiles/logger_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/logger_test"
 	cd /home/lqf/cpp/Itachi/build/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/logger_test.dir/link.txt --verbose=$(VERBOSE)

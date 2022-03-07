@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-06 15:49:08
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-07 11:27:47
+ * @LastEditTime: 2022-03-07 15:26:02
  * @Description: 缓冲类
  */
 #ifndef __BUFFER__H__
@@ -53,6 +53,11 @@ namespace Itachi
         size_t maxBufferSIze() const
         {
             return m_buffer.size();
+        }
+
+        size_t maxWriteaableSIze() const
+        {
+            return m_buffer.size()-m_writeable_Index;
         }
 
         const char *begin() const
@@ -164,7 +169,7 @@ namespace Itachi
 
         std::string readAllAsString()
         {
-            ASSERT(readableBuffer() >= 0);
+            ASSERT(readableBuffer() > 0);
             std::string str(beginRead(), readableBuffer());
             m_readable_Index = m_preReserve_index;
             m_writeable_Index = m_preReserve_index;

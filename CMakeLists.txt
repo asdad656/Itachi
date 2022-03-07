@@ -43,6 +43,9 @@ endif()
 
 #base库文件
 add_subdirectory(./src/Base)
+#net库文件
+add_subdirectory(./src/Net)
+
 #可执行文件
 add_subdirectory(./test)
 
