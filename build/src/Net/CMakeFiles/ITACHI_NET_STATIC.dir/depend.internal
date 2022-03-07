@@ -5,13 +5,11 @@ src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/buffer.cpp.o
  ../src/Base/include/definition.h
  ../src/Base/include/json.hpp
  ../src/Base/include/logger.h
- ../src/Base/include/threadpool_c++11.h
  ../src/Net/./include/buffer.h
  /home/lqf/cpp/Itachi/src/Net/src/buffer.cpp
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/socket.cpp.o
  ../src/Base/include/definition.h
  ../src/Base/include/json.hpp
  ../src/Base/include/logger.h
- ../src/Base/include/threadpool_c++11.h
  ../src/Net/./include/socket.h
  /home/lqf/cpp/Itachi/src/Net/src/socket.cpp

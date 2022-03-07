@@ -4,14 +4,12 @@
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/buffer.cpp.o: ../src/Base/include/definition.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/buffer.cpp.o: ../src/Base/include/json.hpp
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/buffer.cpp.o: ../src/Base/include/logger.h
-src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/buffer.cpp.o: ../src/Base/include/threadpool_c++11.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/buffer.cpp.o: ../src/Net/./include/buffer.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/buffer.cpp.o: ../src/Net/src/buffer.cpp
 
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/socket.cpp.o: ../src/Base/include/definition.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/socket.cpp.o: ../src/Base/include/json.hpp
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/socket.cpp.o: ../src/Base/include/logger.h
-src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/socket.cpp.o: ../src/Base/include/threadpool_c++11.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/socket.cpp.o: ../src/Net/./include/socket.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/socket.cpp.o: ../src/Net/src/socket.cpp
 

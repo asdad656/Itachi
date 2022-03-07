@@ -5,5 +5,4 @@ test/CMakeFiles/config_test.dir/config_test.cpp.o
  ../src/Base/include/config.h
  ../src/Base/include/json.hpp
  ../src/Base/include/logger.h
- ../src/Base/include/threadpool_c++11.h
  /home/lqf/cpp/Itachi/test/config_test.cpp

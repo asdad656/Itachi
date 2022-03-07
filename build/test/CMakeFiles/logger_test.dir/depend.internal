@@ -6,5 +6,4 @@ test/CMakeFiles/logger_test.dir/logger_test.cpp.o
  ../src/Base/include/definition.h
  ../src/Base/include/json.hpp
  ../src/Base/include/logger.h
- ../src/Base/include/threadpool_c++11.h
  /home/lqf/cpp/Itachi/test/logger_test.cpp
