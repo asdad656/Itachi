@@ -1,10 +1,10 @@
 /*
- * @Author: your name
- * @Date: 2022-03-02 13:58:32
- * @LastEditTime: 2022-03-05 00:43:46
+ * @Author: lqf
+ * @page: www.Jackey.top
+ * @Date: 2022-03-04 21:38:33
  * @LastEditors: lqf
- * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- * @FilePath: \newProject\include\config.h
+ * @LastEditTime: 2022-03-07 09:55:30
+ * @Description::配置项系统，负责在配置文件中 加载系统配置，使用模板方法模式实现
  */
 #ifndef __CONFIG__H__
 #define __CONFIG__H__

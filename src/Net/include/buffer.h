@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-06 15:49:08
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-06 23:31:30
+ * @LastEditTime: 2022-03-07 11:27:47
  * @Description: 缓冲类
  */
 #ifndef __BUFFER__H__
@@ -14,8 +14,8 @@
 #include "definition.h"
 namespace Itachi
 {
-    static const size_t preReserveBufferSize = 8;
-    static const size_t defaultBufferSize = 8;
+    static constexpr size_t preReserveBufferSize = 8;
+    static constexpr size_t defaultBufferSize = 4096;
     class Buffer;
     using buffer_shared_ptr = std::shared_ptr<Buffer>;
     class Buffer
@@ -150,24 +150,50 @@ namespace Itachi
             hasWriten(src.size() + 1);
         }
 
-        std::string readAsString(const size_t &len){
-            ASSERT(len<=readableBuffer());
-            if(len==readableBuffer()){
+        std::string readAsString(const size_t &len)
+        {
+            ASSERT(len <= readableBuffer());
+            if (len == readableBuffer())
+            {
                 return readAllAsString();
             }
-            std::string str(beginRead(),len);
+            std::string str(beginRead(), len);
             hasRead(len);
             return str;
         }
 
-        std::string readAllAsString(){
-            ASSERT(readableBuffer()>=0);
-            std::string str(beginRead(),readableBuffer());
-            m_readable_Index=m_preReserve_index;
-            m_writeable_Index=m_preReserve_index;
+        std::string readAllAsString()
+        {
+            ASSERT(readableBuffer() >= 0);
+            std::string str(beginRead(), readableBuffer());
+            m_readable_Index = m_preReserve_index;
+            m_writeable_Index = m_preReserve_index;
             return str;
         }
 
+        const char*findEOF()const noexcept{
+            const char*it=std::find(beginRead(),beginWrite(),'\r\n');
+            return it==beginWrite()?nullptr:it;
+        }
+
+        const char*FindEOF(const char*start)const noexcept{
+            ASSERT(start>=beginRead()&&start<=beginWrite());
+            const char*it=std::find(start,beginWrite(),'\r\n');
+            return it==beginWrite()?nullptr:it;
+        }
+
+        const char*FindSpace()const noexcept{
+            const char*it=std::find(beginRead(),beginWrite(),' ');
+            return it==beginWrite()?nullptr:it;
+        }
+
+        const char*FindSpace(const char*start)const noexcept{
+            ASSERT(start>=beginRead()&&start<=beginWrite());
+            const char*it=std::find(start,beginWrite(),' ');
+            return it==beginWrite()?nullptr:it;
+        }
+
+        ssize_t readFromFd(int fd,int*saveError);
     private:
         std::vector<char> m_buffer;
         size_t m_readable_Index;
