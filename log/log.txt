@@ -58,3 +58,7 @@
 
 [/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 13 : 140703296370432]  test thread pool:   lqf : 13  :   140703296370432
 
+[/home/lqf/cpp/Itachi/src/Net/include/buffer.h:155] [2022-03-07 15:21:22] [FATAL]  [main  thread : thread::id of a non-executing thread]  ASSERT FAILED:  len <= readableBuffer()
+
+[/home/lqf/cpp/Itachi/src/Net/include/buffer.h:155] [2022-03-07 15:22:09] [FATAL]  [main  thread : thread::id of a non-executing thread]  ASSERT FAILED:  len <= readableBuffer()
+

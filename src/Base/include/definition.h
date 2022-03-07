@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-04 21:38:33
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-06 23:20:50
+ * @LastEditTime: 2022-03-07 15:20:46
  * @Description: 
  */
 #ifndef __DEFINITION__H__
@@ -31,18 +31,17 @@
 
 
 //------------------------------assert-----------------------------------//
-#ifdef  DEBUG
-    #define ASSERT(CONDITION)                                                 \
-        if(!CONDITION)                                                                  \
-            {                                                                                  \
-                LOG_FATAL<<"ASSERT FAILED:  "<<#CONDITION;      \
-                assert(CONDITION);                                                  \
-            }
-#else
-    #define ASSERT(CONDITION)                                                \
+// #ifdef  DEBUG
+#define ASSERT(CONDITION)                                                 \
+    if(!(CONDITION))                                                                  \
+        {                                                                                  \
+            LOG_FATAL<<"ASSERT FAILED:  "<<#CONDITION;      \
+            assert(CONDITION);                                                  \
+        }
+// #else
+//     #define ASSERT(CONDITION)                                                
 
 #endif
 
 
 
-#endif

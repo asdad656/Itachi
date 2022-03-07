@@ -12,9 +12,13 @@ foreach(val_ ${EXECUTABLE_SRC})
 
     add_executable(${FILE_NAME} ${val_})
 
-    include_directories(${FILE_NAME} ${PROJECT_SOURCE_DIR}/src/Base/include)
+    include_directories(${FILE_NAME} 
+                                ${PROJECT_SOURCE_DIR}/src/Base/include
+                                ${PROJECT_SOURCE_DIR}/src/Net/include)
 
-    target_link_libraries(${FILE_NAME} ITACHI_BASE)
+    target_link_libraries(${FILE_NAME} 
+                                    ITACHI_BASE
+                                    ITACHI_NET)
 
     add_dependencies(${FILE_NAME} ITACHI_BASE)
 endforeach()

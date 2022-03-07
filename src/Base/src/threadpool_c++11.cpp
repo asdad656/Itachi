@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-05 23:53:15
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-06 12:09:59
+ * @LastEditTime: 2022-03-07 15:07:41
  * @Description: 
  */
 #include "threadpool_c++11.h"
@@ -20,8 +20,8 @@ namespace Itachi
     void ThreadPool::addTask(Task *task)
     {
         std::unique_lock<std::mutex> lock(m_mutex);
-        std::shared_ptr<Task> ptr(task);
-        m_taskQueue.push(ptr);
+        //astd::shared_ptr<Task> ptr(task);
+        m_taskQueue.emplace(task);
         //    if(m_idelThreadCount)
         if (m_taskQueue.size() == 1)
         {
@@ -32,7 +32,7 @@ namespace Itachi
     void ThreadPool::addTask(std::function<void *(void *)> cb, void *args, int8_t priority)
     {
         std::unique_lock<std::mutex> lock(m_mutex);
-        m_taskQueue.push(std::make_shared<Task>(cb, args, priority));
+        m_taskQueue.emplace(new Task(cb, args, priority));
         if (m_idelThreadCount != 0)
         {
             m_condition_variable.notify_one();
@@ -63,7 +63,9 @@ namespace Itachi
             m_stop = false;
             for (int i = 0; i < m_threadMaxCount; ++i)
             {
-                m_threads[i] = std::make_shared<Thread>(std::bind(&ThreadPool::execuate, this, m_name + " : " + std::to_string(i)), m_name + " : " + std::to_string(i));
+                    m_threads.emplace_back(new Thread(std::bind(&ThreadPool::execuate,this,m_name+std::to_string(i)),
+                                        static_cast<void*>(this),
+                                        m_name+std::to_string(i)));
             }
         }
     }

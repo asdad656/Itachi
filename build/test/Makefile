@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/buffer_test.dir/rule:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/buffer_test.dir/rule
+.PHONY : test/CMakeFiles/buffer_test.dir/rule
+
+# Convenience name for target.
+buffer_test: test/CMakeFiles/buffer_test.dir/rule
+
+.PHONY : buffer_test
+
+# fast build rule for target.
+buffer_test/fast:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/buffer_test.dir/build.make test/CMakeFiles/buffer_test.dir/build
+.PHONY : buffer_test/fast
+
+# Convenience name for target.
 test/CMakeFiles/threapool_test.dir/rule:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/threapool_test.dir/rule
 .PHONY : test/CMakeFiles/threapool_test.dir/rule
@@ -154,6 +169,33 @@ config_test: test/CMakeFiles/config_test.dir/rule
 config_test/fast:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/config_test.dir/build.make test/CMakeFiles/config_test.dir/build
 .PHONY : config_test/fast
+
+buffer_test.o: buffer_test.cpp.o
+
+.PHONY : buffer_test.o
+
+# target to build an object file
+buffer_test.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/buffer_test.dir/build.make test/CMakeFiles/buffer_test.dir/buffer_test.cpp.o
+.PHONY : buffer_test.cpp.o
+
+buffer_test.i: buffer_test.cpp.i
+
+.PHONY : buffer_test.i
+
+# target to preprocess a source file
+buffer_test.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/buffer_test.dir/build.make test/CMakeFiles/buffer_test.dir/buffer_test.cpp.i
+.PHONY : buffer_test.cpp.i
+
+buffer_test.s: buffer_test.cpp.s
+
+.PHONY : buffer_test.s
+
+# target to generate assembly for a file
+buffer_test.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/buffer_test.dir/build.make test/CMakeFiles/buffer_test.dir/buffer_test.cpp.s
+.PHONY : buffer_test.cpp.s
 
 config_test.o: config_test.cpp.o
 
@@ -244,9 +286,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... buffer_test"
 	@echo "... threapool_test"
 	@echo "... logger_test"
 	@echo "... config_test"
+	@echo "... buffer_test.o"
+	@echo "... buffer_test.i"
+	@echo "... buffer_test.s"
 	@echo "... config_test.o"
 	@echo "... config_test.i"
 	@echo "... config_test.s"

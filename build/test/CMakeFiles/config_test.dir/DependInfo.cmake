@@ -12,13 +12,16 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../test/config_test"
   "../src/Base/include"
+  "../src/Net/include"
   "../test/logger_test"
   "../test/threapool_test"
+  "../test/buffer_test"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/ITACHI_BASE.dir/DependInfo.cmake"
+  "/home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/ITACHI_NET.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

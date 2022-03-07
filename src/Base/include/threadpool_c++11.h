@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-03 17:13:23
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-06 12:09:42
+ * @LastEditTime: 2022-03-07 15:12:14
  * @Description: 
  */
 #ifndef __THREADAPOOL__C11__H__
@@ -34,9 +34,14 @@ namespace Itachi
         Task()
         {
         }
-        Task(std::function<void *(void *)> cb, void *args, int8_t priority = 0) : args(args),
-                                                                                  cb(std::move(cb)),
+        Task(std::function<void *(void *)> &cb, void *args, int8_t priority = 0) : args(args),
+                                                                                  cb(cb),
                                                                                   priority(priority > 5 ? 5 : (priority < 0 ? 0 : priority))
+        {
+        }
+        Task(std::function<void *(void *)> &&cb, void *args, int8_t priority = 0) : args(args),
+                                                                                cb(cb),
+                                                                                priority(priority > 5 ? 5 : (priority < 0 ? 0 : priority))
         {
         }
         void *operator()()
@@ -80,7 +85,8 @@ namespace Itachi
                    m_name("")
         {
         }
-        Thread(std::function<void *(void *)> cb, void *args, const std::string &name) : m_task(new Task(cb, args)),
+        Thread(std::function<void *(void *)> cb, void *args, const std::string &name) : 
+                                                                                        m_task(new Task(std::move(cb), args)),
                                                                                         m_name(name)
         {
             m_state = NEW;
@@ -88,9 +94,13 @@ namespace Itachi
             m_state = EXECUT;
         }
 
-        Thread(std::function<void()> cb, const std::string &name) : m_thread(new std::thread(cb)),
-                                                                    m_name(name)
+        Thread(std::function<void *(void *)> &&cb, void *args, std::string &&name) : 
+                                                                                        m_task(new Task(std::move(cb), args)),
+                                                                                        m_name(std::move(name))
         {
+            m_state = NEW;
+            m_thread.reset(new std::thread((*m_task)));
+            m_state = EXECUT;
         }
 
         Thread(Task *task) : m_task(task)
@@ -142,13 +152,31 @@ namespace Itachi
                                                                                                    m_threadMaxCount(maxThreadCount < 10 ? 10 : maxThreadCount),
                                                                                                    m_stop(!autoStart)
         {
+            //m_threads.resize(maxThreadCount);
+            if (autoStart)
+                for (int i = 0; i < maxThreadCount; ++i)
+                {
+                    m_threads.emplace_back(new Thread(
+                        std::bind(&ThreadPool::execuate,this,m_name+std::to_string(i)),
+                                    static_cast<void*>(this),
+                                    m_name+std::to_string(i)));
+                }
+        }
+
+        ThreadPool(std::string &&name = "", int maxThreadCount = 10, bool autoStart = true) : m_name(name),
+                                                                                                   m_threadMaxCount(maxThreadCount < 10 ? 10 : maxThreadCount),
+                                                                                                   m_stop(!autoStart)
+        {
             m_threads.resize(maxThreadCount);
             if (autoStart)
                 for (int i = 0; i < maxThreadCount; ++i)
                 {
-                    m_threads[i] = std::make_shared<Thread>(std::bind(&ThreadPool::execuate, this, name + " : " + std::to_string(i)), name + " : " + std::to_string(i));
+                    m_threads.emplace_back(new Thread(std::bind(&ThreadPool::execuate,this,m_name+std::to_string(i)),
+                                                        static_cast<void*>(this),
+                                                        m_name+std::to_string(i)));
                 }
         }
+
         ~ThreadPool()
         {
             m_stop = true;

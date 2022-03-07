@@ -137,6 +137,45 @@ ITACHI_BASE/fast:
 .PHONY : ITACHI_BASE/fast
 
 #=============================================================================
+# Target rules for targets named ITACHI_NET_STATIC
+
+# Build rule for target.
+ITACHI_NET_STATIC: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ITACHI_NET_STATIC
+.PHONY : ITACHI_NET_STATIC
+
+# fast build rule for target.
+ITACHI_NET_STATIC/fast:
+	$(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build
+.PHONY : ITACHI_NET_STATIC/fast
+
+#=============================================================================
+# Target rules for targets named ITACHI_NET
+
+# Build rule for target.
+ITACHI_NET: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ITACHI_NET
+.PHONY : ITACHI_NET
+
+# fast build rule for target.
+ITACHI_NET/fast:
+	$(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/build
+.PHONY : ITACHI_NET/fast
+
+#=============================================================================
+# Target rules for targets named buffer_test
+
+# Build rule for target.
+buffer_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 buffer_test
+.PHONY : buffer_test
+
+# fast build rule for target.
+buffer_test/fast:
+	$(MAKE) -f test/CMakeFiles/buffer_test.dir/build.make test/CMakeFiles/buffer_test.dir/build
+.PHONY : buffer_test/fast
+
+#=============================================================================
 # Target rules for targets named threapool_test
 
 # Build rule for target.
@@ -185,6 +224,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ITACHI_BASE_STATIC"
 	@echo "... ITACHI_BASE"
+	@echo "... ITACHI_NET_STATIC"
+	@echo "... ITACHI_NET"
+	@echo "... buffer_test"
 	@echo "... threapool_test"
 	@echo "... logger_test"
 	@echo "... config_test"

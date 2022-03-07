@@ -1,1 +1,1 @@
-/usr/bin/c++   -pthread -g   CMakeFiles/config_test.dir/config_test.cpp.o  -o ../../bin/config_test -rdynamic ../../lib/libITACHI_BASE.so -Wl,-rpath,/home/lqf/cpp/Itachi/lib 
+/usr/bin/c++   -pthread -g   CMakeFiles/config_test.dir/config_test.cpp.o  -o ../../bin/config_test -rdynamic ../../lib/libITACHI_BASE.so ../../lib/libITACHI_NET.so -Wl,-rpath,/home/lqf/cpp/Itachi/lib 
