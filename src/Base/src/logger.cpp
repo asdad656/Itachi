@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-03 17:09:30
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-06 12:36:41
+ * @LastEditTime: 2022-03-07 15:35:48
  * @Description: 
  */
 #include "../include/logger.h"
@@ -51,6 +51,19 @@ namespace Itachi
 #undef XX
         return LogLevel::WRONGLEVEL;
     }
+
+
+    LogMessage::LogMessage(const LogLevel::Level &level,
+                const char *file,
+                int line) : m_level(level),
+                            m_file(file),
+                            m_line(line),
+                            m_time(time(NULL)),
+                            m_threadId(getCurrentThreadId()),
+                            m_threadName(getCurrentThreadName())
+    {
+    }
+
 
     class LogLevelFormater : public LogFormatter::LogItemFormatter
     {

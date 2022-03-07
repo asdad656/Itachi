@@ -140,6 +140,66 @@ ITACHI_BASE/fast:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/build
 .PHONY : ITACHI_BASE/fast
 
+src/EventLoop.o: src/EventLoop.cpp.o
+
+.PHONY : src/EventLoop.o
+
+# target to build an object file
+src/EventLoop.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/EventLoop.cpp.o
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o
+.PHONY : src/EventLoop.cpp.o
+
+src/EventLoop.i: src/EventLoop.cpp.i
+
+.PHONY : src/EventLoop.i
+
+# target to preprocess a source file
+src/EventLoop.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/EventLoop.cpp.i
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.i
+.PHONY : src/EventLoop.cpp.i
+
+src/EventLoop.s: src/EventLoop.cpp.s
+
+.PHONY : src/EventLoop.s
+
+# target to generate assembly for a file
+src/EventLoop.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/EventLoop.cpp.s
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.s
+.PHONY : src/EventLoop.cpp.s
+
+src/channel.o: src/channel.cpp.o
+
+.PHONY : src/channel.o
+
+# target to build an object file
+src/channel.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/channel.cpp.o
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o
+.PHONY : src/channel.cpp.o
+
+src/channel.i: src/channel.cpp.i
+
+.PHONY : src/channel.i
+
+# target to preprocess a source file
+src/channel.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/channel.cpp.i
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.i
+.PHONY : src/channel.cpp.i
+
+src/channel.s: src/channel.cpp.s
+
+.PHONY : src/channel.s
+
+# target to generate assembly for a file
+src/channel.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/channel.cpp.s
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.s
+.PHONY : src/channel.cpp.s
+
 src/config.o: src/config.cpp.o
 
 .PHONY : src/config.o
@@ -240,6 +300,12 @@ help:
 	@echo "... ITACHI_BASE_STATIC"
 	@echo "... rebuild_cache"
 	@echo "... ITACHI_BASE"
+	@echo "... src/EventLoop.o"
+	@echo "... src/EventLoop.i"
+	@echo "... src/EventLoop.s"
+	@echo "... src/channel.o"
+	@echo "... src/channel.i"
+	@echo "... src/channel.s"
 	@echo "... src/config.o"
 	@echo "... src/config.i"
 	@echo "... src/config.s"

@@ -129,11 +129,61 @@ src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o.provides: src/Bas
 src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o.provides.build: src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o
 
 
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o: src/Base/CMakeFiles/ITACHI_BASE.dir/flags.make
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o: ../src/Base/src/EventLoop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o"
+	cd /home/lqf/cpp/Itachi/build/src/Base && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o -c /home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp
+
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.i"
+	cd /home/lqf/cpp/Itachi/build/src/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp > CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.i
+
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.s"
+	cd /home/lqf/cpp/Itachi/build/src/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp -o CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.s
+
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o.requires:
+
+.PHONY : src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o.requires
+
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o.provides: src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o.requires
+	$(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o.provides.build
+.PHONY : src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o.provides
+
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o.provides.build: src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o
+
+
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o: src/Base/CMakeFiles/ITACHI_BASE.dir/flags.make
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o: ../src/Base/src/channel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o"
+	cd /home/lqf/cpp/Itachi/build/src/Base && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o -c /home/lqf/cpp/Itachi/src/Base/src/channel.cpp
+
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.i"
+	cd /home/lqf/cpp/Itachi/build/src/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lqf/cpp/Itachi/src/Base/src/channel.cpp > CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.i
+
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.s"
+	cd /home/lqf/cpp/Itachi/build/src/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lqf/cpp/Itachi/src/Base/src/channel.cpp -o CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.s
+
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o.requires:
+
+.PHONY : src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o.requires
+
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o.provides: src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o.requires
+	$(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o.provides.build
+.PHONY : src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o.provides
+
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o.provides.build: src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o
+
+
 # Object files for target ITACHI_BASE
 ITACHI_BASE_OBJECTS = \
 "CMakeFiles/ITACHI_BASE.dir/src/config.cpp.o" \
 "CMakeFiles/ITACHI_BASE.dir/src/logger.cpp.o" \
-"CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o"
+"CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o" \
+"CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o" \
+"CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o"
 
 # External object files for target ITACHI_BASE
 ITACHI_BASE_EXTERNAL_OBJECTS =
@@ -141,9 +191,11 @@ ITACHI_BASE_EXTERNAL_OBJECTS =
 ../lib/libITACHI_BASE.so: src/Base/CMakeFiles/ITACHI_BASE.dir/src/config.cpp.o
 ../lib/libITACHI_BASE.so: src/Base/CMakeFiles/ITACHI_BASE.dir/src/logger.cpp.o
 ../lib/libITACHI_BASE.so: src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o
+../lib/libITACHI_BASE.so: src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o
+../lib/libITACHI_BASE.so: src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o
 ../lib/libITACHI_BASE.so: src/Base/CMakeFiles/ITACHI_BASE.dir/build.make
 ../lib/libITACHI_BASE.so: src/Base/CMakeFiles/ITACHI_BASE.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../../../lib/libITACHI_BASE.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library ../../../lib/libITACHI_BASE.so"
 	cd /home/lqf/cpp/Itachi/build/src/Base && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ITACHI_BASE.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +206,8 @@ src/Base/CMakeFiles/ITACHI_BASE.dir/build: ../lib/libITACHI_BASE.so
 src/Base/CMakeFiles/ITACHI_BASE.dir/requires: src/Base/CMakeFiles/ITACHI_BASE.dir/src/config.cpp.o.requires
 src/Base/CMakeFiles/ITACHI_BASE.dir/requires: src/Base/CMakeFiles/ITACHI_BASE.dir/src/logger.cpp.o.requires
 src/Base/CMakeFiles/ITACHI_BASE.dir/requires: src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o.requires
+src/Base/CMakeFiles/ITACHI_BASE.dir/requires: src/Base/CMakeFiles/ITACHI_BASE.dir/src/EventLoop.cpp.o.requires
+src/Base/CMakeFiles/ITACHI_BASE.dir/requires: src/Base/CMakeFiles/ITACHI_BASE.dir/src/channel.cpp.o.requires
 
 .PHONY : src/Base/CMakeFiles/ITACHI_BASE.dir/requires
 
