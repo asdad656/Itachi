@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-05 23:53:15
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-07 15:07:41
+ * @LastEditTime: 2022-03-08 18:09:16
  * @Description: 
  */
 #include "threadpool_c++11.h"
@@ -15,7 +15,7 @@
 #include <functional>
 namespace Itachi
 {
-    static thread_local std::thread::id _Current_thread__t_id = std::thread::id();
+    static thread_local std::thread::id _Current_thread__t_id = std::thread::id(0);
     static thread_local std::string _Current_thread__t_name = "main  thread";
     void ThreadPool::addTask(Task *task)
     {

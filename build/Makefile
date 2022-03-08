@@ -163,6 +163,19 @@ ITACHI_NET/fast:
 .PHONY : ITACHI_NET/fast
 
 #=============================================================================
+# Target rules for targets named eventloop_test
+
+# Build rule for target.
+eventloop_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 eventloop_test
+.PHONY : eventloop_test
+
+# fast build rule for target.
+eventloop_test/fast:
+	$(MAKE) -f test/CMakeFiles/eventloop_test.dir/build.make test/CMakeFiles/eventloop_test.dir/build
+.PHONY : eventloop_test/fast
+
+#=============================================================================
 # Target rules for targets named buffer_test
 
 # Build rule for target.
@@ -226,6 +239,7 @@ help:
 	@echo "... ITACHI_BASE"
 	@echo "... ITACHI_NET_STATIC"
 	@echo "... ITACHI_NET"
+	@echo "... eventloop_test"
 	@echo "... buffer_test"
 	@echo "... threapool_test"
 	@echo "... logger_test"

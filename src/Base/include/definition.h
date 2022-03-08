@@ -3,13 +3,13 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-04 21:38:33
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-07 15:20:46
+ * @LastEditTime: 2022-03-08 14:51:09
  * @Description: 
  */
-#ifndef __DEFINITION__H__
-#define __DEFINITION__H__
 #include<logger.h>
 #include<assert.h>
+#ifndef __DEFINITION__H__
+#define __DEFINITION__H__
 
 //------------------------------logger------------------------ ------------//
 #define __INIT__                                                                     \

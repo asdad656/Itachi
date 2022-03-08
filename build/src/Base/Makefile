@@ -230,6 +230,36 @@ src/config.cpp.s:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/config.cpp.s
 .PHONY : src/config.cpp.s
 
+src/epoll_poller.o: src/epoll_poller.cpp.o
+
+.PHONY : src/epoll_poller.o
+
+# target to build an object file
+src/epoll_poller.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/epoll_poller.cpp.o
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/epoll_poller.cpp.o
+.PHONY : src/epoll_poller.cpp.o
+
+src/epoll_poller.i: src/epoll_poller.cpp.i
+
+.PHONY : src/epoll_poller.i
+
+# target to preprocess a source file
+src/epoll_poller.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/epoll_poller.cpp.i
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/epoll_poller.cpp.i
+.PHONY : src/epoll_poller.cpp.i
+
+src/epoll_poller.s: src/epoll_poller.cpp.s
+
+.PHONY : src/epoll_poller.s
+
+# target to generate assembly for a file
+src/epoll_poller.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/epoll_poller.cpp.s
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/epoll_poller.cpp.s
+.PHONY : src/epoll_poller.cpp.s
+
 src/logger.o: src/logger.cpp.o
 
 .PHONY : src/logger.o
@@ -309,6 +339,9 @@ help:
 	@echo "... src/config.o"
 	@echo "... src/config.i"
 	@echo "... src/config.s"
+	@echo "... src/epoll_poller.o"
+	@echo "... src/epoll_poller.i"
+	@echo "... src/epoll_poller.s"
 	@echo "... src/logger.o"
 	@echo "... src/logger.i"
 	@echo "... src/logger.s"
