@@ -47,8 +47,9 @@ add_subdirectory(./src/Base)
 add_subdirectory(./src/Net)
 
 #可执行文件
+# if(EXISTS BUILD_TEST)
 add_subdirectory(./test)
-
+# endif()
 
 
 

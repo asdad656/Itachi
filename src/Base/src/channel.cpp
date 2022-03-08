@@ -3,11 +3,12 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-07 18:46:22
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-07 19:30:15
+ * @LastEditTime: 2022-03-08 16:28:16
  * @Description: 
  */
 #include "channel.h"
 #include <sys/epoll.h>
+#include"EventLoop.h"
 #include "definition.h"
 namespace Itachi
 {
@@ -31,7 +32,7 @@ namespace Itachi
             if (m_closeCallBack)
             {
                 LOG_INFO << "m_fd CLOSE ,m_closeCallBack is called";
-                m_closeCallBack(m_fd);
+                m_closeCallBack();
             }
         }
         //可读
@@ -39,7 +40,7 @@ namespace Itachi
         {
             if (m_readCallBack)
             {
-                m_readCallBack(m_fd);
+                m_readCallBack();
             }
         }
         //可写
@@ -47,7 +48,7 @@ namespace Itachi
         {
             if (m_writeCallback)
             {
-                m_writeCallback(m_fd);
+                m_writeCallback();
             }
         }
         //错误
@@ -56,7 +57,7 @@ namespace Itachi
             if (m_errorCallBack)
             {
                 LOG_ERROR << "m_revent is K_ERROREVENT!!";
-                m_errorCallBack(m_fd);
+                m_errorCallBack();
             }
         }
         m_isHandlingEvent = false;
@@ -80,9 +81,9 @@ namespace Itachi
         m_event |= K_WRITEEVENT;
         update();
     }
-    void Channel::update() const
+    void Channel::update()
     {
-        //
+        m_ownerLoop->update(this);
     }
     void Channel::setRevent(const int &revent)
     {

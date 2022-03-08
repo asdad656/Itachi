@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/eventloop_test.dir/rule:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/eventloop_test.dir/rule
+.PHONY : test/CMakeFiles/eventloop_test.dir/rule
+
+# Convenience name for target.
+eventloop_test: test/CMakeFiles/eventloop_test.dir/rule
+
+.PHONY : eventloop_test
+
+# fast build rule for target.
+eventloop_test/fast:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/eventloop_test.dir/build.make test/CMakeFiles/eventloop_test.dir/build
+.PHONY : eventloop_test/fast
+
+# Convenience name for target.
 test/CMakeFiles/buffer_test.dir/rule:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/buffer_test.dir/rule
 .PHONY : test/CMakeFiles/buffer_test.dir/rule
@@ -224,6 +239,33 @@ config_test.cpp.s:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/config_test.dir/build.make test/CMakeFiles/config_test.dir/config_test.cpp.s
 .PHONY : config_test.cpp.s
 
+eventloop_test.o: eventloop_test.cpp.o
+
+.PHONY : eventloop_test.o
+
+# target to build an object file
+eventloop_test.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/eventloop_test.dir/build.make test/CMakeFiles/eventloop_test.dir/eventloop_test.cpp.o
+.PHONY : eventloop_test.cpp.o
+
+eventloop_test.i: eventloop_test.cpp.i
+
+.PHONY : eventloop_test.i
+
+# target to preprocess a source file
+eventloop_test.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/eventloop_test.dir/build.make test/CMakeFiles/eventloop_test.dir/eventloop_test.cpp.i
+.PHONY : eventloop_test.cpp.i
+
+eventloop_test.s: eventloop_test.cpp.s
+
+.PHONY : eventloop_test.s
+
+# target to generate assembly for a file
+eventloop_test.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/eventloop_test.dir/build.make test/CMakeFiles/eventloop_test.dir/eventloop_test.cpp.s
+.PHONY : eventloop_test.cpp.s
+
 logger_test.o: logger_test.cpp.o
 
 .PHONY : logger_test.o
@@ -286,6 +328,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... eventloop_test"
 	@echo "... buffer_test"
 	@echo "... threapool_test"
 	@echo "... logger_test"
@@ -296,6 +339,9 @@ help:
 	@echo "... config_test.o"
 	@echo "... config_test.i"
 	@echo "... config_test.s"
+	@echo "... eventloop_test.o"
+	@echo "... eventloop_test.i"
+	@echo "... eventloop_test.s"
 	@echo "... logger_test.o"
 	@echo "... logger_test.i"
 	@echo "... logger_test.s"

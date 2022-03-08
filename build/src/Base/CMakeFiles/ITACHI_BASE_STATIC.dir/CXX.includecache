@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+../src/Base/./include/EventLoop.h
+vector
+-
+memory
+-
+mutex
+-
+noncopyaable.h
+../src/Base/./include/noncopyaable.h
+
 ../src/Base/./include/callback.h
 functional
 -
@@ -58,6 +68,12 @@ logger.h
 logger.h
 -
 assert.h
+-
+
+../src/Base/./include/epoll_poller.h
+poller.h
+../src/Base/./include/poller.h
+vector
 -
 
 ../src/Base/./include/json.hpp
@@ -452,6 +468,14 @@ mutex
 
 ../src/Base/./include/noncopyaable.h
 
+../src/Base/./include/poller.h
+map
+-
+vector
+-
+memory
+-
+
 ../src/Base/./include/threadpool_c++11.h
 mutex
 -
@@ -499,12 +523,30 @@ mutex
 -
 
 /home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp
+EventLoop.h
+/home/lqf/cpp/Itachi/src/Base/src/EventLoop.h
+channel.h
+/home/lqf/cpp/Itachi/src/Base/src/channel.h
+definition.h
+/home/lqf/cpp/Itachi/src/Base/src/definition.h
+sys/epoll.h
+-
+poller.h
+/home/lqf/cpp/Itachi/src/Base/src/poller.h
+epoll_poller.h
+/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.h
+sys/eventfd.h
+-
+unistd.h
+-
 
 /home/lqf/cpp/Itachi/src/Base/src/channel.cpp
 channel.h
 /home/lqf/cpp/Itachi/src/Base/src/channel.h
 sys/epoll.h
 -
+EventLoop.h
+/home/lqf/cpp/Itachi/src/Base/src/EventLoop.h
 definition.h
 /home/lqf/cpp/Itachi/src/Base/src/definition.h
 
@@ -523,6 +565,18 @@ list
 -
 definition.h
 /home/lqf/cpp/Itachi/src/Base/src/definition.h
+
+/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp
+epoll_poller.h
+/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.h
+definition.h
+/home/lqf/cpp/Itachi/src/Base/src/definition.h
+config.h
+/home/lqf/cpp/Itachi/src/Base/src/config.h
+channel.h
+/home/lqf/cpp/Itachi/src/Base/src/channel.h
+sys/epoll.h
+-
 
 /home/lqf/cpp/Itachi/src/Base/src/logger.cpp
 ../include/logger.h

@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-03 17:13:23
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-07 19:47:42
+ * @LastEditTime: 2022-03-08 18:12:30
  * @Description: 
  */
 #ifndef __THREADAPOOL__C11__H__
@@ -27,7 +27,10 @@
 //notify——all at threaad exit
 namespace Itachi
 {
-
+    std::thread::id getCurrentThreadId();
+    std::string getCurrentThreadName();
+    void setCurrentThreadName(const std::string &);
+    void setCurrentThreadId(const std::thread::id &);
     struct Task
     {
         typedef std::unique_ptr<Task> unique_ptr;
@@ -146,14 +149,14 @@ namespace Itachi
     class ThreadPool
     {
     public:
-        ThreadPool(const std::string &name = "", int maxThreadCount = 10, bool autoStart = true) : m_name(name),
-                                                                                                   m_threadMaxCount(maxThreadCount < 10 ? 10 : maxThreadCount),
-                                                                                                   m_stop(!autoStart)
+        ThreadPool(const std::string &name = "", int maxThreadCount = 10, bool autoStart = false) : m_name(name),
+                                                                                                    m_threadMaxCount(maxThreadCount < 10 ? 10 : maxThreadCount),
+                                                                                                    m_stop(!autoStart)
         {
             //m_threads.resize(maxThreadCount);
             if (autoStart)
             {
-                m_stop=false;
+                m_stop = false;
                 for (int i = 0; i < maxThreadCount; ++i)
                 {
                     m_threads.emplace_back(new Thread(
@@ -161,8 +164,8 @@ namespace Itachi
                         static_cast<void *>(this),
                         m_name + std::to_string(i)));
                 }
-
             }
+            setCurrentThreadId(std::this_thread::get_id());
         }
 
         ThreadPool(std::string &&name = "", int maxThreadCount = 10, bool autoStart = true) : m_name(name),
@@ -204,10 +207,6 @@ namespace Itachi
         std::vector<Thread::ptr> m_threads;
     };
 
-    std::thread::id getCurrentThreadId();
-    std::string getCurrentThreadName();
-    void setCurrentThreadName(const std::string &);
-    void setCurrentThreadId(const std::thread::id &);
 }
 
 #endif
