@@ -492,6 +492,28 @@ stdint.h
 map
 -
 
+../src/Net/include/buffer.h
+vector
+-
+memory
+-
+string.h
+-
+definition.h
+../src/Net/include/definition.h
+
+../src/Net/include/tcpConnection.h
+string
+-
+ostream
+-
+memory
+-
+callback.h
+../src/Net/include/callback.h
+noncopyaable.h
+../src/Net/include/noncopyaable.h
+
 /home/lqf/cpp/Itachi/test/tcpserver_test.cpp
 channel.h
 /home/lqf/cpp/Itachi/test/channel.h
@@ -511,4 +533,8 @@ arpa/inet.h
 -
 Tcpserver.h
 /home/lqf/cpp/Itachi/test/Tcpserver.h
+buffer.h
+/home/lqf/cpp/Itachi/test/buffer.h
+tcpConnection.h
+/home/lqf/cpp/Itachi/test/tcpConnection.h
 

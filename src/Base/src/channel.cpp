@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-07 18:46:22
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-10 19:08:00
+ * @LastEditTime: 2022-03-10 21:05:08
  * @Description: 
  */
 #include "channel.h"
@@ -27,16 +27,16 @@ namespace Itachi
     {
         m_isHandlingEvent = true;
         //关闭
-        if ((m_revent & EPOLLHUP) && (m_revent && EPOLLIN))
-        {
-            if (m_closeCallBack)
-            {
-                LOG_INFO << "m_fd CLOSE ,m_closeCallBack is called";
-                m_closeCallBack();
-                        m_isHandlingEvent = false;
-                return;
-            }
-        }
+        // if ((m_revent & EPOLLHUP) && (m_revent && EPOLLIN))
+        // {
+        //     if (m_closeCallBack)
+        //     {
+        //         LOG_INFO << "m_fd CLOSE ,m_closeCallBack is called";
+        //         m_closeCallBack();
+        //                 m_isHandlingEvent = false;
+        //         return;
+        //     }
+        // }
         //可读
         
         if (m_revent & K_READEVENT)
@@ -55,14 +55,14 @@ namespace Itachi
             }
         }
         //错误
-        if (m_revent & K_ERROREVENT)
-        {
-            if (m_errorCallBack)
-            {
-                LOG_ERROR << "m_revent is K_ERROREVENT!!";
-                m_errorCallBack();
-            }
-        }
+        // if (m_revent & K_ERROREVENT)
+        // {
+        //     if (m_errorCallBack)
+        //     {
+        //         LOG_ERROR << "m_revent is K_ERROREVENT!!";
+        //         m_errorCallBack();
+        //     }
+        // }
         m_isHandlingEvent = false;
     }
     void Channel::handleWrite()

@@ -22,3 +22,11 @@
 
 [/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:86] [2022-03-10 20:46:04] [FATAL]  [ThreadPool_eventLoop  4 : 140465598674688]  EPOLL_CTL_ADD faild on epollfd: 18   fd:123
 
+[/home/lqf/cpp/Itachi/src/Net/include/buffer.h:172] [2022-03-10 21:02:42] [FATAL]  [ThreadPool_eventLoop  2 : 140261338547968]  ASSERT FAILED:  readableBuffer() > 0
+
+[/home/lqf/cpp/Itachi/src/Net/include/buffer.h:172] [2022-03-10 21:03:16] [FATAL]  [ThreadPool_eventLoop  1 : 140617626400512]  ASSERT FAILED:  readableBuffer() > 0
+
+[/home/lqf/cpp/Itachi/src/Base/src/channel.cpp:62] [2022-03-10 21:04:05] [ERROR]  [ThreadPool_eventLoop  1 : 140097999599360]  m_revent is K_ERROREVENT!!
+
+[/home/lqf/cpp/Itachi/src/Base/src/channel.cpp:62] [2022-03-10 21:04:32] [ERROR]  [ThreadPool_eventLoop  0 : 140098007992064]  m_revent is K_ERROREVENT!!
+

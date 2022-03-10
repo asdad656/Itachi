@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-09 11:28:01
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-10 20:27:40
+ * @LastEditTime: 2022-03-10 21:03:55
  * @Description: H
  */
 #include "tcpConnection.h"
@@ -119,17 +119,19 @@ namespace Itachi
         if(n==0){
             handleClose();
         }
-        if(n<0)
+        else if(n<0)
         {
             LOG_FATAL<<"handleMessage failed!!   error is "<<saveerror;
-        }
-        if(m_messageCallBack)
+        }else if(m_messageCallBack)
         m_messageCallBack(shared_from_this(), m_inPutBuffer.get(), 0);
     }
     void TcpConnection::handleClose()
     {
         if(m_CloseCallBack)
         m_CloseCallBack(shared_from_this(), 0);
+        else{
+            connectionDestory();
+        }
     }
     void TcpConnection::handleError()
     {

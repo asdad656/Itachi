@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-09 16:15:23
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-10 17:57:55
+ * @LastEditTime: 2022-03-10 20:56:13
  * @Description: 
  */
 #ifndef __TCPSERVER__H__
@@ -30,6 +30,15 @@ namespace Itachi
         void newConnectionCallBasck(int fd,sockaddr_in*addr);
         void connection();
         void removeConnection(std::shared_ptr<TcpConnection> connection);
+        void setMessageCallBack(TcpMessaageCallBack cb){
+            m_messageCallBack=std::move(cb);
+        }
+        void setErrorCallBack(TcpErrorCallBack cb){
+            m_ErrorCallBack=std::move(cb);
+        }
+        void setConnectionCallBack(TcpConnectionCallBack cb){
+            m_ConnectionCallBack=std::move(cb);
+        }
     private:
         std::atomic<int>m_nextId;
         bool m_isStart;

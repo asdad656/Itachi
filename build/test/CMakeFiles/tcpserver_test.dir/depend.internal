@@ -12,4 +12,6 @@ test/CMakeFiles/tcpserver_test.dir/tcpserver_test.cpp.o
  ../src/Base/include/noncopyaable.h
  ../src/Base/include/threadpool_c++11.h
  ../src/Net/include/Tcpserver.h
+ ../src/Net/include/buffer.h
+ ../src/Net/include/tcpConnection.h
  /home/lqf/cpp/Itachi/test/tcpserver_test.cpp
