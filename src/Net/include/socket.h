@@ -3,11 +3,16 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-06 16:22:27
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-07 12:56:37
+ * @LastEditTime: 2022-03-09 18:35:41
  * @Description: ipv4 socket
  */
+#ifndef __SOCKET__H__
+#define __SOCKET__H__
 #include<arpa/inet.h>
+#include<iostream>
+#include<sstream>
 #include<memory>
+#include<stdint.h>
 namespace Itachi{
     class Socket;
     using socket_unique_ptr=std::unique_ptr<Socket>;
@@ -50,9 +55,21 @@ namespace Itachi{
         const sockaddr_in*getLocalAddr()noexcept{
             return m_locaaddr.get();
         }
+        std::string toString()const{
+            std::stringstream oss;
+            char Addr[INET_ADDRSTRLEN];
+            inet_ntop(AF_INET,&(m_peeraddr.get()->sin_addr),Addr,sizeof(Addr));
+            oss<<std::endl;
+            oss<<"peer   Socket Information: "<<"  fd:   "<<m_fd<<" peerAddr: "<<Addr<<"  :  "<<ntohs(m_peeraddr->sin_port)<<std::endl;;
+            inet_ntop(AF_INET,&(m_locaaddr.get()->sin_addr),Addr,sizeof(Addr));
+            oss<<"locaal Socket Information: "<<"  fd:   "<<m_fd<<" peerAddr: "<<Addr<<"  :  "<<ntohs(m_locaaddr->sin_port)<<std::endl;
+            return oss.str();
+        }
     private:
         int  m_fd;
         sockaddr_unique_ptr m_locaaddr;
         sockaddr_unique_ptr m_peeraddr;
     };
 }
+
+#endif

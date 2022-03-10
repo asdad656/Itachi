@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-07 15:32:32
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-08 18:01:20
+ * @LastEditTime: 2022-03-10 18:45:17
  * @Description: 
  */
 
@@ -19,7 +19,6 @@ namespace Itachi
 {
     class Channel;
     class Poller;
-    class Adaptor;
     class EventLoop : public nonCopyable
     {
     public:
@@ -33,8 +32,9 @@ namespace Itachi
         void stop();
         bool isInLoopThread() const;
         void runInLoop(ExtraTask cb);
+        void queueInLoop(ExtraTask cb);
         void update(Channel *);
-
+        void removeChannel(Channel*);
     private:
         void doExtraTasks();
         void assertInLoopThread() const;

@@ -1,0 +1,139 @@
+Date : 2022-03-09 18:41:56
+Directory : /home/lqf/cpp/Itachi
+Total : 79 files,  5915 codes, 843 comments, 1141 blanks, all 7899 lines
+
+Languages
++-------------+------------+------------+------------+------------+------------+
+| language    | files      | code       | comment    | blank      | total      |
++-------------+------------+------------+------------+------------+------------+
+| C++         |         37 |      3,335 |        530 |        405 |      4,270 |
+| Makefile    |          4 |        693 |        255 |        375 |      1,323 |
+| CMake       |         32 |        685 |          0 |        143 |        828 |
+| Log         |          1 |        464 |          0 |         57 |        521 |
+| C           |          2 |        448 |         50 |         99 |        597 |
+| CMake Cache |          1 |        257 |          0 |         60 |        317 |
+| JSON        |          1 |         24 |          0 |          1 |         25 |
+| Markdown    |          1 |          9 |          8 |          1 |         18 |
++-------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                           | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                              |         79 |      5,915 |        843 |      1,141 |      7,899 |
+| build                                                                                          |         42 |      3,339 |        357 |        830 |      4,526 |
+| build/CMakeFiles                                                                               |         10 |      1,889 |        102 |        297 |      2,288 |
+| build/CMakeFiles/3.6.2                                                                         |          5 |        926 |        102 |        221 |      1,249 |
+| build/CMakeFiles/3.6.2/CompilerIdC                                                             |          1 |        417 |         50 |         95 |        562 |
+| build/CMakeFiles/3.6.2/CompilerIdCXX                                                           |          1 |        390 |         52 |         92 |        534 |
+| build/src                                                                                      |         16 |        621 |        117 |        247 |        985 |
+| build/src/Base                                                                                 |          8 |        321 |         60 |        128 |        509 |
+| build/src/Base/CMakeFiles                                                                      |          6 |         91 |          0 |         18 |        109 |
+| build/src/Base/CMakeFiles/ITACHI_BASE.dir                                                      |          2 |         38 |          0 |          6 |         44 |
+| build/src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir                                               |          3 |         41 |          0 |          7 |         48 |
+| build/src/Net                                                                                  |          8 |        300 |         57 |        119 |        476 |
+| build/src/Net/CMakeFiles                                                                       |          6 |         91 |          0 |         18 |        109 |
+| build/src/Net/CMakeFiles/ITACHI_NET.dir                                                        |          2 |         38 |          0 |          6 |         44 |
+| build/src/Net/CMakeFiles/ITACHI_NET_STATIC.dir                                                 |          3 |         41 |          0 |          7 |         48 |
+| build/test                                                                                     |         13 |        408 |         66 |        148 |        622 |
+| build/test/CMakeFiles                                                                          |         11 |        187 |          0 |         35 |        222 |
+| build/test/CMakeFiles/buffer_test.dir                                                          |          2 |         35 |          0 |          6 |         41 |
+| build/test/CMakeFiles/config_test.dir                                                          |          2 |         35 |          0 |          6 |         41 |
+| build/test/CMakeFiles/eventloop_test.dir                                                       |          2 |         35 |          0 |          6 |         41 |
+| build/test/CMakeFiles/logger_test.dir                                                          |          2 |         35 |          0 |          6 |         41 |
+| build/test/CMakeFiles/threapool_test.dir                                                       |          2 |         35 |          0 |          6 |         41 |
+| src                                                                                            |         30 |      2,372 |        427 |        254 |      3,053 |
+| src/Base                                                                                       |         20 |      1,799 |        336 |        200 |      2,335 |
+| src/Base/include                                                                               |         14 |      1,054 |        176 |        141 |      1,371 |
+| src/Base/src                                                                                   |          6 |        745 |        160 |         59 |        964 |
+| src/Net                                                                                        |         10 |        573 |         91 |         54 |        718 |
+| src/Net/include                                                                                |          5 |        317 |         43 |         41 |        401 |
+| src/Net/src                                                                                    |          5 |        256 |         48 |         13 |        317 |
+| test                                                                                           |          5 |        171 |         51 |         55 |        277 |
++------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------+-------------+------------+------------+------------+------------+
+| filename                                                                                       | language    | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------+-------------+------------+------------+------------+------------+
+| /home/lqf/cpp/Itachi/README.md                                                                 | Markdown    |          9 |          8 |          1 |         18 |
+| /home/lqf/cpp/Itachi/build/CMakeCache.txt                                                      | CMake Cache |        257 |          0 |         60 |        317 |
+| /home/lqf/cpp/Itachi/build/CMakeFiles/3.6.2/CMakeCCompiler.cmake                               | CMake       |         54 |          0 |         14 |         68 |
+| /home/lqf/cpp/Itachi/build/CMakeFiles/3.6.2/CMakeCXXCompiler.cmake                             | CMake       |         55 |          0 |         14 |         69 |
+| /home/lqf/cpp/Itachi/build/CMakeFiles/3.6.2/CMakeSystem.cmake                                  | CMake       |         10 |          0 |          6 |         16 |
+| /home/lqf/cpp/Itachi/build/CMakeFiles/3.6.2/CompilerIdC/CMakeCCompilerId.c                     | C           |        417 |         50 |         95 |        562 |
+| /home/lqf/cpp/Itachi/build/CMakeFiles/3.6.2/CompilerIdCXX/CMakeCXXCompilerId.cpp               | C++         |        390 |         52 |         92 |        534 |
+| /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeDirectoryInformation.cmake                          | CMake       |         12 |          0 |          5 |         17 |
+| /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeOutput.log                                          | Log         |        464 |          0 |         57 |        521 |
+| /home/lqf/cpp/Itachi/build/CMakeFiles/Makefile.cmake                                           | CMake       |         54 |          0 |          6 |         60 |
+| /home/lqf/cpp/Itachi/build/CMakeFiles/feature_tests.c                                          | C           |         31 |          0 |          4 |         35 |
+| /home/lqf/cpp/Itachi/build/CMakeFiles/feature_tests.cxx                                        | C++         |        402 |          0 |          4 |        406 |
+| /home/lqf/cpp/Itachi/build/Makefile                                                            | Makefile    |        120 |         72 |         69 |        261 |
+| /home/lqf/cpp/Itachi/build/cmake_install.cmake                                                 | CMake       |         44 |          0 |          9 |         53 |
+| /home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/CMakeDirectoryInformation.cmake                 | CMake       |         12 |          0 |          5 |         17 |
+| /home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/ITACHI_BASE.dir/DependInfo.cmake                | CMake       |         24 |          0 |          4 |         28 |
+| /home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/ITACHI_BASE.dir/cmake_clean.cmake               | CMake       |         14 |          0 |          2 |         16 |
+| /home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/DependInfo.cmake         | CMake       |         24 |          0 |          4 |         28 |
+| /home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/cmake_clean.cmake        | CMake       |         14 |          0 |          2 |         16 |
+| /home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/cmake_clean_target.cmake | CMake       |          3 |          0 |          1 |          4 |
+| /home/lqf/cpp/Itachi/build/src/Base/Makefile                                                   | Makefile    |        201 |         60 |        104 |        365 |
+| /home/lqf/cpp/Itachi/build/src/Base/cmake_install.cmake                                        | CMake       |         29 |          0 |          6 |         35 |
+| /home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/CMakeDirectoryInformation.cmake                  | CMake       |         12 |          0 |          5 |         17 |
+| /home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/ITACHI_NET.dir/DependInfo.cmake                  | CMake       |         25 |          0 |          4 |         29 |
+| /home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/ITACHI_NET.dir/cmake_clean.cmake                 | CMake       |         13 |          0 |          2 |         15 |
+| /home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/DependInfo.cmake           | CMake       |         25 |          0 |          4 |         29 |
+| /home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/cmake_clean.cmake          | CMake       |         13 |          0 |          2 |         15 |
+| /home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/cmake_clean_target.cmake   | CMake       |          3 |          0 |          1 |          4 |
+| /home/lqf/cpp/Itachi/build/src/Net/Makefile                                                    | Makefile    |        180 |         57 |         95 |        332 |
+| /home/lqf/cpp/Itachi/build/src/Net/cmake_install.cmake                                         | CMake       |         29 |          0 |          6 |         35 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/CMakeDirectoryInformation.cmake                     | CMake       |         12 |          0 |          5 |         17 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/buffer_test.dir/DependInfo.cmake                    | CMake       |         26 |          0 |          4 |         30 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/buffer_test.dir/cmake_clean.cmake                   | CMake       |          9 |          0 |          2 |         11 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/config_test.dir/DependInfo.cmake                    | CMake       |         26 |          0 |          4 |         30 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/config_test.dir/cmake_clean.cmake                   | CMake       |          9 |          0 |          2 |         11 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/eventloop_test.dir/DependInfo.cmake                 | CMake       |         26 |          0 |          4 |         30 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/eventloop_test.dir/cmake_clean.cmake                | CMake       |          9 |          0 |          2 |         11 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/logger_test.dir/DependInfo.cmake                    | CMake       |         26 |          0 |          4 |         30 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/logger_test.dir/cmake_clean.cmake                   | CMake       |          9 |          0 |          2 |         11 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/threapool_test.dir/DependInfo.cmake                 | CMake       |         26 |          0 |          4 |         30 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/threapool_test.dir/cmake_clean.cmake                | CMake       |          9 |          0 |          2 |         11 |
+| /home/lqf/cpp/Itachi/build/test/Makefile                                                       | Makefile    |        192 |         66 |        107 |        365 |
+| /home/lqf/cpp/Itachi/build/test/cmake_install.cmake                                            | CMake       |         29 |          0 |          6 |         35 |
+| /home/lqf/cpp/Itachi/config.json                                                               | JSON        |         24 |          0 |          1 |         25 |
+| /home/lqf/cpp/Itachi/src/Base/include/EventLoop.h                                              | C++         |         43 |          9 |          4 |         56 |
+| /home/lqf/cpp/Itachi/src/Base/include/callback.h                                               | C++         |         17 |         18 |          8 |         43 |
+| /home/lqf/cpp/Itachi/src/Base/include/channel.h                                                | C++         |         78 |          8 |          4 |         90 |
+| /home/lqf/cpp/Itachi/src/Base/include/config.h                                                 | C++         |        245 |         29 |         27 |        301 |
+| /home/lqf/cpp/Itachi/src/Base/include/definition.h                                             | C++         |         20 |         13 |         15 |         48 |
+| /home/lqf/cpp/Itachi/src/Base/include/epoll_poller.h                                           | C++         |         21 |          8 |          6 |         35 |
+| /home/lqf/cpp/Itachi/src/Base/include/fiber.h                                                  | C++         |          0 |          8 |          1 |          9 |
+| /home/lqf/cpp/Itachi/src/Base/include/logger.h                                                 | C++         |        384 |         28 |         48 |        460 |
+| /home/lqf/cpp/Itachi/src/Base/include/noncopyaable.h                                           | C++         |         15 |          8 |          2 |         25 |
+| /home/lqf/cpp/Itachi/src/Base/include/poller.h                                                 | C++         |         31 |          8 |          3 |         42 |
+| /home/lqf/cpp/Itachi/src/Base/include/singleton.h                                              | C++         |         21 |          8 |          2 |         31 |
+| /home/lqf/cpp/Itachi/src/Base/include/thread_linux.h                                           | C++         |          0 |          8 |          1 |          9 |
+| /home/lqf/cpp/Itachi/src/Base/include/threadpoll_linux.h                                       | C++         |          0 |          8 |          1 |          9 |
+| /home/lqf/cpp/Itachi/src/Base/include/threadpool_c++11.h                                       | C++         |        179 |         15 |         19 |        213 |
+| /home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp                                                | C++         |        113 |         16 |          5 |        134 |
+| /home/lqf/cpp/Itachi/src/Base/src/channel.cpp                                                  | C++         |        125 |         12 |          7 |        144 |
+| /home/lqf/cpp/Itachi/src/Base/src/config.cpp                                                   | C++         |         68 |         16 |          9 |         93 |
+| /home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp                                             | C++         |        105 |          9 |          1 |        115 |
+| /home/lqf/cpp/Itachi/src/Base/src/logger.cpp                                                   | C++         |        231 |         97 |         30 |        358 |
+| /home/lqf/cpp/Itachi/src/Base/src/threadpool_c++11.cpp                                         | C++         |        103 |         10 |          7 |        120 |
+| /home/lqf/cpp/Itachi/src/Net/include/Tcpserver.h                                               | C++         |         16 |          8 |          1 |         25 |
+| /home/lqf/cpp/Itachi/src/Net/include/adaptor.h                                                 | C++         |          7 |          8 |          4 |         19 |
+| /home/lqf/cpp/Itachi/src/Net/include/buffer.h                                                  | C++         |        174 |          8 |         28 |        210 |
+| /home/lqf/cpp/Itachi/src/Net/include/socket.h                                                  | C++         |         61 |          8 |          6 |         75 |
+| /home/lqf/cpp/Itachi/src/Net/include/tcpConnection.h                                           | C++         |         59 |         11 |          2 |         72 |
+| /home/lqf/cpp/Itachi/src/Net/src/TcpServer.cpp                                                 | C++         |          0 |          8 |          1 |          9 |
+| /home/lqf/cpp/Itachi/src/Net/src/adaptor.cpp                                                   | C++         |          0 |          8 |          1 |          9 |
+| /home/lqf/cpp/Itachi/src/Net/src/buffer.cpp                                                    | C++         |         27 |          8 |          0 |         35 |
+| /home/lqf/cpp/Itachi/src/Net/src/socket.cpp                                                    | C++         |         83 |         13 |          7 |        103 |
+| /home/lqf/cpp/Itachi/src/Net/src/tcpConnection.cpp                                             | C++         |        146 |         11 |          4 |        161 |
+| /home/lqf/cpp/Itachi/test/buffer_test.cpp                                                      | C++         |         20 |          9 |          4 |         33 |
+| /home/lqf/cpp/Itachi/test/config_test.cpp                                                      | C++         |         30 |          8 |          5 |         43 |
+| /home/lqf/cpp/Itachi/test/eventloop_test.cpp                                                   | C++         |         52 |         17 |         17 |         86 |
+| /home/lqf/cpp/Itachi/test/logger_test.cpp                                                      | C++         |         28 |          8 |         16 |         52 |
+| /home/lqf/cpp/Itachi/test/threapool_test.cpp                                                   | C++         |         41 |          9 |         13 |         63 |
+| Total                                                                                          |             |      5,915 |        843 |      1,141 |      7,899 |
++------------------------------------------------------------------------------------------------+-------------+------------+------------+------------+------------+

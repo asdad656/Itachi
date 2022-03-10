@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-07 16:24:09
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-08 15:45:07
+ * @LastEditTime: 2022-03-10 17:35:49
  * @Description: 
  */
 #ifndef __CHANNEL___H__
@@ -43,6 +43,8 @@ namespace Itachi
         void setCloseCallBack(closeableCallBack &&);
         void setErrorCallBack(const errorableCallBack &);
         void setErrorCallBack(errorableCallBack &&);
+        void disableWrite();
+         void disableAll();
         void setIndex(const int &index)
         {
             m_index = index;

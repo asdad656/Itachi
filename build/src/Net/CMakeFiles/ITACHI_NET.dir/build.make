@@ -105,19 +105,97 @@ src/Net/CMakeFiles/ITACHI_NET.dir/src/socket.cpp.o.provides: src/Net/CMakeFiles/
 src/Net/CMakeFiles/ITACHI_NET.dir/src/socket.cpp.o.provides.build: src/Net/CMakeFiles/ITACHI_NET.dir/src/socket.cpp.o
 
 
+src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o: src/Net/CMakeFiles/ITACHI_NET.dir/flags.make
+src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o: ../src/Net/src/tcpConnection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o -c /home/lqf/cpp/Itachi/src/Net/src/tcpConnection.cpp
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.i"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lqf/cpp/Itachi/src/Net/src/tcpConnection.cpp > CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.i
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.s"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lqf/cpp/Itachi/src/Net/src/tcpConnection.cpp -o CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.s
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o.requires:
+
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o.requires
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o.provides: src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o.requires
+	$(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o.provides.build
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o.provides
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o.provides.build: src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o
+
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o: src/Net/CMakeFiles/ITACHI_NET.dir/flags.make
+src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o: ../src/Net/src/adaptor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o -c /home/lqf/cpp/Itachi/src/Net/src/adaptor.cpp
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.i"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lqf/cpp/Itachi/src/Net/src/adaptor.cpp > CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.i
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.s"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lqf/cpp/Itachi/src/Net/src/adaptor.cpp -o CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.s
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o.requires:
+
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o.requires
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o.provides: src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o.requires
+	$(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o.provides.build
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o.provides
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o.provides.build: src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o
+
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o: src/Net/CMakeFiles/ITACHI_NET.dir/flags.make
+src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o: ../src/Net/src/TcpServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o -c /home/lqf/cpp/Itachi/src/Net/src/TcpServer.cpp
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.i"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lqf/cpp/Itachi/src/Net/src/TcpServer.cpp > CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.i
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.s"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lqf/cpp/Itachi/src/Net/src/TcpServer.cpp -o CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.s
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o.requires:
+
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o.requires
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o.provides: src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o.requires
+	$(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o.provides.build
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o.provides
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o.provides.build: src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o
+
+
 # Object files for target ITACHI_NET
 ITACHI_NET_OBJECTS = \
 "CMakeFiles/ITACHI_NET.dir/src/buffer.cpp.o" \
-"CMakeFiles/ITACHI_NET.dir/src/socket.cpp.o"
+"CMakeFiles/ITACHI_NET.dir/src/socket.cpp.o" \
+"CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o" \
+"CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o" \
+"CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o"
 
 # External object files for target ITACHI_NET
 ITACHI_NET_EXTERNAL_OBJECTS =
 
 ../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/src/buffer.cpp.o
 ../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/src/socket.cpp.o
+../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o
+../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o
+../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o
 ../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/build.make
 ../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library ../../../lib/libITACHI_NET.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library ../../../lib/libITACHI_NET.so"
 	cd /home/lqf/cpp/Itachi/build/src/Net && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ITACHI_NET.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +205,9 @@ src/Net/CMakeFiles/ITACHI_NET.dir/build: ../lib/libITACHI_NET.so
 
 src/Net/CMakeFiles/ITACHI_NET.dir/requires: src/Net/CMakeFiles/ITACHI_NET.dir/src/buffer.cpp.o.requires
 src/Net/CMakeFiles/ITACHI_NET.dir/requires: src/Net/CMakeFiles/ITACHI_NET.dir/src/socket.cpp.o.requires
+src/Net/CMakeFiles/ITACHI_NET.dir/requires: src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o.requires
+src/Net/CMakeFiles/ITACHI_NET.dir/requires: src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o.requires
+src/Net/CMakeFiles/ITACHI_NET.dir/requires: src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o.requires
 
 .PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/requires
 

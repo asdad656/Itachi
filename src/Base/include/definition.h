@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-04 21:38:33
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-08 14:51:09
+ * @LastEditTime: 2022-03-09 20:34:13
  * @Description: 
  */
 #include<logger.h>
@@ -15,7 +15,7 @@
 #define __INIT__                                                                     \
     Itachi::LogManager::getInstance();                                        \
  
-#define LOG(LEVEL)                                                                \
+#define LOG(LEVEL)                                                                 \
     Itachi::LogWraper(#LEVEL,__FILE__,__LINE__)
 
 
@@ -27,16 +27,16 @@
 
 #define LOG_ERROR  LOG(ERROR)
 
-#define LOG_FATAL  LOG(FATAL)
-
+#define LOG_FATAL                                                                     \
+            LOG(FATAL)                                                                     
 
 //------------------------------assert-----------------------------------//
 // #ifdef  DEBUG
-#define ASSERT(CONDITION)                                                 \
-    if(!(CONDITION))                                                                  \
-        {                                                                                  \
-            LOG_FATAL<<"ASSERT FAILED:  "<<#CONDITION;      \
-            assert(CONDITION);                                                  \
+#define ASSERT(CONDITION)                                                       \
+    if(!(CONDITION))                                                                      \
+        {                                                                                        \
+            LOG_FATAL<<"ASSERT FAILED:  "<<#CONDITION;            \
+            assert(CONDITION);                                                        \
         }
 // #else
 //     #define ASSERT(CONDITION)                                                

@@ -51,6 +51,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/Base/CMakeFiles/ITACHI_BASE.dir/DependInfo.cmake"
   "src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/DependInfo.cmake"
   "src/Net/CMakeFiles/ITACHI_NET.dir/DependInfo.cmake"
+  "test/CMakeFiles/tcpserver_test.dir/DependInfo.cmake"
   "test/CMakeFiles/eventloop_test.dir/DependInfo.cmake"
   "test/CMakeFiles/buffer_test.dir/DependInfo.cmake"
   "test/CMakeFiles/threapool_test.dir/DependInfo.cmake"

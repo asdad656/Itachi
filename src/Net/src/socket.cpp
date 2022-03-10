@@ -3,19 +3,20 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-06 16:22:33
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-07 12:56:11
+ * @LastEditTime: 2022-03-10 17:06:44
  * @Description: 
  */
 #include "socket.h"
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <netinet/tcp.h>
-#include"definition.h"
+#include "definition.h"
 namespace Itachi
 {
     void Socket::setNoBlock(const bool &val)
     {
-        int rt = setsockopt(m_fd, SOL_SOCKET, SOCK_NONBLOCK, &val, sizeof(bool));
+        int opt = val ? 1 : 0;
+        int rt = setsockopt(m_fd, SOL_SOCKET, SOCK_NONBLOCK, &opt, sizeof(int));
         if (rt)
         {
             LOG_ERROR << "setNoBlock error";
@@ -24,8 +25,8 @@ namespace Itachi
 
     void Socket::setReuseAddr(const bool &val)
     {
-
-        int rt = setsockopt(m_fd, SOL_SOCKET, SO_REUSEADDR, &val, sizeof(bool));
+        int opt = val ? 1 : 0;
+        int rt = setsockopt(m_fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(int));
         if (rt)
         {
             LOG_ERROR << "setReuseAddr error";
@@ -34,7 +35,8 @@ namespace Itachi
 
     void Socket::setReusePort(const bool &val)
     {
-        int rt = setsockopt(m_fd, SOL_SOCKET, SO_REUSEPORT, &val, sizeof(bool));
+        int opt = val ? 1 : 0;
+        int rt = setsockopt(m_fd, SOL_SOCKET, SO_REUSEPORT, &opt, sizeof(int));
         if (rt)
         {
             LOG_ERROR << "setReusePort error";
@@ -43,7 +45,9 @@ namespace Itachi
 
     void Socket::setTcpNoDelay(const bool &val)
     {
-        int rt = setsockopt(m_fd, IPPROTO_TCP, TCP_NODELAY, &val, sizeof(bool));
+
+        int opt = val ? 1 : 0;
+        int rt = setsockopt(m_fd, IPPROTO_TCP, TCP_NODELAY, &opt, sizeof(int));
 
         if (rt)
         {
@@ -52,7 +56,8 @@ namespace Itachi
     }
     void Socket::setSendTimeOut(const int &val)
     {
-        int rt = setsockopt(m_fd, SOL_SOCKET, SO_SNDTIMEO, &val, sizeof(int));
+        int opt = val ? 1 : 0;
+        int rt = setsockopt(m_fd, SOL_SOCKET, SO_SNDTIMEO, &opt, sizeof(int));
         if (rt)
         {
             LOG_ERROR << "setSendTimeOut error";
@@ -60,7 +65,8 @@ namespace Itachi
     }
     void Socket::setRecvTieOut(const int &val)
     {
-        int rt = setsockopt(m_fd, SOL_SOCKET, SO_RCVTIMEO, &val, sizeof(int));
+        int opt = val ? 1 : 0;
+        int rt = setsockopt(m_fd, SOL_SOCKET, SO_RCVTIMEO, &opt, sizeof(int));
         if (rt)
         {
             LOG_ERROR << "setRecvTieOut error";
@@ -68,7 +74,8 @@ namespace Itachi
     }
     void Socket::setRecvBuffer(const int &val)
     {
-        int rt = setsockopt(m_fd, SOL_SOCKET, SO_RCVBUF, &val, sizeof(int));
+        int opt = val ? 1 : 0;
+        int rt = setsockopt(m_fd, SOL_SOCKET, SO_RCVBUF, &opt, sizeof(int));
         if (rt)
         {
             LOG_ERROR << "setRecvBuffer error";
@@ -76,7 +83,8 @@ namespace Itachi
     }
     void Socket::setSendBuffer(const int &val)
     {
-        int rt = setsockopt(m_fd, SOL_SOCKET, SO_SNDBUF, &val, sizeof(int));
+        int opt = val ? 1 : 0;
+        int rt = setsockopt(m_fd, SOL_SOCKET, SO_SNDBUF, &opt, sizeof(int));
         if (rt)
         {
             LOG_ERROR << "setSendBuffer error";
@@ -93,11 +101,12 @@ namespace Itachi
 
     void Socket::setTcpKeepAlive(const bool &val)
     {
-        int rt = setsockopt(m_fd, SOL_SOCKET, SO_KEEPALIVE, &val, sizeof(int));
+        int opt = val ? 1 : 0;
+        int rt = setsockopt(m_fd, SOL_SOCKET, SO_KEEPALIVE, &opt, sizeof(int));
         if (rt)
         {
             LOG_ERROR << "setTcpKeepAlive error";
         }
-    }   
-    
+    }
+
 }

@@ -19,6 +19,8 @@ noncopyaable.h
 ../src/Base/include/callback.h
 functional
 -
+memory
+-
 
 ../src/Base/include/channel.h
 functional
