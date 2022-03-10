@@ -1,128 +1,32 @@
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:49:51] [ERROR]  [lqf : 14 : 140736464934656]  test thread pool:   lqf : 14  :   140736464934656
+[/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:86] [2022-03-10 20:46:04] [FATAL]  [ThreadPool_eventLoop  2 : 140465496127232]  EPOLL_CTL_ADD faild on epollfd: 12   fd:28
 
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 26 : 140735407978240]  test thread pool:   lqf : 26  :   140735407978240
+[/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:86] [2022-03-10 20:46:04] [FATAL]  [ThreadPool_eventLoop  0 : 140465623852800]  EPOLL_CTL_ADD faild on epollfd: 6   fd:29
 
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 24 : 140735902885632]  test thread pool:   lqf : 24  :   140735902885632
+[/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:86] [2022-03-10 20:46:04] [FATAL]  [ThreadPool_eventLoop  3 : 140465607067392]  EPOLL_CTL_ADD faild on epollfd: 8   fd:37
 
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 24 : 140735902885632]  test thread pool:   lqf : 24  :   140735902885632
+[/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:86] [2022-03-10 20:46:04] [FATAL]  [ThreadPool_eventLoop  1 : 140465615460096]  EPOLL_CTL_ADD faild on epollfd: 10   fd:38
 
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 29 : 140735382800128]  test thread pool:   lqf : 29  :   140735382800128
+[/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:86] [2022-03-10 20:46:04] [FATAL]  [ThreadPool_eventLoop  0 : 140465623852800]  EPOLL_CTL_ADD faild on epollfd: 6   fd:50
 
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 23 : 140735911278336]  test thread pool:   lqf : 23  :   140735911278336
+[/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:86] [2022-03-10 20:46:04] [FATAL]  [ThreadPool_eventLoop  4 : 140465598674688]  EPOLL_CTL_ADD faild on epollfd: 18   fd:63
 
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 12 : 140736481720064]  test thread pool:   lqf : 12  :   140736481720064
+[/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:86] [2022-03-10 20:46:04] [FATAL]  [ThreadPool_eventLoop  8 : 140465487734528]  EPOLL_CTL_ADD faild on epollfd: 24   fd:66
 
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 19 : 140735944849152]  test thread pool:   lqf : 19  :   140735944849152
+[/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:86] [2022-03-10 20:46:04] [FATAL]  [ThreadPool_eventLoop  3 : 140465607067392]  EPOLL_CTL_ADD faild on epollfd: 8   fd:77
 
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 11 : 140737035343616]  test thread pool:   lqf : 11  :   140737035343616
+[/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:86] [2022-03-10 20:46:04] [FATAL]  [ThreadPool_eventLoop  6 : 140465581889280]  EPOLL_CTL_ADD faild on epollfd: 16   fd:82
 
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 29 : 140735382800128]  test thread pool:   lqf : 29  :   140735382800128
+[/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:86] [2022-03-10 20:46:04] [FATAL]  [ThreadPool_eventLoop  2 : 140465496127232]  EPOLL_CTL_ADD faild on epollfd: 12   fd:109
 
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 26 : 140735407978240]  test thread pool:   lqf : 26  :   140735407978240
+[/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:86] [2022-03-10 20:46:04] [FATAL]  [ThreadPool_eventLoop  5 : 140465590281984]  EPOLL_CTL_ADD faild on epollfd: 14   fd:121
 
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 27 : 140735399585536]  test thread pool:   lqf : 27  :   140735399585536
+[/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:86] [2022-03-10 20:46:04] [FATAL]  [ThreadPool_eventLoop  4 : 140465598674688]  EPOLL_CTL_ADD faild on epollfd: 18   fd:123
 
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 24 : 140735902885632]  test thread pool:   lqf : 24  :   140735902885632
+[/home/lqf/cpp/Itachi/src/Net/include/buffer.h:172] [2022-03-10 21:02:42] [FATAL]  [ThreadPool_eventLoop  2 : 140261338547968]  ASSERT FAILED:  readableBuffer() > 0
 
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 20 : 140735936456448]  test thread pool:   lqf : 20  :   140735936456448
+[/home/lqf/cpp/Itachi/src/Net/include/buffer.h:172] [2022-03-10 21:03:16] [FATAL]  [ThreadPool_eventLoop  1 : 140617626400512]  ASSERT FAILED:  readableBuffer() > 0
 
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 25 : 140735894492928]  test thread pool:   lqf : 25  :   140735894492928
+[/home/lqf/cpp/Itachi/src/Base/src/channel.cpp:62] [2022-03-10 21:04:05] [ERROR]  [ThreadPool_eventLoop  1 : 140097999599360]  m_revent is K_ERROREVENT!!
 
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 15 : 140736456541952]  test thread pool:   lqf : 15  :   140736456541952
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 16 : 140736448149248]  test thread pool:   lqf : 16  :   140736448149248
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 9 : 140737052129024]  test thread pool:   lqf : 9  :   140737052129024
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:50:59] [ERROR]  [lqf : 8 : 140737060521728]  test thread pool:   lqf : 8  :   140737060521728
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 6 : 140703432832768]  test thread pool:   lqf : 6  :   140703432832768
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 5 : 140703441225472]  test thread pool:   lqf : 5  :   140703441225472
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 29 : 140702474278656]  test thread pool:   lqf : 29  :   140702474278656
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 8 : 140703416047360]  test thread pool:   lqf : 8  :   140703416047360
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 27 : 140702491064064]  test thread pool:   lqf : 27  :   140702491064064
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 3 : 140703329941248]  test thread pool:   lqf : 3  :   140703329941248
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 28 : 140702482671360]  test thread pool:   lqf : 28  :   140702482671360
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 0 : 140703474796288]  test thread pool:   lqf : 0  :   140703474796288
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 2 : 140703458010880]  test thread pool:   lqf : 2  :   140703458010880
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 7 : 140703424440064]  test thread pool:   lqf : 7  :   140703424440064
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-06 12:59:28] [ERROR]  [lqf : 13 : 140703296370432]  test thread pool:   lqf : 13  :   140703296370432
-
-[/home/lqf/cpp/Itachi/src/Net/include/buffer.h:155] [2022-03-07 15:21:22] [FATAL]  [main  thread : thread::id of a non-executing thread]  ASSERT FAILED:  len <= readableBuffer()
-
-[/home/lqf/cpp/Itachi/src/Net/include/buffer.h:155] [2022-03-07 15:22:09] [FATAL]  [main  thread : thread::id of a non-executing thread]  ASSERT FAILED:  len <= readableBuffer()
-
-[/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:37] [2022-03-08 16:39:41] [FATAL]  [main  thread : thread::id of a non-executing thread]  ASSERT FAILED:  it != m_channels.end()
-
-[/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:37] [2022-03-08 16:40:32] [FATAL]  [main  thread : thread::id of a non-executing thread]  ASSERT FAILED:  it != m_channels.end()
-
-[/home/lqf/cpp/Itachi/src/Base/src/epoll_poller.cpp:37] [2022-03-08 16:42:38] [FATAL]  [main  thread : thread::id of a non-executing thread]  ASSERT FAILED:  it != m_channels.end()
-
-[/home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp:123] [2022-03-08 18:03:08] [ERROR]  [lqfadsf7 : 140737068914432]  weakUp error!!
-
-[/home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp:123] [2022-03-08 18:03:08] [ERROR]  [lqfadsf6 : 140737077307136]  weakUp error!!
-
-[/home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp:123] [2022-03-08 18:03:08] [ERROR]  [lqfadsf6 : 140737077307136]  weakUp error!!
-
-[/home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp:123] [2022-03-08 18:03:08] [ERROR]  [lqfadsf5 : 140737085699840]  weakUp error!!
-
-[/home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp:123] [2022-03-08 18:03:08] [ERROR]  [lqfadsf9 : 140737052129024]  weakUp error!!
-
-[/home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp:123] [2022-03-08 18:03:08] [ERROR]  [lqfadsf8 : 140737060521728]  weakUp error!!
-
-[/home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp:123] [2022-03-08 18:03:08] [ERROR]  [lqfadsf0 : 140737331676928]  weakUp error!!
-
-[/home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp:123] [2022-03-08 18:03:08] [ERROR]  [lqfadsf1 : 140737323284224]  weakUp error!!
-
-[/home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp:123] [2022-03-08 18:03:08] [ERROR]  [lqfadsf7 : 140737068914432]  weakUp error!!
-
-[/home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp:123] [2022-03-08 18:03:08] [ERROR]  [lqfadsf3 : 140737306498816]  weakUp error!!
-
-[/home/lqf/cpp/Itachi/src/Base/src/EventLoop.cpp:131] [2022-03-08 18:06:50] [ERROR]  [main  thread : thread::id of a non-executing thread]  headReadOnWeakUpFd error!!
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf28 : 140735391192832]  test thread pool:   lqf28  :   140735391192832
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf21 : 140735928063744]  test thread pool:   lqf21  :   140735928063744
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf21 : 140735928063744]  test thread pool:   lqf21  :   140735928063744
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf26 : 140735407978240]  test thread pool:   lqf26  :   140735407978240
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf19 : 140735944849152]  test thread pool:   lqf19  :   140735944849152
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf18 : 140736431363840]  test thread pool:   lqf18  :   140736431363840
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf17 : 140736439756544]  test thread pool:   lqf17  :   140736439756544
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf23 : 140735911278336]  test thread pool:   lqf23  :   140735911278336
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf20 : 140735936456448]  test thread pool:   lqf20  :   140735936456448
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf21 : 140735928063744]  test thread pool:   lqf21  :   140735928063744
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf28 : 140735391192832]  test thread pool:   lqf28  :   140735391192832
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf25 : 140735894492928]  test thread pool:   lqf25  :   140735894492928
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf24 : 140735902885632]  test thread pool:   lqf24  :   140735902885632
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf19 : 140735944849152]  test thread pool:   lqf19  :   140735944849152
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf21 : 140735928063744]  test thread pool:   lqf21  :   140735928063744
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf11 : 140737035343616]  test thread pool:   lqf11  :   140737035343616
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf12 : 140736481720064]  test thread pool:   lqf12  :   140736481720064
-
-[/home/lqf/cpp/Itachi/test/threapool_test.cpp:19] [2022-03-08 18:10:10] [ERROR]  [lqf10 : 140737043736320]  test thread pool:   lqf10  :   140737043736320
+[/home/lqf/cpp/Itachi/src/Base/src/channel.cpp:62] [2022-03-10 21:04:32] [ERROR]  [ThreadPool_eventLoop  0 : 140098007992064]  m_revent is K_ERROREVENT!!
 

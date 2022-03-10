@@ -1,0 +1,15 @@
+"filename", "language", "CMake", "C++", "Makefile", "comment", "blank", "total"
+"/home/lqf/cpp/Itachi/build/CMakeFiles/Makefile.cmake", "CMake", -70, 0, 0, 0, 0, -70
+"/home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/ITACHI_NET.dir/DependInfo.cmake", "CMake", 3, 0, 0, 0, 0, 3
+"/home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/ITACHI_NET.dir/cmake_clean.cmake", "CMake", 3, 0, 0, 0, 0, 3
+"/home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/DependInfo.cmake", "CMake", 3, 0, 0, 0, 0, 3
+"/home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/cmake_clean.cmake", "CMake", 3, 0, 0, 0, 0, 3
+"/home/lqf/cpp/Itachi/build/src/Net/Makefile", "Makefile", 0, 0, 63, 9, 27, 99
+"/home/lqf/cpp/Itachi/src/Base/include/channel.h", "C++", 0, 1, 0, 0, 0, 1
+"/home/lqf/cpp/Itachi/src/Base/include/json.hpp", "C++", 0, -15660, 0, -3846, -2604, -22110
+"/home/lqf/cpp/Itachi/src/Base/src/channel.cpp", "C++", 0, 4, 0, 0, 1, 5
+"/home/lqf/cpp/Itachi/src/Net/include/Tcpserver.h", "C++", 0, 16, 0, 0, 0, 16
+"/home/lqf/cpp/Itachi/src/Net/include/socket.h", "C++", 0, 16, 0, 0, 1, 17
+"/home/lqf/cpp/Itachi/src/Net/include/tcpConnection.h", "C++", 0, 10, 0, 0, -1, 9
+"/home/lqf/cpp/Itachi/src/Net/src/tcpConnection.cpp", "C++", 0, 146, 0, 3, 3, 152
+"Total", "-", -58, -15467, 63, -3834, -2573, -21869

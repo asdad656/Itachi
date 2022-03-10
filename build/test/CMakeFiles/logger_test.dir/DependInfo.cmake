@@ -17,6 +17,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../test/threapool_test"
   "../test/buffer_test"
   "../test/eventloop_test"
+  "../test/tcpserver_test"
   )
 
 # Targets to which this target links.

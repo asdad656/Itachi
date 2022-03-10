@@ -27,6 +27,7 @@ src/Base/CMakeFiles/ITACHI_BASE.dir/src/config.cpp.o: ../src/Base/./include/json
 src/Base/CMakeFiles/ITACHI_BASE.dir/src/config.cpp.o: ../src/Base/./include/logger.h
 src/Base/CMakeFiles/ITACHI_BASE.dir/src/config.cpp.o: ../src/Base/src/config.cpp
 
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/epoll_poller.cpp.o: ../src/Base/./include/EventLoop.h
 src/Base/CMakeFiles/ITACHI_BASE.dir/src/epoll_poller.cpp.o: ../src/Base/./include/callback.h
 src/Base/CMakeFiles/ITACHI_BASE.dir/src/epoll_poller.cpp.o: ../src/Base/./include/channel.h
 src/Base/CMakeFiles/ITACHI_BASE.dir/src/epoll_poller.cpp.o: ../src/Base/./include/config.h
@@ -45,6 +46,11 @@ src/Base/CMakeFiles/ITACHI_BASE.dir/src/logger.cpp.o: ../src/Base/./include/thre
 src/Base/CMakeFiles/ITACHI_BASE.dir/src/logger.cpp.o: ../src/Base/include/logger.h
 src/Base/CMakeFiles/ITACHI_BASE.dir/src/logger.cpp.o: ../src/Base/src/logger.cpp
 
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o: ../src/Base/./include/EventLoop.h
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o: ../src/Base/./include/definition.h
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o: ../src/Base/./include/json.hpp
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o: ../src/Base/./include/logger.h
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o: ../src/Base/./include/noncopyaable.h
 src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o: ../src/Base/./include/threadpool_c++11.h
 src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o: ../src/Base/src/threadpool_c++11.cpp
 

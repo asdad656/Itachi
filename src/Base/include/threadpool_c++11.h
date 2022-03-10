@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-03 17:13:23
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-08 18:12:30
+ * @LastEditTime: 2022-03-10 18:27:58
  * @Description: 
  */
 #ifndef __THREADAPOOL__C11__H__
@@ -205,6 +205,25 @@ namespace Itachi
         std::condition_variable m_condition_variable;
         std::priority_queue<std::shared_ptr<Task>, std::vector<std::shared_ptr<Task>>, taskQueue_cmp> m_taskQueue;
         std::vector<Thread::ptr> m_threads;
+    };
+    class EventLoop;
+    class ThreadPool_eventLoop{
+    public:
+        using VecType=std::vector<std::shared_ptr<EventLoop>>;
+        
+        ThreadPool_eventLoop(int defaule_threadCounts=10);
+        ~ThreadPool_eventLoop();
+        void start();
+        void stop();
+        EventLoop*getALoop()const;
+    private:
+        static void *execuate(void*,const std::string &name);
+    private:
+        std::mutex m_mutex;
+        int m_maxThreadCount;
+        bool m_starting;
+        std::vector<Thread::ptr> m_threads;
+        VecType m_eventLoops;
     };
 
 }

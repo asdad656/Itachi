@@ -140,6 +140,66 @@ ITACHI_NET/fast:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/build
 .PHONY : ITACHI_NET/fast
 
+src/TcpServer.o: src/TcpServer.cpp.o
+
+.PHONY : src/TcpServer.o
+
+# target to build an object file
+src/TcpServer.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/TcpServer.cpp.o
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o
+.PHONY : src/TcpServer.cpp.o
+
+src/TcpServer.i: src/TcpServer.cpp.i
+
+.PHONY : src/TcpServer.i
+
+# target to preprocess a source file
+src/TcpServer.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/TcpServer.cpp.i
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.i
+.PHONY : src/TcpServer.cpp.i
+
+src/TcpServer.s: src/TcpServer.cpp.s
+
+.PHONY : src/TcpServer.s
+
+# target to generate assembly for a file
+src/TcpServer.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/TcpServer.cpp.s
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.s
+.PHONY : src/TcpServer.cpp.s
+
+src/adaptor.o: src/adaptor.cpp.o
+
+.PHONY : src/adaptor.o
+
+# target to build an object file
+src/adaptor.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/adaptor.cpp.o
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o
+.PHONY : src/adaptor.cpp.o
+
+src/adaptor.i: src/adaptor.cpp.i
+
+.PHONY : src/adaptor.i
+
+# target to preprocess a source file
+src/adaptor.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/adaptor.cpp.i
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.i
+.PHONY : src/adaptor.cpp.i
+
+src/adaptor.s: src/adaptor.cpp.s
+
+.PHONY : src/adaptor.s
+
+# target to generate assembly for a file
+src/adaptor.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/adaptor.cpp.s
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.s
+.PHONY : src/adaptor.cpp.s
+
 src/buffer.o: src/buffer.cpp.o
 
 .PHONY : src/buffer.o
@@ -200,6 +260,36 @@ src/socket.cpp.s:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/socket.cpp.s
 .PHONY : src/socket.cpp.s
 
+src/tcpConnection.o: src/tcpConnection.cpp.o
+
+.PHONY : src/tcpConnection.o
+
+# target to build an object file
+src/tcpConnection.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.o
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o
+.PHONY : src/tcpConnection.cpp.o
+
+src/tcpConnection.i: src/tcpConnection.cpp.i
+
+.PHONY : src/tcpConnection.i
+
+# target to preprocess a source file
+src/tcpConnection.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.i
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.i
+.PHONY : src/tcpConnection.cpp.i
+
+src/tcpConnection.s: src/tcpConnection.cpp.s
+
+.PHONY : src/tcpConnection.s
+
+# target to generate assembly for a file
+src/tcpConnection.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.s
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.s
+.PHONY : src/tcpConnection.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,12 +300,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ITACHI_NET_STATIC"
 	@echo "... ITACHI_NET"
+	@echo "... src/TcpServer.o"
+	@echo "... src/TcpServer.i"
+	@echo "... src/TcpServer.s"
+	@echo "... src/adaptor.o"
+	@echo "... src/adaptor.i"
+	@echo "... src/adaptor.s"
 	@echo "... src/buffer.o"
 	@echo "... src/buffer.i"
 	@echo "... src/buffer.s"
 	@echo "... src/socket.o"
 	@echo "... src/socket.i"
 	@echo "... src/socket.s"
+	@echo "... src/tcpConnection.o"
+	@echo "... src/tcpConnection.i"
+	@echo "... src/tcpConnection.s"
 .PHONY : help
 
 

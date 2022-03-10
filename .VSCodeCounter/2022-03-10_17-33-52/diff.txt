@@ -1,0 +1,67 @@
+Date : 2022-03-10 17:33:52
+Directory : /home/lqf/cpp/Itachi
+Total : 23 files,  430 codes, 29 comments, 27 blanks, all 486 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         13 |        354 |         19 |          5 |        378 |
+| CMake    |          8 |         42 |          0 |          6 |         48 |
+| Makefile |          2 |         34 |         10 |         16 |         60 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                            | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                               |         23 |        430 |         29 |         27 |        486 |
+| build                                                                           |         10 |         76 |         10 |         22 |        108 |
+| build/CMakeFiles                                                                |          1 |          1 |          0 |          0 |          1 |
+| build/test                                                                      |          8 |         68 |          6 |         19 |         93 |
+| build/test/CMakeFiles                                                           |          7 |         41 |          0 |          6 |         47 |
+| build/test/CMakeFiles/buffer_test.dir                                           |          1 |          1 |          0 |          0 |          1 |
+| build/test/CMakeFiles/config_test.dir                                           |          1 |          1 |          0 |          0 |          1 |
+| build/test/CMakeFiles/eventloop_test.dir                                        |          1 |          1 |          0 |          0 |          1 |
+| build/test/CMakeFiles/logger_test.dir                                           |          1 |          1 |          0 |          0 |          1 |
+| build/test/CMakeFiles/tcpserver_test.dir                                        |          2 |         36 |          0 |          6 |         42 |
+| build/test/CMakeFiles/threapool_test.dir                                        |          1 |          1 |          0 |          0 |          1 |
+| src                                                                             |         12 |        326 |          2 |         -1 |        327 |
+| src/Base                                                                        |          5 |         82 |          0 |          2 |         84 |
+| src/Base/include                                                                |          4 |         21 |          0 |         -1 |         20 |
+| src/Base/src                                                                    |          1 |         61 |          0 |          3 |         64 |
+| src/Net                                                                         |          7 |        244 |          2 |         -3 |        243 |
+| src/Net/include                                                                 |          3 |         56 |          0 |         -2 |         54 |
+| src/Net/src                                                                     |          4 |        188 |          2 |         -1 |        189 |
+| test                                                                            |          1 |         28 |         17 |          6 |         51 |
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                        | language | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/lqf/cpp/Itachi/build/CMakeFiles/Makefile.cmake                            | CMake    |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/build/Makefile                                             | Makefile |          7 |          4 |          3 |         14 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/buffer_test.dir/DependInfo.cmake     | CMake    |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/config_test.dir/DependInfo.cmake     | CMake    |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/eventloop_test.dir/DependInfo.cmake  | CMake    |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/logger_test.dir/DependInfo.cmake     | CMake    |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/tcpserver_test.dir/DependInfo.cmake  | CMake    |         27 |          0 |          4 |         31 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/tcpserver_test.dir/cmake_clean.cmake | CMake    |          9 |          0 |          2 |         11 |
+| /home/lqf/cpp/Itachi/build/test/CMakeFiles/threapool_test.dir/DependInfo.cmake  | CMake    |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/build/test/Makefile                                        | Makefile |         27 |          6 |         13 |         46 |
+| /home/lqf/cpp/Itachi/src/Base/include/EventLoop.h                               | C++      |         -1 |          0 |          0 |         -1 |
+| /home/lqf/cpp/Itachi/src/Base/include/callback.h                                | C++      |          3 |          0 |         -1 |          2 |
+| /home/lqf/cpp/Itachi/src/Base/include/definition.h                              | C++      |          1 |          0 |         -1 |          0 |
+| /home/lqf/cpp/Itachi/src/Base/include/threadpool_c++11.h                        | C++      |         18 |          0 |          1 |         19 |
+| /home/lqf/cpp/Itachi/src/Base/src/threadpool_c++11.cpp                          | C++      |         61 |          0 |          3 |         64 |
+| /home/lqf/cpp/Itachi/src/Net/include/Tcpserver.h                                | C++      |         23 |          0 |          0 |         23 |
+| /home/lqf/cpp/Itachi/src/Net/include/adaptor.h                                  | C++      |         28 |          0 |         -2 |         26 |
+| /home/lqf/cpp/Itachi/src/Net/include/tcpConnection.h                            | C++      |          5 |          0 |          0 |          5 |
+| /home/lqf/cpp/Itachi/src/Net/src/TcpServer.cpp                                  | C++      |         70 |          1 |          1 |         72 |
+| /home/lqf/cpp/Itachi/src/Net/src/adaptor.cpp                                    | C++      |         71 |          1 |         -1 |         71 |
+| /home/lqf/cpp/Itachi/src/Net/src/socket.cpp                                     | C++      |          9 |          0 |          0 |          9 |
+| /home/lqf/cpp/Itachi/src/Net/src/tcpConnection.cpp                              | C++      |         38 |          0 |         -1 |         37 |
+| /home/lqf/cpp/Itachi/test/tcpserver_test.cpp                                    | C++      |         28 |         17 |          6 |         51 |
+| Total                                                                           |          |        430 |         29 |         27 |        486 |
++---------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

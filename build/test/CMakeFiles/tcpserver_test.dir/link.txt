@@ -1,0 +1,1 @@
+/usr/bin/c++   -pthread -g   CMakeFiles/tcpserver_test.dir/tcpserver_test.cpp.o  -o ../../bin/tcpserver_test -rdynamic ../../lib/libITACHI_BASE.so ../../lib/libITACHI_NET.so -Wl,-rpath,/home/lqf/cpp/Itachi/lib 

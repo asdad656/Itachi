@@ -19,6 +19,8 @@ noncopyaable.h
 ../src/Base/./include/callback.h
 functional
 -
+memory
+-
 
 ../src/Base/./include/channel.h
 functional
@@ -577,6 +579,8 @@ channel.h
 /home/lqf/cpp/Itachi/src/Base/src/channel.h
 sys/epoll.h
 -
+EventLoop.h
+/home/lqf/cpp/Itachi/src/Base/src/EventLoop.h
 
 /home/lqf/cpp/Itachi/src/Base/src/logger.cpp
 ../include/logger.h
@@ -611,4 +615,8 @@ atomic
 -
 functional
 -
+definition.h
+/home/lqf/cpp/Itachi/src/Base/src/definition.h
+EventLoop.h
+/home/lqf/cpp/Itachi/src/Base/src/EventLoop.h
 

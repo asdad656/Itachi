@@ -163,6 +163,19 @@ ITACHI_NET/fast:
 .PHONY : ITACHI_NET/fast
 
 #=============================================================================
+# Target rules for targets named tcpserver_test
+
+# Build rule for target.
+tcpserver_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tcpserver_test
+.PHONY : tcpserver_test
+
+# fast build rule for target.
+tcpserver_test/fast:
+	$(MAKE) -f test/CMakeFiles/tcpserver_test.dir/build.make test/CMakeFiles/tcpserver_test.dir/build
+.PHONY : tcpserver_test/fast
+
+#=============================================================================
 # Target rules for targets named eventloop_test
 
 # Build rule for target.
@@ -239,6 +252,7 @@ help:
 	@echo "... ITACHI_BASE"
 	@echo "... ITACHI_NET_STATIC"
 	@echo "... ITACHI_NET"
+	@echo "... tcpserver_test"
 	@echo "... eventloop_test"
 	@echo "... buffer_test"
 	@echo "... threapool_test"

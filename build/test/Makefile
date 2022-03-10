@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/tcpserver_test.dir/rule:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tcpserver_test.dir/rule
+.PHONY : test/CMakeFiles/tcpserver_test.dir/rule
+
+# Convenience name for target.
+tcpserver_test: test/CMakeFiles/tcpserver_test.dir/rule
+
+.PHONY : tcpserver_test
+
+# fast build rule for target.
+tcpserver_test/fast:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/tcpserver_test.dir/build.make test/CMakeFiles/tcpserver_test.dir/build
+.PHONY : tcpserver_test/fast
+
+# Convenience name for target.
 test/CMakeFiles/eventloop_test.dir/rule:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/eventloop_test.dir/rule
 .PHONY : test/CMakeFiles/eventloop_test.dir/rule
@@ -293,6 +308,33 @@ logger_test.cpp.s:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/logger_test.dir/build.make test/CMakeFiles/logger_test.dir/logger_test.cpp.s
 .PHONY : logger_test.cpp.s
 
+tcpserver_test.o: tcpserver_test.cpp.o
+
+.PHONY : tcpserver_test.o
+
+# target to build an object file
+tcpserver_test.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/tcpserver_test.dir/build.make test/CMakeFiles/tcpserver_test.dir/tcpserver_test.cpp.o
+.PHONY : tcpserver_test.cpp.o
+
+tcpserver_test.i: tcpserver_test.cpp.i
+
+.PHONY : tcpserver_test.i
+
+# target to preprocess a source file
+tcpserver_test.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/tcpserver_test.dir/build.make test/CMakeFiles/tcpserver_test.dir/tcpserver_test.cpp.i
+.PHONY : tcpserver_test.cpp.i
+
+tcpserver_test.s: tcpserver_test.cpp.s
+
+.PHONY : tcpserver_test.s
+
+# target to generate assembly for a file
+tcpserver_test.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/tcpserver_test.dir/build.make test/CMakeFiles/tcpserver_test.dir/tcpserver_test.cpp.s
+.PHONY : tcpserver_test.cpp.s
+
 threapool_test.o: threapool_test.cpp.o
 
 .PHONY : threapool_test.o
@@ -328,6 +370,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... tcpserver_test"
 	@echo "... eventloop_test"
 	@echo "... buffer_test"
 	@echo "... threapool_test"
@@ -345,6 +388,9 @@ help:
 	@echo "... logger_test.o"
 	@echo "... logger_test.i"
 	@echo "... logger_test.s"
+	@echo "... tcpserver_test.o"
+	@echo "... tcpserver_test.i"
+	@echo "... tcpserver_test.s"
 	@echo "... threapool_test.o"
 	@echo "... threapool_test.i"
 	@echo "... threapool_test.s"
