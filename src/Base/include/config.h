@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-04 21:38:33
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-07 09:55:30
+ * @LastEditTime: 2022-03-11 21:27:04
  * @Description::配置项系统，负责在配置文件中 加载系统配置，使用模板方法模式实现
  */
 #ifndef __CONFIG__H__
@@ -79,20 +79,20 @@ class lexical_cast<std::string,std::vector<T>>
 {
 public:
     std::string operator()(const std::vector<T>& from)const{
-            std::ostringstream iss;
-            iss<<"[";
+            std::string iss="";
+           iss+="[";
             for(int i=0;i<from.size();++i){
-                iss<<lexical_cast<std::string,T>()(from[i]);
+                iss+=lexical_cast<std::string,T>()(from[i]);
                 if(i!=from.size()-1){
-                    iss<<",";
+                    iss+=",";
                 }else{
-                    iss<<"]";
+                   iss+="]";
                 }
             }
             if(from.size()==0){
-                iss<<"]";
+               iss+="]";
             }
-            return iss.str();
+            return iss;
     }
 };
 
@@ -120,14 +120,14 @@ class lexical_cast<std::string,std::list<T>>
 {
 public:
     std::string operator()(const std::list<T>& from){
-            std::ostringstream iss;
-            iss<<"[";
+            std::string iss="";
+            iss+="[";
             for(const auto&val:from){
-                iss<<lexical_cast<std::string,T>()(val)<<",";
+                iss+=lexical_cast<std::string,T>()(val);
+                iss+=",";
             }
-            std::string str=iss.str();
-            *str.rbegin()=']';
-            return str;
+            *iss.rbegin()=']';
+            return iss;
     }
 };
 
@@ -145,7 +145,7 @@ public:
             to.insert(lexical_cast<T,std::string>()(it->dump()));
         }
         return to;
-
+;
     }
 };
 
@@ -156,14 +156,15 @@ class lexical_cast<std::string,std::set<T>>
 {
 public:
     std::string operator()(const std::set<T>& from){
-            std::ostringstream iss;
-            iss<<"[";
+            std::string iss;
+            iss+="[";
             for(const auto&val:from){
-                iss<<lexical_cast<std::string,T>()(val)<<",";
+                iss+=lexical_cast<std::string,T>()(val);
+                iss+=",";
             }
-            std::string str=iss.str();
-            *str.rbegin()=']';
-            return str;
+           
+            *iss.rbegin()=']';
+            return iss;
     }
 };
 
@@ -174,7 +175,7 @@ class lexical_cast<std::string,LogAppenderDefiner>
 {
 public:
     std::string operator()(const LogAppenderDefiner& from){
-            return from.ToString();
+            return from.ToString();;
     }
 };
 
@@ -211,7 +212,7 @@ public:
     ConfigVarBase(name,describtion),
     m_var(default_value)
     {
-        init();
+       init();
     }
     void setVar(const T & var_value){
         if(var_value!=m_var){

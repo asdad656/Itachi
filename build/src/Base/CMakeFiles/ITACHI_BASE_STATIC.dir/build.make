@@ -201,6 +201,30 @@ src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/threadpool_c++11.cpp.o.provides: 
 src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/threadpool_c++11.cpp.o.provides.build: src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/threadpool_c++11.cpp.o
 
 
+src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o: src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/flags.make
+src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o: ../src/Base/src/timeStamp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o"
+	cd /home/lqf/cpp/Itachi/build/src/Base && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o -c /home/lqf/cpp/Itachi/src/Base/src/timeStamp.cpp
+
+src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.i"
+	cd /home/lqf/cpp/Itachi/build/src/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lqf/cpp/Itachi/src/Base/src/timeStamp.cpp > CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.i
+
+src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.s"
+	cd /home/lqf/cpp/Itachi/build/src/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lqf/cpp/Itachi/src/Base/src/timeStamp.cpp -o CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.s
+
+src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o.requires:
+
+.PHONY : src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o.requires
+
+src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o.provides: src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o.requires
+	$(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o.provides.build
+.PHONY : src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o.provides
+
+src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o.provides.build: src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o
+
+
 # Object files for target ITACHI_BASE_STATIC
 ITACHI_BASE_STATIC_OBJECTS = \
 "CMakeFiles/ITACHI_BASE_STATIC.dir/src/config.cpp.o" \
@@ -208,7 +232,8 @@ ITACHI_BASE_STATIC_OBJECTS = \
 "CMakeFiles/ITACHI_BASE_STATIC.dir/src/channel.cpp.o" \
 "CMakeFiles/ITACHI_BASE_STATIC.dir/src/epoll_poller.cpp.o" \
 "CMakeFiles/ITACHI_BASE_STATIC.dir/src/logger.cpp.o" \
-"CMakeFiles/ITACHI_BASE_STATIC.dir/src/threadpool_c++11.cpp.o"
+"CMakeFiles/ITACHI_BASE_STATIC.dir/src/threadpool_c++11.cpp.o" \
+"CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o"
 
 # External object files for target ITACHI_BASE_STATIC
 ITACHI_BASE_STATIC_EXTERNAL_OBJECTS =
@@ -219,9 +244,10 @@ ITACHI_BASE_STATIC_EXTERNAL_OBJECTS =
 ../lib/libITACHI_BASE_STATIC.a: src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/epoll_poller.cpp.o
 ../lib/libITACHI_BASE_STATIC.a: src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/logger.cpp.o
 ../lib/libITACHI_BASE_STATIC.a: src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/threadpool_c++11.cpp.o
+../lib/libITACHI_BASE_STATIC.a: src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o
 ../lib/libITACHI_BASE_STATIC.a: src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make
 ../lib/libITACHI_BASE_STATIC.a: src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library ../../../lib/libITACHI_BASE_STATIC.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library ../../../lib/libITACHI_BASE_STATIC.a"
 	cd /home/lqf/cpp/Itachi/build/src/Base && $(CMAKE_COMMAND) -P CMakeFiles/ITACHI_BASE_STATIC.dir/cmake_clean_target.cmake
 	cd /home/lqf/cpp/Itachi/build/src/Base && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ITACHI_BASE_STATIC.dir/link.txt --verbose=$(VERBOSE)
 
@@ -236,6 +262,7 @@ src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/requires: src/Base/CMakeFiles/ITACHI_
 src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/requires: src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/epoll_poller.cpp.o.requires
 src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/requires: src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/logger.cpp.o.requires
 src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/requires: src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/threadpool_c++11.cpp.o.requires
+src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/requires: src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o.requires
 
 .PHONY : src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/requires
 

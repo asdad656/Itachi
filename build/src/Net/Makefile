@@ -230,6 +230,156 @@ src/buffer.cpp.s:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/buffer.cpp.s
 .PHONY : src/buffer.cpp.s
 
+src/httpParser.o: src/httpParser.cpp.o
+
+.PHONY : src/httpParser.o
+
+# target to build an object file
+src/httpParser.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpParser.cpp.o
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o
+.PHONY : src/httpParser.cpp.o
+
+src/httpParser.i: src/httpParser.cpp.i
+
+.PHONY : src/httpParser.i
+
+# target to preprocess a source file
+src/httpParser.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpParser.cpp.i
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.i
+.PHONY : src/httpParser.cpp.i
+
+src/httpParser.s: src/httpParser.cpp.s
+
+.PHONY : src/httpParser.s
+
+# target to generate assembly for a file
+src/httpParser.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpParser.cpp.s
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.s
+.PHONY : src/httpParser.cpp.s
+
+src/httpRequest.o: src/httpRequest.cpp.o
+
+.PHONY : src/httpRequest.o
+
+# target to build an object file
+src/httpRequest.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpRequest.cpp.o
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o
+.PHONY : src/httpRequest.cpp.o
+
+src/httpRequest.i: src/httpRequest.cpp.i
+
+.PHONY : src/httpRequest.i
+
+# target to preprocess a source file
+src/httpRequest.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpRequest.cpp.i
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.i
+.PHONY : src/httpRequest.cpp.i
+
+src/httpRequest.s: src/httpRequest.cpp.s
+
+.PHONY : src/httpRequest.s
+
+# target to generate assembly for a file
+src/httpRequest.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpRequest.cpp.s
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.s
+.PHONY : src/httpRequest.cpp.s
+
+src/httpResponse.o: src/httpResponse.cpp.o
+
+.PHONY : src/httpResponse.o
+
+# target to build an object file
+src/httpResponse.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpResponse.cpp.o
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o
+.PHONY : src/httpResponse.cpp.o
+
+src/httpResponse.i: src/httpResponse.cpp.i
+
+.PHONY : src/httpResponse.i
+
+# target to preprocess a source file
+src/httpResponse.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpResponse.cpp.i
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.i
+.PHONY : src/httpResponse.cpp.i
+
+src/httpResponse.s: src/httpResponse.cpp.s
+
+.PHONY : src/httpResponse.s
+
+# target to generate assembly for a file
+src/httpResponse.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpResponse.cpp.s
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.s
+.PHONY : src/httpResponse.cpp.s
+
+src/httpServer.o: src/httpServer.cpp.o
+
+.PHONY : src/httpServer.o
+
+# target to build an object file
+src/httpServer.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o
+.PHONY : src/httpServer.cpp.o
+
+src/httpServer.i: src/httpServer.cpp.i
+
+.PHONY : src/httpServer.i
+
+# target to preprocess a source file
+src/httpServer.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.i
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.i
+.PHONY : src/httpServer.cpp.i
+
+src/httpServer.s: src/httpServer.cpp.s
+
+.PHONY : src/httpServer.s
+
+# target to generate assembly for a file
+src/httpServer.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.s
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.s
+.PHONY : src/httpServer.cpp.s
+
+src/httpServlet.o: src/httpServlet.cpp.o
+
+.PHONY : src/httpServlet.o
+
+# target to build an object file
+src/httpServlet.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServlet.cpp.o
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o
+.PHONY : src/httpServlet.cpp.o
+
+src/httpServlet.i: src/httpServlet.cpp.i
+
+.PHONY : src/httpServlet.i
+
+# target to preprocess a source file
+src/httpServlet.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServlet.cpp.i
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.i
+.PHONY : src/httpServlet.cpp.i
+
+src/httpServlet.s: src/httpServlet.cpp.s
+
+.PHONY : src/httpServlet.s
+
+# target to generate assembly for a file
+src/httpServlet.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/build.make src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServlet.cpp.s
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.s
+.PHONY : src/httpServlet.cpp.s
+
 src/socket.o: src/socket.cpp.o
 
 .PHONY : src/socket.o
@@ -309,6 +459,21 @@ help:
 	@echo "... src/buffer.o"
 	@echo "... src/buffer.i"
 	@echo "... src/buffer.s"
+	@echo "... src/httpParser.o"
+	@echo "... src/httpParser.i"
+	@echo "... src/httpParser.s"
+	@echo "... src/httpRequest.o"
+	@echo "... src/httpRequest.i"
+	@echo "... src/httpRequest.s"
+	@echo "... src/httpResponse.o"
+	@echo "... src/httpResponse.i"
+	@echo "... src/httpResponse.s"
+	@echo "... src/httpServer.o"
+	@echo "... src/httpServer.i"
+	@echo "... src/httpServer.s"
+	@echo "... src/httpServlet.o"
+	@echo "... src/httpServlet.i"
+	@echo "... src/httpServlet.s"
 	@echo "... src/socket.o"
 	@echo "... src/socket.i"
 	@echo "... src/socket.s"

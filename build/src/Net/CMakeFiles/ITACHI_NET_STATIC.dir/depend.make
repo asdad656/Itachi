@@ -3,11 +3,13 @@
 
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/TcpServer.cpp.o: ../src/Base/include/EventLoop.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/TcpServer.cpp.o: ../src/Base/include/callback.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/TcpServer.cpp.o: ../src/Base/include/config.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/TcpServer.cpp.o: ../src/Base/include/definition.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/TcpServer.cpp.o: ../src/Base/include/json.hpp
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/TcpServer.cpp.o: ../src/Base/include/logger.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/TcpServer.cpp.o: ../src/Base/include/noncopyaable.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/TcpServer.cpp.o: ../src/Base/include/threadpool_c++11.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/TcpServer.cpp.o: ../src/Base/include/timeStamp.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/TcpServer.cpp.o: ../src/Net/./include/Tcpserver.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/TcpServer.cpp.o: ../src/Net/./include/adaptor.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/TcpServer.cpp.o: ../src/Net/./include/tcpConnection.h
@@ -30,6 +32,48 @@ src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/buffer.cpp.o: ../src/Base/include/l
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/buffer.cpp.o: ../src/Net/./include/buffer.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/buffer.cpp.o: ../src/Net/src/buffer.cpp
 
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpParser.cpp.o: ../src/Base/include/definition.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpParser.cpp.o: ../src/Base/include/json.hpp
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpParser.cpp.o: ../src/Base/include/logger.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpParser.cpp.o: ../src/Base/include/timeStamp.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpParser.cpp.o: ../src/Net/./include/buffer.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpParser.cpp.o: ../src/Net/./include/httpParser.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpParser.cpp.o: ../src/Net/./include/httpRequest.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpParser.cpp.o: ../src/Net/./include/httpResponse.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpParser.cpp.o: ../src/Net/src/httpParser.cpp
+
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpRequest.cpp.o: ../src/Base/include/timeStamp.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpRequest.cpp.o: ../src/Net/./include/httpRequest.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpRequest.cpp.o: ../src/Net/src/httpRequest.cpp
+
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpResponse.cpp.o: ../src/Base/include/timeStamp.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpResponse.cpp.o: ../src/Net/./include/httpRequest.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpResponse.cpp.o: ../src/Net/./include/httpResponse.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpResponse.cpp.o: ../src/Net/src/httpResponse.cpp
+
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Base/include/callback.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Base/include/config.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Base/include/definition.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Base/include/json.hpp
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Base/include/logger.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Base/include/noncopyaable.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Base/include/timeStamp.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Net/./include/Tcpserver.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Net/./include/buffer.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Net/./include/httpParser.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Net/./include/httpRequest.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Net/./include/httpResponse.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Net/./include/httpServer.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Net/./include/httpServlet.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Net/./include/tcpConnection.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServer.cpp.o: ../src/Net/src/httpServer.cpp
+
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServlet.cpp.o: ../src/Base/include/timeStamp.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServlet.cpp.o: ../src/Net/./include/httpRequest.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServlet.cpp.o: ../src/Net/./include/httpResponse.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServlet.cpp.o: ../src/Net/./include/httpServlet.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/httpServlet.cpp.o: ../src/Net/src/httpServlet.cpp
+
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/socket.cpp.o: ../src/Base/include/definition.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/socket.cpp.o: ../src/Base/include/json.hpp
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/socket.cpp.o: ../src/Base/include/logger.h
@@ -43,8 +87,12 @@ src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.o: ../src/Base/in
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.o: ../src/Base/include/json.hpp
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.o: ../src/Base/include/logger.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.o: ../src/Base/include/noncopyaable.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.o: ../src/Base/include/timeStamp.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.o: ../src/Net/./include/adaptor.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.o: ../src/Net/./include/buffer.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.o: ../src/Net/./include/httpParser.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.o: ../src/Net/./include/httpRequest.h
+src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.o: ../src/Net/./include/httpResponse.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.o: ../src/Net/./include/socket.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.o: ../src/Net/./include/tcpConnection.h
 src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/src/tcpConnection.cpp.o: ../src/Net/src/tcpConnection.cpp

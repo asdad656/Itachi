@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2022-03-02 13:49:58
- * @LastEditTime: 2022-03-05 13:49:27
+ * @LastEditTime: 2022-03-11 17:05:36
  * @LastEditors: lqf
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: \newProject\config.cpp
@@ -53,13 +53,17 @@ namespace Itachi
             auto it = LookUpBase(name);
             if (it != nullptr)
             {
-                it->fromString(val.second.dump());
+               it->fromString(val.second.dump());
             }
             else
             {
                 // std::cout<<name<<"    config undefine"<<std::endl;
             }
         }
+
+        // for(auto&val:data_list){
+        //     std::cout<<val.first<<" "<<val.second.dump()<<std::endl;
+        // }
     }
 
     void Config::getAllVars(std::string name,

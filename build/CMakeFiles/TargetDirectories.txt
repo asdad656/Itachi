@@ -10,6 +10,7 @@
 /home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/ITACHI_NET.dir
 /home/lqf/cpp/Itachi/build/test/CMakeFiles/edit_cache.dir
 /home/lqf/cpp/Itachi/build/test/CMakeFiles/rebuild_cache.dir
+/home/lqf/cpp/Itachi/build/test/CMakeFiles/httpServer_test.dir
 /home/lqf/cpp/Itachi/build/test/CMakeFiles/tcpserver_test.dir
 /home/lqf/cpp/Itachi/build/test/CMakeFiles/eventloop_test.dir
 /home/lqf/cpp/Itachi/build/test/CMakeFiles/buffer_test.dir

@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/httpServer_test.dir/rule:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/httpServer_test.dir/rule
+.PHONY : test/CMakeFiles/httpServer_test.dir/rule
+
+# Convenience name for target.
+httpServer_test: test/CMakeFiles/httpServer_test.dir/rule
+
+.PHONY : httpServer_test
+
+# fast build rule for target.
+httpServer_test/fast:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/httpServer_test.dir/build.make test/CMakeFiles/httpServer_test.dir/build
+.PHONY : httpServer_test/fast
+
+# Convenience name for target.
 test/CMakeFiles/tcpserver_test.dir/rule:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tcpserver_test.dir/rule
 .PHONY : test/CMakeFiles/tcpserver_test.dir/rule
@@ -281,6 +296,33 @@ eventloop_test.cpp.s:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/eventloop_test.dir/build.make test/CMakeFiles/eventloop_test.dir/eventloop_test.cpp.s
 .PHONY : eventloop_test.cpp.s
 
+httpServer_test.o: httpServer_test.cpp.o
+
+.PHONY : httpServer_test.o
+
+# target to build an object file
+httpServer_test.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/httpServer_test.dir/build.make test/CMakeFiles/httpServer_test.dir/httpServer_test.cpp.o
+.PHONY : httpServer_test.cpp.o
+
+httpServer_test.i: httpServer_test.cpp.i
+
+.PHONY : httpServer_test.i
+
+# target to preprocess a source file
+httpServer_test.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/httpServer_test.dir/build.make test/CMakeFiles/httpServer_test.dir/httpServer_test.cpp.i
+.PHONY : httpServer_test.cpp.i
+
+httpServer_test.s: httpServer_test.cpp.s
+
+.PHONY : httpServer_test.s
+
+# target to generate assembly for a file
+httpServer_test.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/httpServer_test.dir/build.make test/CMakeFiles/httpServer_test.dir/httpServer_test.cpp.s
+.PHONY : httpServer_test.cpp.s
+
 logger_test.o: logger_test.cpp.o
 
 .PHONY : logger_test.o
@@ -370,6 +412,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... httpServer_test"
 	@echo "... tcpserver_test"
 	@echo "... eventloop_test"
 	@echo "... buffer_test"
@@ -385,6 +428,9 @@ help:
 	@echo "... eventloop_test.o"
 	@echo "... eventloop_test.i"
 	@echo "... eventloop_test.s"
+	@echo "... httpServer_test.o"
+	@echo "... httpServer_test.i"
+	@echo "... httpServer_test.s"
 	@echo "... logger_test.o"
 	@echo "... logger_test.i"
 	@echo "... logger_test.s"

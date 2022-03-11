@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-09 15:59:25
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-10 20:43:53
+ * @LastEditTime: 2022-03-11 21:40:05
  * @Description: 
  */
 #include "adaptor.h"
@@ -25,17 +25,26 @@ namespace Itachi
                                                              IPPROTO_TCP)),
                                                  m_listening(false),
                                                  m_ownerLoop(ownerLoop),
-                                                 m_channel(new Channel(m_ownerLoop, m_fd)),
-                                                 m_socket(new Socket(m_fd, nullptr, localaddr))
+                                                 m_channel(new Channel(m_ownerLoop, m_fd))
+                                                 
     {
         if (m_fd == -1)
         {
             LOG_FATAL << "Aadaptor failed";
         }
-        m_socket->setReuseAddr(true);
+        if (-1 == bind(m_fd, (const sockaddr *)localaddr, sizeof(sockaddr)))
+        {
+            LOG_FATAL << "Aadaptor bind failed address is: " << inet_ntoa(localaddr->sin_addr);
+        }else{
+            LOG_DEBUG << "Aadaptor bind success address is: " << inet_ntoa(localaddr->sin_addr)<<" port is: "<<ntohs(localaddr->sin_port);
+
+        }
+        m_socket.reset(new Socket(m_fd, nullptr, localaddr));
+        // m_socket->setReuseAddr(true);
         m_socket->setReusePort(true);
+        // m_socket->setTcpKeepAlive(true);
         // m_socket->setReuse(true);
-        bind(m_fd, (const sockaddr *)localaddr, sizeof(sockaddr_in));
+
         m_channel->setReadCallback(
             std::bind(
                 &Aadaptor::handleRead, this));
@@ -66,7 +75,7 @@ namespace Itachi
         if (!m_listening)
         {
             m_listening = true;
-            if (-1 == ::listen(m_fd, 10000))
+            if (-1 == ::listen(m_fd, 1000))
             {
                 LOG_FATAL << "Aadaptor failed";
                 return;
@@ -78,4 +87,9 @@ namespace Itachi
     {
         return m_socket->getLocalAddr();
     }
+    void Aadaptor::setTcpNoDealy(bool val)
+    {
+        m_socket->setTcpNoDelay(val);
+    }
+
 }

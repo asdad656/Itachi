@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-06 16:22:27
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-09 18:35:41
+ * @LastEditTime: 2022-03-11 20:43:57
  * @Description: ipv4 socket
  */
 #ifndef __SOCKET__H__
@@ -13,6 +13,7 @@
 #include<sstream>
 #include<memory>
 #include<stdint.h>
+#include<unistd.h>
 namespace Itachi{
     class Socket;
     using socket_unique_ptr=std::unique_ptr<Socket>;
@@ -31,10 +32,10 @@ namespace Itachi{
         m_peeraddr(peeraddr),
         m_locaaddr(localaddr)
         {
-            
+            // setTcpKeepAlive(true);
         }
         ~Socket(){
-
+            // close(m_fd);
         }
         void setReuseAddr(const bool &);
         void setReusePort(const bool &);

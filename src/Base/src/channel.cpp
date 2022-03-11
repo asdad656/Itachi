@@ -3,13 +3,14 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-07 18:46:22
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-10 21:05:08
+ * @LastEditTime: 2022-03-11 14:44:15
  * @Description: 
  */
 #include "channel.h"
 #include <sys/epoll.h>
 #include"EventLoop.h"
 #include "definition.h"
+#include"unistd.h"
 namespace Itachi
 {
 
@@ -21,6 +22,7 @@ namespace Itachi
     Channel::~Channel()
     {
         ASSERT(!m_isHandlingEvent);
+        ::close(m_fd);
     }
 
     void Channel::handle()

@@ -16,22 +16,6 @@ mutex
 noncopyaable.h
 ../src/Base/include/noncopyaable.h
 
-../src/Base/include/callback.h
-functional
--
-memory
--
-
-../src/Base/include/channel.h
-functional
--
-memory
--
-callback.h
-../src/Base/include/callback.h
-noncopyaable.h
-../src/Base/include/noncopyaable.h
-
 ../src/Base/include/config.h
 json.hpp
 -
@@ -464,35 +448,11 @@ mutex
 
 ../src/Base/include/noncopyaable.h
 
-../src/Base/include/threadpool_c++11.h
-mutex
--
-condition_variable
--
-thread
--
-functional
--
-memory
--
-queue
--
-atomic
--
-vector
--
-
 /home/lqf/cpp/Itachi/test/eventloop_test.cpp
-channel.h
-/home/lqf/cpp/Itachi/test/channel.h
 config.h
 /home/lqf/cpp/Itachi/test/config.h
 definition.h
 /home/lqf/cpp/Itachi/test/definition.h
 EventLoop.h
 /home/lqf/cpp/Itachi/test/EventLoop.h
-sys/timerfd.h
--
-threadpool_c++11.h
-/home/lqf/cpp/Itachi/test/threadpool_c++11.h
 

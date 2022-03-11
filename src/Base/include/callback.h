@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-07 16:30:41
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-09 20:54:55
+ * @LastEditTime: 2022-03-11 11:29:51
  * @Description: 
  */
 #ifndef __CALLBACK__H__
@@ -14,15 +14,16 @@ struct sockaddr_in;
 namespace Itachi{
     class TcpConnection;
     class Buffer;
+    class TimeStamp;
     using readableCallBack=std::function<void()>;
     using writeableCallBack=std::function<void()>;
     using errorableCallBack=std::function<void()>;
     using closeableCallBack=std::function<void()>;
-    using TcpConnectionCallBack=std::function<void(std::shared_ptr<TcpConnection>,int timeStemp)>;
-    using TcpCloseCallBack=std::function<void(std::shared_ptr<TcpConnection>,int timeStemp)>;
-    using TcpReadCallBack=std::function<void(std::shared_ptr<TcpConnection>,int timeStemp)>;
-    using TcpErrorCallBack=std::function<void(std::shared_ptr<TcpConnection>,int timeStemp)>;
-    using TcpMessaageCallBack=std::function<void(std::shared_ptr<TcpConnection>,Buffer*,int timeStemp)>;
+    using TcpConnectionCallBack=std::function<void(std::shared_ptr<TcpConnection>)>;
+    using TcpCloseCallBack=std::function<void(std::shared_ptr<TcpConnection>,const TimeStamp& timeStemp)>;
+    using TcpReadCallBack=std::function<void(std::shared_ptr<TcpConnection>,const TimeStamp& timeStemp)>;
+    using TcpErrorCallBack=std::function<void(std::shared_ptr<TcpConnection>,const TimeStamp& timeStemp)>;
+    using TcpMessaageCallBack=std::function<void(std::shared_ptr<TcpConnection>,Buffer*,const TimeStamp& timeStemp)>;
     using  AdaptorReadCallBack=std::function<void(int,sockaddr_in*)>;
 }
 

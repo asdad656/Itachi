@@ -163,6 +163,19 @@ ITACHI_NET/fast:
 .PHONY : ITACHI_NET/fast
 
 #=============================================================================
+# Target rules for targets named httpServer_test
+
+# Build rule for target.
+httpServer_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 httpServer_test
+.PHONY : httpServer_test
+
+# fast build rule for target.
+httpServer_test/fast:
+	$(MAKE) -f test/CMakeFiles/httpServer_test.dir/build.make test/CMakeFiles/httpServer_test.dir/build
+.PHONY : httpServer_test/fast
+
+#=============================================================================
 # Target rules for targets named tcpserver_test
 
 # Build rule for target.
@@ -252,6 +265,7 @@ help:
 	@echo "... ITACHI_BASE"
 	@echo "... ITACHI_NET_STATIC"
 	@echo "... ITACHI_NET"
+	@echo "... httpServer_test"
 	@echo "... tcpserver_test"
 	@echo "... eventloop_test"
 	@echo "... buffer_test"

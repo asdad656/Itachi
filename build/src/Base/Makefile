@@ -320,6 +320,36 @@ src/threadpool_c++11.cpp.s:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.s
 .PHONY : src/threadpool_c++11.cpp.s
 
+src/timeStamp.o: src/timeStamp.cpp.o
+
+.PHONY : src/timeStamp.o
+
+# target to build an object file
+src/timeStamp.cpp.o:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.o
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/timeStamp.cpp.o
+.PHONY : src/timeStamp.cpp.o
+
+src/timeStamp.i: src/timeStamp.cpp.i
+
+.PHONY : src/timeStamp.i
+
+# target to preprocess a source file
+src/timeStamp.cpp.i:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.i
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/timeStamp.cpp.i
+.PHONY : src/timeStamp.cpp.i
+
+src/timeStamp.s: src/timeStamp.cpp.s
+
+.PHONY : src/timeStamp.s
+
+# target to generate assembly for a file
+src/timeStamp.cpp.s:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/build.make src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/src/timeStamp.cpp.s
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f src/Base/CMakeFiles/ITACHI_BASE.dir/build.make src/Base/CMakeFiles/ITACHI_BASE.dir/src/timeStamp.cpp.s
+.PHONY : src/timeStamp.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -348,6 +378,9 @@ help:
 	@echo "... src/threadpool_c++11.o"
 	@echo "... src/threadpool_c++11.i"
 	@echo "... src/threadpool_c++11.s"
+	@echo "... src/timeStamp.o"
+	@echo "... src/timeStamp.i"
+	@echo "... src/timeStamp.s"
 .PHONY : help
 
 

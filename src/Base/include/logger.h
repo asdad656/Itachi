@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-03 17:09:22
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-07 15:36:58
+ * @LastEditTime: 2022-03-11 18:39:02
  * @Description: 
  */
 #ifndef __LOGGER__H_
@@ -20,7 +20,7 @@
 #include <list>
 #include <json.hpp>
 #include <thread>
-#include<mutex>
+#include <mutex>
 
 namespace Itachi
 {
@@ -231,22 +231,26 @@ namespace Itachi
         }
         void log(const LogMessage &logMessage) override
         {
-           {
-                std::lock_guard<std::mutex> lock(m_mutex);//
+            {
+                std::lock_guard<std::mutex> lock(m_mutex); //
                 reopen();
                 if (m_fstream.is_open())
+                {
                     m_formatter.format(logMessage, m_fstream);
-                else{
-                    std::cout<<"m_fstream not open"<<std::endl;
+                    m_fstream.close();
                 }
-           }
+                else
+                {
+                    std::cout << "m_fstream not open" << std::endl;
+                }
+            }
             //m_fstream.flush();
         }
         void reopen()
         {
-            if(m_fstream.is_open())
-            m_fstream.close();
-            m_fstream.open(m_fileName,std::ios::out|std::ios::app);
+            if (m_fstream.is_open())
+                m_fstream.close();
+            m_fstream.open(m_fileName, std::ios::out | std::ios::app);
         }
 
     private:
@@ -373,15 +377,24 @@ namespace Itachi
 
         std::string ToString() const
         {
-            std::ostringstream oss;
-            oss << "{"
-                << "name: " << m_name << " "
-                << "type: " << m_type << " "
-                << "filepath: " << m_filePath << " "
-                << "level: " << m_level << " "
-                << "formate: " << m_formate
-                << "}";
-            return oss.str();
+            std::string oss;
+            oss += "{";
+            oss += "name: ";
+            oss += m_name;
+            oss += " ";
+            oss += "type: ";
+            oss += m_type;
+            oss += " ";
+            oss += "filepath: ";
+            oss += m_filePath;
+            oss += " ";
+            oss += "level: ";
+            oss += m_level;
+            oss += " ";
+            oss += "formate:";
+             oss += m_formate;
+            oss+="}";
+            return "oss"; //oss;
         }
 
     private:

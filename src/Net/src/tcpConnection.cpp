@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-09 11:28:01
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-10 21:03:55
+ * @LastEditTime: 2022-03-11 21:39:34
  * @Description: H
  */
 #include "tcpConnection.h"
@@ -18,21 +18,23 @@
 #include <functional>
 #include <unistd.h>
 #include "adaptor.h"
+#include "httpParser.h"
+#include "timeStamp.h"
 namespace Itachi
 {
     TcpConnection::TcpConnection(EventLoop *ownerLoop,
                                  int fd,
                                  sockaddr_in *peerAddr,
                                  const sockaddr_in *localaddr,
-                                 const std::string&name):
-    m_state(State::NEW),
-    m_socket(new Socket(fd,peerAddr,new sockaddr_in(*localaddr))),
-    m_ownerLoop(ownerLoop),
-    m_outPutBuffer(new Buffer),
-    m_inPutBuffer(new Buffer),
-    m_channel(new Channel(m_ownerLoop, fd)),
-    m_name(name)
-{
+                                 const std::string &name) : m_state(State::NEW),
+                                                            m_socket(new Socket(fd, peerAddr, new sockaddr_in(*localaddr))),
+                                                            m_ownerLoop(ownerLoop),
+                                                            m_outPutBuffer(new Buffer),
+                                                            m_inPutBuffer(new Buffer),
+                                                            m_channel(new Channel(m_ownerLoop, fd)),
+                                                            m_name(name)
+    //m_ConnectionCallBack(nuuu)
+    {
         m_channel->setCloseCallBack(
             std::bind(&TcpConnection::handleClose, this));
 
@@ -42,26 +44,46 @@ namespace Itachi
             std::bind(&TcpConnection::handleMessage, this));
         m_channel->setWriteCallBack(
             std::bind(&TcpConnection::handleWrite, this));
-        m_ownerLoop->runInLoop(
-            std::bind(&TcpConnection::connectionEntablish,this)
-        );
+
+        setKeepAlive(true);
+        setTcpNoDealy(true);
+        setReuseAddr(true);
     }
     TcpConnection::~TcpConnection()
     {
         m_state = State::DESTORY;
     }
-    void TcpConnection::connectionEntablish(){
+    void TcpConnection::setKeepAlive(bool val)
+    {
+        m_socket->setTcpKeepAlive(true);
+    }
+    void TcpConnection::setReusePort(bool val)
+    {
+        m_socket->setReusePort(val);
+    }
+    void TcpConnection::setReuseAddr(bool val)
+    {
+        m_socket->setReuseAddr(val);
+    }
+    void TcpConnection::connectionEntablish()
+    {
         assert(m_ownerLoop->isInLoopThread());
-        LOG_DEBUG<<"   "<<m_name<<"   connectionEntablish!!!";
+        LOG_DEBUG << "   " << m_name << "   connectionEntablish!!!";
         m_channel->enableRead();
-        if(m_ConnectionCallBack){
-            m_ConnectionCallBack(shared_from_this(),0);
+        if (!m_ConnectionCallBack)
+        {
+            return;
+        }
+        else
+        {
+            m_ConnectionCallBack(shared_from_this());
         }
     }
 
-    void TcpConnection::connectionDestory(){
-                m_channel->disableAll();
-                m_ownerLoop->removeChannel(m_channel.get());
+    void TcpConnection::connectionDestory()
+    {
+        m_channel->disableAll();
+        m_ownerLoop->removeChannel(m_channel.get());
     }
     //-------------------------------get------------------------------------------//
     int TcpConnection::getFd() const
@@ -79,6 +101,10 @@ namespace Itachi
     TcpConnection::State TcpConnection::getTcpState() const
     {
         return m_state;
+    }
+    http::HttpParser *TcpConnection::getHttpParser() const
+    {
+        return m_parser.get();
     }
     //-------------------------------set------------------------------------------//
     void TcpConnection::setConnectionCallBack(TcpConnectionCallBack cb)
@@ -111,32 +137,44 @@ namespace Itachi
     {
         os << m_socket->toString();
     }
+    void TcpConnection::setTcpNoDealy(bool val)
+    {
+        m_socket->setTcpNoDelay(val);
+    }
+    void TcpConnection::setHttpParser(HttpParser *httpParser)
+    {
+        m_parser.reset(httpParser);
+    }
+
     //-------------------------------opt------------------------------------------//
     void TcpConnection::handleMessage()
     {
-        int  saveerror;
-        ssize_t n=m_inPutBuffer->readFromFd(m_socket->getFd(),&saveerror);
-        if(n==0){
+        int saveerror;
+        ssize_t n = m_inPutBuffer->readFromFd(m_socket->getFd(), &saveerror);
+        if (n == 0)
+        {
             handleClose();
         }
-        else if(n<0)
+        else if (n < 0)
         {
-            LOG_FATAL<<"handleMessage failed!!   error is "<<saveerror;
-        }else if(m_messageCallBack)
-        m_messageCallBack(shared_from_this(), m_inPutBuffer.get(), 0);
+            LOG_FATAL << "handleMessage failed!!   error is " << saveerror;
+        }
+        else if (m_messageCallBack)
+            m_messageCallBack(shared_from_this(), m_inPutBuffer.get(), TimeStamp::now());
     }
     void TcpConnection::handleClose()
     {
-        if(m_CloseCallBack)
-        m_CloseCallBack(shared_from_this(), 0);
-        else{
+        if (m_CloseCallBack)
+            m_CloseCallBack(shared_from_this(), TimeStamp::now());
+        else
+        {
             connectionDestory();
         }
     }
     void TcpConnection::handleError()
     {
-        if(m_ErrorCallBack)
-        m_ErrorCallBack(shared_from_this(), 0);
+        if (m_ErrorCallBack)
+            m_ErrorCallBack(shared_from_this(), TimeStamp::now());
     }
     void TcpConnection::handleWrite()
     {

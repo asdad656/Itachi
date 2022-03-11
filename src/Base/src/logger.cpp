@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-03 17:09:30
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-07 15:35:48
+ * @LastEditTime: 2022-03-11 13:43:40
  * @Description: 
  */
 #include "../include/logger.h"
@@ -308,7 +308,7 @@ namespace Itachi
 
     //---------------------------------------loginit----------------------------------------//
     ConfigVar<std::vector<LogAppenderDefiner>>::ptr vec_loggers =
-        Config::LookUp(".lqf.loggers", std::vector<LogAppenderDefiner>{});
+        Config::LookUp(".loggers", std::vector<LogAppenderDefiner>{});
 
     auto logInitCallBack =
         [](const std::vector<LogAppenderDefiner> &old_val, const std::vector<LogAppenderDefiner> &new_val)

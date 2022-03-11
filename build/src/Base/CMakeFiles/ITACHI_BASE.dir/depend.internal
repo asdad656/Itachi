@@ -54,3 +54,6 @@ src/Base/CMakeFiles/ITACHI_BASE.dir/src/threadpool_c++11.cpp.o
  ../src/Base/./include/noncopyaable.h
  ../src/Base/./include/threadpool_c++11.h
  /home/lqf/cpp/Itachi/src/Base/src/threadpool_c++11.cpp
+src/Base/CMakeFiles/ITACHI_BASE.dir/src/timeStamp.cpp.o
+ ../src/Base/./include/timeStamp.h
+ /home/lqf/cpp/Itachi/src/Base/src/timeStamp.cpp

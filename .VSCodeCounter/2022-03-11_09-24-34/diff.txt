@@ -1,0 +1,54 @@
+Date : 2022-03-11 09:24:34
+Directory : /home/lqf/cpp/Itachi
+Total : 22 files,  829 codes, 158 comments, 60 blanks, all 1047 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         22 |        829 |        158 |         60 |      1,047 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                 | files      | code       | comment    | blank      | total      |
++------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                    |         22 |        829 |        158 |         60 |      1,047 |
+| src                                                  |         21 |        819 |        167 |         64 |      1,050 |
+| src/Base                                             |          4 |         38 |         34 |          5 |         77 |
+| src/Base/include                                     |          2 |         46 |          8 |          4 |         58 |
+| src/Base/src                                         |          2 |         -8 |         26 |          1 |         19 |
+| src/Net                                              |         17 |        781 |        133 |         59 |        973 |
+| src/Net/include                                      |          9 |        419 |         76 |         36 |        531 |
+| src/Net/src                                          |          8 |        362 |         57 |         23 |        442 |
+| test                                                 |          1 |         10 |         -9 |         -4 |         -3 |
++------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                             | language | code       | comment    | blank      | total      |
++------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/lqf/cpp/Itachi/src/Base/include/callback.h     | C++      |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/src/Base/include/timeStamp.h    | C++      |         45 |          8 |          4 |         57 |
+| /home/lqf/cpp/Itachi/src/Base/src/channel.cpp        | C++      |        -18 |         18 |          0 |          0 |
+| /home/lqf/cpp/Itachi/src/Base/src/timeStamp.cpp      | C++      |         10 |          8 |          1 |         19 |
+| /home/lqf/cpp/Itachi/src/Net/include/Tcpserver.h     | C++      |         11 |          0 |          0 |         11 |
+| /home/lqf/cpp/Itachi/src/Net/include/adaptor.h       | C++      |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/src/Net/include/httpContex.h    | C++      |          0 |          8 |          1 |          9 |
+| /home/lqf/cpp/Itachi/src/Net/include/httpParser.h    | C++      |         37 |          8 |          0 |         45 |
+| /home/lqf/cpp/Itachi/src/Net/include/httpRequest.h   | C++      |        135 |         32 |          8 |        175 |
+| /home/lqf/cpp/Itachi/src/Net/include/httpResponse.h  | C++      |        109 |          9 |         10 |        128 |
+| /home/lqf/cpp/Itachi/src/Net/include/httpServer.h    | C++      |         47 |         10 |          4 |         61 |
+| /home/lqf/cpp/Itachi/src/Net/include/httpServlet.h   | C++      |         68 |          9 |         10 |         87 |
+| /home/lqf/cpp/Itachi/src/Net/include/tcpConnection.h | C++      |         11 |          0 |          3 |         14 |
+| /home/lqf/cpp/Itachi/src/Net/src/TcpServer.cpp       | C++      |          4 |          0 |         -1 |          3 |
+| /home/lqf/cpp/Itachi/src/Net/src/adaptor.cpp         | C++      |          4 |          0 |          1 |          5 |
+| /home/lqf/cpp/Itachi/src/Net/src/httpParser.cpp      | C++      |        146 |         14 |          7 |        167 |
+| /home/lqf/cpp/Itachi/src/Net/src/httpRequest.cpp     | C++      |         29 |          8 |          0 |         37 |
+| /home/lqf/cpp/Itachi/src/Net/src/httpResponse.cpp    | C++      |         40 |         11 |          6 |         57 |
+| /home/lqf/cpp/Itachi/src/Net/src/httpServer.cpp      | C++      |         56 |          8 |          1 |         65 |
+| /home/lqf/cpp/Itachi/src/Net/src/httpServlet.cpp     | C++      |         64 |         16 |          8 |         88 |
+| /home/lqf/cpp/Itachi/src/Net/src/tcpConnection.cpp   | C++      |         19 |          0 |          1 |         20 |
+| /home/lqf/cpp/Itachi/test/tcpserver_test.cpp         | C++      |         10 |         -9 |         -4 |         -3 |
+| Total                                                |          |        829 |        158 |         60 |      1,047 |
++------------------------------------------------------+----------+------------+------------+------------+------------+

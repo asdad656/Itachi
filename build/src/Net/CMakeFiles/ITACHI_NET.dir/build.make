@@ -177,13 +177,138 @@ src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o.provides: src/Net/CMakeFil
 src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o.provides.build: src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o
 
 
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o: src/Net/CMakeFiles/ITACHI_NET.dir/flags.make
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o: ../src/Net/src/httpParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o -c /home/lqf/cpp/Itachi/src/Net/src/httpParser.cpp
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.i"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lqf/cpp/Itachi/src/Net/src/httpParser.cpp > CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.i
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.s"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lqf/cpp/Itachi/src/Net/src/httpParser.cpp -o CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.s
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o.requires:
+
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o.requires
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o.provides: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o.requires
+	$(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o.provides.build
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o.provides
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o.provides.build: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o
+
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o: src/Net/CMakeFiles/ITACHI_NET.dir/flags.make
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o: ../src/Net/src/httpRequest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o -c /home/lqf/cpp/Itachi/src/Net/src/httpRequest.cpp
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.i"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lqf/cpp/Itachi/src/Net/src/httpRequest.cpp > CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.i
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.s"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lqf/cpp/Itachi/src/Net/src/httpRequest.cpp -o CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.s
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o.requires:
+
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o.requires
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o.provides: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o.requires
+	$(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o.provides.build
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o.provides
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o.provides.build: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o
+
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o: src/Net/CMakeFiles/ITACHI_NET.dir/flags.make
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o: ../src/Net/src/httpResponse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o -c /home/lqf/cpp/Itachi/src/Net/src/httpResponse.cpp
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.i"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lqf/cpp/Itachi/src/Net/src/httpResponse.cpp > CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.i
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.s"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lqf/cpp/Itachi/src/Net/src/httpResponse.cpp -o CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.s
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o.requires:
+
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o.requires
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o.provides: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o.requires
+	$(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o.provides.build
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o.provides
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o.provides.build: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o
+
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o: src/Net/CMakeFiles/ITACHI_NET.dir/flags.make
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o: ../src/Net/src/httpServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o -c /home/lqf/cpp/Itachi/src/Net/src/httpServer.cpp
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.i"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lqf/cpp/Itachi/src/Net/src/httpServer.cpp > CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.i
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.s"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lqf/cpp/Itachi/src/Net/src/httpServer.cpp -o CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.s
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o.requires:
+
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o.requires
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o.provides: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o.requires
+	$(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o.provides.build
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o.provides
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o.provides.build: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o
+
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o: src/Net/CMakeFiles/ITACHI_NET.dir/flags.make
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o: ../src/Net/src/httpServlet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o -c /home/lqf/cpp/Itachi/src/Net/src/httpServlet.cpp
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.i"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lqf/cpp/Itachi/src/Net/src/httpServlet.cpp > CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.i
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.s"
+	cd /home/lqf/cpp/Itachi/build/src/Net && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lqf/cpp/Itachi/src/Net/src/httpServlet.cpp -o CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.s
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o.requires:
+
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o.requires
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o.provides: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o.requires
+	$(MAKE) -f src/Net/CMakeFiles/ITACHI_NET.dir/build.make src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o.provides.build
+.PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o.provides
+
+src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o.provides.build: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o
+
+
 # Object files for target ITACHI_NET
 ITACHI_NET_OBJECTS = \
 "CMakeFiles/ITACHI_NET.dir/src/buffer.cpp.o" \
 "CMakeFiles/ITACHI_NET.dir/src/socket.cpp.o" \
 "CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o" \
 "CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o" \
-"CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o"
+"CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o" \
+"CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o" \
+"CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o" \
+"CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o" \
+"CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o" \
+"CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o"
 
 # External object files for target ITACHI_NET
 ITACHI_NET_EXTERNAL_OBJECTS =
@@ -193,9 +318,14 @@ ITACHI_NET_EXTERNAL_OBJECTS =
 ../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o
 ../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o
 ../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o
+../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o
+../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o
+../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o
+../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o
+../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o
 ../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/build.make
 ../lib/libITACHI_NET.so: src/Net/CMakeFiles/ITACHI_NET.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library ../../../lib/libITACHI_NET.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library ../../../lib/libITACHI_NET.so"
 	cd /home/lqf/cpp/Itachi/build/src/Net && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ITACHI_NET.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -208,6 +338,11 @@ src/Net/CMakeFiles/ITACHI_NET.dir/requires: src/Net/CMakeFiles/ITACHI_NET.dir/sr
 src/Net/CMakeFiles/ITACHI_NET.dir/requires: src/Net/CMakeFiles/ITACHI_NET.dir/src/tcpConnection.cpp.o.requires
 src/Net/CMakeFiles/ITACHI_NET.dir/requires: src/Net/CMakeFiles/ITACHI_NET.dir/src/adaptor.cpp.o.requires
 src/Net/CMakeFiles/ITACHI_NET.dir/requires: src/Net/CMakeFiles/ITACHI_NET.dir/src/TcpServer.cpp.o.requires
+src/Net/CMakeFiles/ITACHI_NET.dir/requires: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpParser.cpp.o.requires
+src/Net/CMakeFiles/ITACHI_NET.dir/requires: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpRequest.cpp.o.requires
+src/Net/CMakeFiles/ITACHI_NET.dir/requires: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpResponse.cpp.o.requires
+src/Net/CMakeFiles/ITACHI_NET.dir/requires: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServer.cpp.o.requires
+src/Net/CMakeFiles/ITACHI_NET.dir/requires: src/Net/CMakeFiles/ITACHI_NET.dir/src/httpServlet.cpp.o.requires
 
 .PHONY : src/Net/CMakeFiles/ITACHI_NET.dir/requires
 

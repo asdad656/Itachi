@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-07 16:24:09
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-10 17:35:49
+ * @LastEditTime: 2022-03-11 21:20:04
  * @Description: 
  */
 #ifndef __CHANNEL___H__
@@ -21,7 +21,8 @@ namespace Itachi
         Channel(EventLoop *eventloop, int fd) : m_ownerLoop(eventloop),
                                                 m_fd(fd),
                                                 m_isHandlingEvent(false),
-                                                m_index(-1)
+                                                m_index(-1),
+                                                m_event(0)
         {
         }
         ~Channel();

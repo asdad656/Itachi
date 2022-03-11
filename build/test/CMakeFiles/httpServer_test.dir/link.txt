@@ -1,0 +1,1 @@
+/usr/bin/c++   -pthread -g   CMakeFiles/httpServer_test.dir/httpServer_test.cpp.o  -o ../../bin/httpServer_test -rdynamic ../../lib/libITACHI_BASE.so ../../lib/libITACHI_NET.so -Wl,-rpath,/home/lqf/cpp/Itachi/lib 

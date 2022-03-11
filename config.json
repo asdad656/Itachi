@@ -1,24 +1,27 @@
 {
-    "lqf": {
-        "loggers": [
-             {
-                "name":"fileStream",
-                "level":"WARN",
-                "type":"FileStream",
-                "filepath":"/home/lqf/cpp/Itachi/log/log.txt",
-                "formate":"[%f:%l] [%d] [%p]  [%u : %t]  %m%n"
-            },
-            {
-                "name":"stdStream",
-                "level":"debug",
-                "type":"stdStream",
-                "formate":"[%f:%l] [%d] [%p]  [%u : %t]  %m%n"
-            }
-            ],
-        "Listenport": [8080,8081,8,8,8,8,8,65,342454,32425,89887,34],
-        "Thread":{
+    "loggers": [
+        {
+            "name": "fileStream",
+            "level": "WARN",
+            "type": "FileStream",
+            "filepath": "/home/lqf/cpp/Itachi/log/log.txt",
+            "formate": "[%f:%l] [%d] [%p]  [%u : %t]  %m%n"
+        },
+        {
+            "name": "stdStream",
+            "level": "debug",
+            "type": "stdStream",
+            "formate": "[%f:%l] [%d] [%p]  [%u : %t]  %m%n"
+        }
+    ],
+ 
+    "TcpServer":
+        {
             "ThreadCount": 10,
-            "ThreadDefaultName":"lqfThread"
+            "ThreadDefaultName": "lqfThread",
+            "ListenPort": 5200,
+            "ListenAddr": "127.0.0.0"
         }
-        }
+
+    
 }

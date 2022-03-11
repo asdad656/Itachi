@@ -1,0 +1,63 @@
+Date : 2022-03-11 10:08:49
+Directory : /home/lqf/cpp/Itachi
+Total : 20 files,  15935 codes, 3899 comments, 2664 blanks, all 22498 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| C++      |         10 |     15,785 |      3,881 |      2,610 |     22,276 |
+| Makefile |          2 |        126 |         18 |         54 |        198 |
+| CMake    |          8 |         24 |          0 |          0 |         24 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                    | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                       |         20 |     15,935 |      3,899 |      2,664 |     22,498 |
+| build                                                                                   |         10 |        150 |         18 |         54 |        222 |
+| build/src                                                                               |         10 |        150 |         18 |         54 |        222 |
+| build/src/Base                                                                          |          5 |         25 |          3 |          9 |         37 |
+| build/src/Base/CMakeFiles                                                               |          4 |          4 |          0 |          0 |          4 |
+| build/src/Base/CMakeFiles/ITACHI_BASE.dir                                               |          2 |          2 |          0 |          0 |          2 |
+| build/src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir                                        |          2 |          2 |          0 |          0 |          2 |
+| build/src/Net                                                                           |          5 |        125 |         15 |         45 |        185 |
+| build/src/Net/CMakeFiles                                                                |          4 |         20 |          0 |          0 |         20 |
+| build/src/Net/CMakeFiles/ITACHI_NET.dir                                                 |          2 |         10 |          0 |          0 |         10 |
+| build/src/Net/CMakeFiles/ITACHI_NET_STATIC.dir                                          |          2 |         10 |          0 |          0 |         10 |
+| src                                                                                     |          8 |     15,711 |      3,850 |      2,605 |     22,166 |
+| src/Base                                                                                |          1 |     15,660 |      3,846 |      2,604 |     22,110 |
+| src/Base/include                                                                        |          1 |     15,660 |      3,846 |      2,604 |     22,110 |
+| src/Net                                                                                 |          7 |         51 |          4 |          1 |         56 |
+| src/Net/include                                                                         |          3 |         36 |          4 |          2 |         42 |
+| src/Net/src                                                                             |          4 |         15 |          0 |         -1 |         14 |
+| test                                                                                    |          2 |         74 |         31 |          5 |        110 |
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                | language | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/ITACHI_BASE.dir/DependInfo.cmake         | CMake    |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/ITACHI_BASE.dir/cmake_clean.cmake        | CMake    |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/DependInfo.cmake  | CMake    |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/build/src/Base/CMakeFiles/ITACHI_BASE_STATIC.dir/cmake_clean.cmake | CMake    |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/build/src/Base/Makefile                                            | Makefile |         21 |          3 |          9 |         33 |
+| /home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/ITACHI_NET.dir/DependInfo.cmake           | CMake    |          5 |          0 |          0 |          5 |
+| /home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/ITACHI_NET.dir/cmake_clean.cmake          | CMake    |          5 |          0 |          0 |          5 |
+| /home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/DependInfo.cmake    | CMake    |          5 |          0 |          0 |          5 |
+| /home/lqf/cpp/Itachi/build/src/Net/CMakeFiles/ITACHI_NET_STATIC.dir/cmake_clean.cmake   | CMake    |          5 |          0 |          0 |          5 |
+| /home/lqf/cpp/Itachi/build/src/Net/Makefile                                             | Makefile |        105 |         15 |         45 |        165 |
+| /home/lqf/cpp/Itachi/src/Base/include/json.hpp                                          | C++      |     15,660 |      3,846 |      2,604 |     22,110 |
+| /home/lqf/cpp/Itachi/src/Net/include/Tcpserver.h                                        | C++      |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/src/Net/include/buffer.h                                           | C++      |         34 |          4 |          1 |         39 |
+| /home/lqf/cpp/Itachi/src/Net/include/httpServer.h                                       | C++      |          1 |          0 |          1 |          2 |
+| /home/lqf/cpp/Itachi/src/Net/src/TcpServer.cpp                                          | C++      |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/src/Net/src/httpParser.cpp                                         | C++      |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/src/Net/src/httpServer.cpp                                         | C++      |         12 |          0 |         -1 |         11 |
+| /home/lqf/cpp/Itachi/src/Net/src/tcpConnection.cpp                                      | C++      |          1 |          0 |          0 |          1 |
+| /home/lqf/cpp/Itachi/test/httpServer_test.cpp                                           | C++      |         73 |         31 |          5 |        109 |
+| /home/lqf/cpp/Itachi/test/tcpserver_test.cpp                                            | C++      |          1 |          0 |          0 |          1 |
+| Total                                                                                   |          |     15,935 |      3,899 |      2,664 |     22,498 |
++-----------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
