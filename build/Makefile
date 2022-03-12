@@ -163,19 +163,6 @@ ITACHI_NET/fast:
 .PHONY : ITACHI_NET/fast
 
 #=============================================================================
-# Target rules for targets named httpServer_test
-
-# Build rule for target.
-httpServer_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 httpServer_test
-.PHONY : httpServer_test
-
-# fast build rule for target.
-httpServer_test/fast:
-	$(MAKE) -f test/CMakeFiles/httpServer_test.dir/build.make test/CMakeFiles/httpServer_test.dir/build
-.PHONY : httpServer_test/fast
-
-#=============================================================================
 # Target rules for targets named tcpserver_test
 
 # Build rule for target.
@@ -189,6 +176,19 @@ tcpserver_test/fast:
 .PHONY : tcpserver_test/fast
 
 #=============================================================================
+# Target rules for targets named httpServer_test
+
+# Build rule for target.
+httpServer_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 httpServer_test
+.PHONY : httpServer_test
+
+# fast build rule for target.
+httpServer_test/fast:
+	$(MAKE) -f test/CMakeFiles/httpServer_test.dir/build.make test/CMakeFiles/httpServer_test.dir/build
+.PHONY : httpServer_test/fast
+
+#=============================================================================
 # Target rules for targets named eventloop_test
 
 # Build rule for target.
@@ -200,6 +200,19 @@ eventloop_test: cmake_check_build_system
 eventloop_test/fast:
 	$(MAKE) -f test/CMakeFiles/eventloop_test.dir/build.make test/CMakeFiles/eventloop_test.dir/build
 .PHONY : eventloop_test/fast
+
+#=============================================================================
+# Target rules for targets named config_test
+
+# Build rule for target.
+config_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 config_test
+.PHONY : config_test
+
+# fast build rule for target.
+config_test/fast:
+	$(MAKE) -f test/CMakeFiles/config_test.dir/build.make test/CMakeFiles/config_test.dir/build
+.PHONY : config_test/fast
 
 #=============================================================================
 # Target rules for targets named buffer_test
@@ -240,19 +253,6 @@ logger_test/fast:
 	$(MAKE) -f test/CMakeFiles/logger_test.dir/build.make test/CMakeFiles/logger_test.dir/build
 .PHONY : logger_test/fast
 
-#=============================================================================
-# Target rules for targets named config_test
-
-# Build rule for target.
-config_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 config_test
-.PHONY : config_test
-
-# fast build rule for target.
-config_test/fast:
-	$(MAKE) -f test/CMakeFiles/config_test.dir/build.make test/CMakeFiles/config_test.dir/build
-.PHONY : config_test/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -265,13 +265,13 @@ help:
 	@echo "... ITACHI_BASE"
 	@echo "... ITACHI_NET_STATIC"
 	@echo "... ITACHI_NET"
-	@echo "... httpServer_test"
 	@echo "... tcpserver_test"
+	@echo "... httpServer_test"
 	@echo "... eventloop_test"
+	@echo "... config_test"
 	@echo "... buffer_test"
 	@echo "... threapool_test"
 	@echo "... logger_test"
-	@echo "... config_test"
 .PHONY : help
 
 

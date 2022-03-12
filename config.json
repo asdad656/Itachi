@@ -14,14 +14,16 @@
             "formate": "[%f:%l] [%d] [%p]  [%u : %t]  %m%n"
         }
     ],
- 
-    "TcpServer":
-        {
-            "ThreadCount": 10,
-            "ThreadDefaultName": "lqfThread",
-            "ListenPort": 5200,
-            "ListenAddr": "127.0.0.0"
-        }
-
-    
+    "TcpServer": {
+        "ThreadCount": 10,
+        "ThreadDefaultName": "lqfThread",
+        "ListenPort": 5200,
+        "ListenAddr": "127.0.0.0"
+    },
+    "HttpServer": {
+        "ThreadCount": 10,
+        "ThreadDefaultName": "lqf's httpServer",
+        "ListenPort": 5302,
+        "ListenAddr": "127.0.0.1"
+    }
 }

@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-03 17:09:22
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-11 18:39:02
+ * @LastEditTime: 2022-03-12 12:44:22
  * @Description: 
  */
 #ifndef __LOGGER__H_
@@ -394,7 +394,7 @@ namespace Itachi
             oss += "formate:";
              oss += m_formate;
             oss+="}";
-            return "oss"; //oss;
+            return oss; //oss;
         }
 
     private:

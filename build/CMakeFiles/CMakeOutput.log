@@ -15,28 +15,28 @@ The CXX compiler identification is GNU, found in "/home/lqf/cpp/Itachi/build/CMa
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_63d40/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_63d40.dir/build.make CMakeFiles/cmTC_63d40.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_401ca/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_401ca.dir/build.make CMakeFiles/cmTC_401ca.dir/build
 gmake[1]: 进入目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_63d40.dir/testCXXCompiler.cxx.o
-/usr/bin/c++      -o CMakeFiles/cmTC_63d40.dir/testCXXCompiler.cxx.o -c /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_63d40
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63d40.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_63d40.dir/testCXXCompiler.cxx.o  -o cmTC_63d40 -rdynamic 
+Building CXX object CMakeFiles/cmTC_401ca.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_401ca.dir/testCXXCompiler.cxx.o -c /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_401ca
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_401ca.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_401ca.dir/testCXXCompiler.cxx.o  -o cmTC_401ca -rdynamic 
 gmake[1]: 离开目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_09889/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_09889.dir/build.make CMakeFiles/cmTC_09889.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_838c7/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_838c7.dir/build.make CMakeFiles/cmTC_838c7.dir/build
 gmake[1]: 进入目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_09889.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++      -o CMakeFiles/cmTC_09889.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.6/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_09889
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09889.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTC_09889.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_09889 -rdynamic  
+Building CXX object CMakeFiles/cmTC_838c7.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_838c7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.6/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_838c7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_838c7.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_838c7.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_838c7 -rdynamic  
 使用内建 specs。
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
@@ -46,8 +46,8 @@ COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
 gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_09889' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_09889 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_09889.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_838c7' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_838c7 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_838c7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
 gmake[1]: 离开目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
 
 
@@ -55,14 +55,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_09889/fast"]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_09889.dir/build.make CMakeFiles/cmTC_09889.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_838c7/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_838c7.dir/build.make CMakeFiles/cmTC_838c7.dir/build]
   ignore line: [gmake[1]: 进入目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”]
-  ignore line: [Building CXX object CMakeFiles/cmTC_09889.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_09889.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.6/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_09889]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09889.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_09889.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_09889 -rdynamic  ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_838c7.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_838c7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.6/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_838c7]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_838c7.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_838c7.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_838c7 -rdynamic  ]
   ignore line: [使用内建 specs。]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
@@ -72,8 +72,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_09889' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_09889 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_09889.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_838c7' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_838c7 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_838c7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
     arg [--build-id] ==> ignore
     arg [--no-add-needed] ==> ignore
@@ -85,7 +85,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_09889] ==> ignore
+    arg [cmTC_838c7] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
@@ -94,7 +94,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
-    arg [CMakeFiles/cmTC_09889.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_838c7.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -123,14 +123,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1y] compiler features compiled with the following output:
 Change Dir: /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_10e51/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_10e51.dir/build.make CMakeFiles/cmTC_10e51.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_74adf/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_74adf.dir/build.make CMakeFiles/cmTC_74adf.dir/build
 gmake[1]: 进入目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_10e51.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++1y -o CMakeFiles/cmTC_10e51.dir/feature_tests.cxx.o -c /home/lqf/cpp/Itachi/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_10e51
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10e51.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_10e51.dir/feature_tests.cxx.o  -o cmTC_10e51 -rdynamic 
+Building CXX object CMakeFiles/cmTC_74adf.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++1y -o CMakeFiles/cmTC_74adf.dir/feature_tests.cxx.o -c /home/lqf/cpp/Itachi/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_74adf
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74adf.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_74adf.dir/feature_tests.cxx.o  -o cmTC_74adf -rdynamic 
 gmake[1]: 离开目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
 
 
@@ -196,14 +196,14 @@ gmake[1]: 离开目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_ce54f/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_ce54f.dir/build.make CMakeFiles/cmTC_ce54f.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_af851/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_af851.dir/build.make CMakeFiles/cmTC_af851.dir/build
 gmake[1]: 进入目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_ce54f.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_ce54f.dir/feature_tests.cxx.o -c /home/lqf/cpp/Itachi/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_ce54f
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce54f.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_ce54f.dir/feature_tests.cxx.o  -o cmTC_ce54f -rdynamic 
+Building CXX object CMakeFiles/cmTC_af851.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_af851.dir/feature_tests.cxx.o -c /home/lqf/cpp/Itachi/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_af851
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af851.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_af851.dir/feature_tests.cxx.o  -o cmTC_af851 -rdynamic 
 gmake[1]: 离开目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
 
 
@@ -269,14 +269,14 @@ gmake[1]: 离开目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_c97bb/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_c97bb.dir/build.make CMakeFiles/cmTC_c97bb.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_4c0a1/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_4c0a1.dir/build.make CMakeFiles/cmTC_4c0a1.dir/build
 gmake[1]: 进入目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_c97bb.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_c97bb.dir/feature_tests.cxx.o -c /home/lqf/cpp/Itachi/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c97bb
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c97bb.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_c97bb.dir/feature_tests.cxx.o  -o cmTC_c97bb -rdynamic 
+Building CXX object CMakeFiles/cmTC_4c0a1.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_4c0a1.dir/feature_tests.cxx.o -c /home/lqf/cpp/Itachi/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_4c0a1
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c0a1.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_4c0a1.dir/feature_tests.cxx.o  -o cmTC_4c0a1 -rdynamic 
 gmake[1]: 离开目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
 
 
@@ -353,28 +353,28 @@ The C compiler identification is GNU, found in "/home/lqf/cpp/Itachi/build/CMake
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_8fd53/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_8fd53.dir/build.make CMakeFiles/cmTC_8fd53.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_059c2/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_059c2.dir/build.make CMakeFiles/cmTC_059c2.dir/build
 gmake[1]: 进入目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_8fd53.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_8fd53.dir/testCCompiler.c.o   -c /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_8fd53
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8fd53.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_8fd53.dir/testCCompiler.c.o  -o cmTC_8fd53 -rdynamic 
+Building C object CMakeFiles/cmTC_059c2.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_059c2.dir/testCCompiler.c.o   -c /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_059c2
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_059c2.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_059c2.dir/testCCompiler.c.o  -o cmTC_059c2 -rdynamic 
 gmake[1]: 离开目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_349c7/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_349c7.dir/build.make CMakeFiles/cmTC_349c7.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_4fbce/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_4fbce.dir/build.make CMakeFiles/cmTC_4fbce.dir/build
 gmake[1]: 进入目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_349c7.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_349c7.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.6/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_349c7
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_349c7.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_349c7.dir/CMakeCCompilerABI.c.o  -o cmTC_349c7 -rdynamic  
+Building C object CMakeFiles/cmTC_4fbce.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_4fbce.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.6/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_4fbce
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fbce.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_4fbce.dir/CMakeCCompilerABI.c.o  -o cmTC_4fbce -rdynamic  
 使用内建 specs。
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
@@ -384,8 +384,8 @@ COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
 gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_349c7' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_349c7 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_349c7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4fbce' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_4fbce /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_4fbce.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
 gmake[1]: 离开目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
 
 
@@ -393,14 +393,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_349c7/fast"]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_349c7.dir/build.make CMakeFiles/cmTC_349c7.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_4fbce/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_4fbce.dir/build.make CMakeFiles/cmTC_4fbce.dir/build]
   ignore line: [gmake[1]: 进入目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”]
-  ignore line: [Building C object CMakeFiles/cmTC_349c7.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_349c7.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.6/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_349c7]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_349c7.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_349c7.dir/CMakeCCompilerABI.c.o  -o cmTC_349c7 -rdynamic  ]
+  ignore line: [Building C object CMakeFiles/cmTC_4fbce.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_4fbce.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.6/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_4fbce]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fbce.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_4fbce.dir/CMakeCCompilerABI.c.o  -o cmTC_4fbce -rdynamic  ]
   ignore line: [使用内建 specs。]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
@@ -410,8 +410,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_349c7' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_349c7 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_349c7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4fbce' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_4fbce /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_4fbce.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
     arg [--build-id] ==> ignore
     arg [--no-add-needed] ==> ignore
@@ -423,7 +423,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_349c7] ==> ignore
+    arg [cmTC_4fbce] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
@@ -432,7 +432,7 @@ Parsed C implicit link information from above output:
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
-    arg [CMakeFiles/cmTC_349c7.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_4fbce.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -463,14 +463,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_eab66/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_eab66.dir/build.make CMakeFiles/cmTC_eab66.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_32496/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_32496.dir/build.make CMakeFiles/cmTC_32496.dir/build
 gmake[1]: 进入目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_eab66.dir/feature_tests.c.o
-/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_eab66.dir/feature_tests.c.o   -c /home/lqf/cpp/Itachi/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_eab66
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eab66.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_eab66.dir/feature_tests.c.o  -o cmTC_eab66 -rdynamic 
+Building C object CMakeFiles/cmTC_32496.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_32496.dir/feature_tests.c.o   -c /home/lqf/cpp/Itachi/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_32496
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32496.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_32496.dir/feature_tests.c.o  -o cmTC_32496 -rdynamic 
 gmake[1]: 离开目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
 
 
@@ -483,14 +483,14 @@ gmake[1]: 离开目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_959c3/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_959c3.dir/build.make CMakeFiles/cmTC_959c3.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_a7a18/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_a7a18.dir/build.make CMakeFiles/cmTC_a7a18.dir/build
 gmake[1]: 进入目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_959c3.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_959c3.dir/feature_tests.c.o   -c /home/lqf/cpp/Itachi/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_959c3
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_959c3.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_959c3.dir/feature_tests.c.o  -o cmTC_959c3 -rdynamic 
+Building C object CMakeFiles/cmTC_a7a18.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_a7a18.dir/feature_tests.c.o   -c /home/lqf/cpp/Itachi/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_a7a18
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7a18.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_a7a18.dir/feature_tests.c.o  -o cmTC_a7a18 -rdynamic 
 gmake[1]: 离开目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
 
 
@@ -503,14 +503,14 @@ gmake[1]: 离开目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_272e4/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_272e4.dir/build.make CMakeFiles/cmTC_272e4.dir/build
+Run Build Command:"/usr/bin/gmake" "cmTC_c77ba/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_c77ba.dir/build.make CMakeFiles/cmTC_c77ba.dir/build
 gmake[1]: 进入目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_272e4.dir/feature_tests.c.o
-/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_272e4.dir/feature_tests.c.o   -c /home/lqf/cpp/Itachi/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_272e4
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_272e4.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_272e4.dir/feature_tests.c.o  -o cmTC_272e4 -rdynamic 
+Building C object CMakeFiles/cmTC_c77ba.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_c77ba.dir/feature_tests.c.o   -c /home/lqf/cpp/Itachi/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_c77ba
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c77ba.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_c77ba.dir/feature_tests.c.o  -o cmTC_c77ba -rdynamic 
 gmake[1]: 离开目录“/home/lqf/cpp/Itachi/build/CMakeFiles/CMakeTmp”
 
 

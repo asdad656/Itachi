@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-05 23:53:15
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-10 18:42:08
+ * @LastEditTime: 2022-03-12 12:36:07
  * @Description: 
  */
 #include "threadpool_c++11.h"
@@ -178,9 +178,9 @@ namespace Itachi
             std::lock_guard<std::mutex> Lock(it->m_mutex);
             it->m_eventLoops.emplace_back(thread_loop);
         }
-        LOG_DEBUG << "thread_loop begin";
+        //LOG_DEBUG << "thread_loop begin";
         thread_loop->loop();
-        LOG_DEBUG << "thread_loop finish";
+        //LOG_DEBUG << "thread_loop finish";
         return 0;
     }
 }

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2022-03-02 14:22:24
- * @LastEditTime: 2022-03-11 13:37:18
+ * @LastEditTime: 2022-03-12 12:46:27
  * @LastEditors: lqf
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%A
  * @FilePath: \configSystem\test\config.cpp
@@ -31,13 +31,9 @@ using namespace Itachi;
 
 int main()
 {
-    // auto x = {1, 1, 2, 3};
-    // std::cout << vec->toString() << std::endl;
-    // std::cout << set1->toString() << std::endl;
-    // std::cout << list1->toString() << std::endl;
+
     Config::LoadFromJson("/home/lqf/cpp/Itachi/config.json");
-    // std::cout << vec_loggers->toString() << std::endl;
-    // std::cout << vec->toString() << std::endl;
+
     
     return 0;
 }

@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-02-08 05:59:53
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-11 21:26:02
+ * @LastEditTime: 2022-03-12 12:57:49
  * @Description: 
  */
 #include "httpServer.h"
@@ -16,9 +16,9 @@ namespace Itachi
 {
 
  ConfigVar<uint16_t>::ptr http_listenPort =
-        Config::LookUp(".httpserver.listenport", (uint16_t)5300);
+        Config::LookUp(".httpserver.listenport", (uint16_t)5301);
      ConfigVar<std::string>::ptr http_serverName =
-        Config::LookUp("httpserver.threaddefaultname", (std::string) "");
+        Config::LookUp(".httpserver.threaddefaultname", (std::string) " ");
  ConfigVar<std::string>::ptr http_listenaddr =
         Config::LookUp(".httpserver.listenaddr", (std::string) "127.0.0.1");
     namespace http

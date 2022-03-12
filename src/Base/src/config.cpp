@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2022-03-02 13:49:58
- * @LastEditTime: 2022-03-11 17:05:36
+ * @LastEditTime: 2022-03-12 12:58:01
  * @LastEditors: lqf
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: \newProject\config.cpp
@@ -43,7 +43,6 @@ namespace Itachi
         }
 
         getAllVars("", data_json, data_list);
-
         for (const auto &val : data_list)
         {
             std::string name = val.first;
@@ -55,15 +54,7 @@ namespace Itachi
             {
                it->fromString(val.second.dump());
             }
-            else
-            {
-                // std::cout<<name<<"    config undefine"<<std::endl;
-            }
         }
-
-        // for(auto&val:data_list){
-        //     std::cout<<val.first<<" "<<val.second.dump()<<std::endl;
-        // }
     }
 
     void Config::getAllVars(std::string name,
@@ -84,13 +75,4 @@ namespace Itachi
             }
         }
     }
-
-    // struct initer
-    // {
-    //     initer()
-    //     {
-    //         Itachi::Config::LoadFromJson("/home/lqf/cpp/configSystem/config.json");
-    //     }
-    // };
-
 }

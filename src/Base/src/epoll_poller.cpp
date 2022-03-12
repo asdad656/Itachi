@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-08 14:41:06
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-11 20:02:28
+ * @LastEditTime: 2022-03-12 12:40:49
  * @Description: 
  */
 #include "epoll_poller.h"
@@ -84,11 +84,12 @@ namespace Itachi
             if (rt ==-1)
             {
                 LOG_FATAL << "EPOLL_CTL_ADD faild on epollfd: " << m_fd << "   fd:" << fd<<"  "<<errno;
+            }
                 //m_ownerLoop->queueInLoop(std::bind(&EpollPoller::update,this,channel));
                 //return;
-            }else{
-                 LOG_FATAL << "EPOLL_CTL_ADD success on epollfd: " << m_fd << "   fd:" << fd<<"  "<<errno;
-            }
+            // }else{
+            //      //LOG_FATAL << "EPOLL_CTL_ADD success on epollfd: " << m_fd << "   fd:" << fd<<"  "<<errno;
+            // }
             channel->setIndex(m_channels.size());
             m_channels[fd]=channel;
         }

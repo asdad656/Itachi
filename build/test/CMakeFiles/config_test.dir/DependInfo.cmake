@@ -10,15 +10,15 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../test/config_test"
+  "../test/logger_test"
   "../src/Base/include"
   "../src/Net/include"
-  "../test/logger_test"
   "../test/threapool_test"
   "../test/buffer_test"
+  "../test/config_test"
   "../test/eventloop_test"
-  "../test/tcpserver_test"
   "../test/httpServer_test"
+  "../test/tcpserver_test"
   )
 
 # Targets to which this target links.

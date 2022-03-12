@@ -251,24 +251,24 @@ clean: src/Net/CMakeFiles/ITACHI_NET.dir/clean
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/httpServer_test.dir/all
 test/all: test/CMakeFiles/tcpserver_test.dir/all
+test/all: test/CMakeFiles/httpServer_test.dir/all
 test/all: test/CMakeFiles/eventloop_test.dir/all
+test/all: test/CMakeFiles/config_test.dir/all
 test/all: test/CMakeFiles/buffer_test.dir/all
 test/all: test/CMakeFiles/threapool_test.dir/all
 test/all: test/CMakeFiles/logger_test.dir/all
-test/all: test/CMakeFiles/config_test.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/httpServer_test.dir/clean
 test/clean: test/CMakeFiles/tcpserver_test.dir/clean
+test/clean: test/CMakeFiles/httpServer_test.dir/clean
 test/clean: test/CMakeFiles/eventloop_test.dir/clean
+test/clean: test/CMakeFiles/config_test.dir/clean
 test/clean: test/CMakeFiles/buffer_test.dir/clean
 test/clean: test/CMakeFiles/threapool_test.dir/clean
 test/clean: test/CMakeFiles/logger_test.dir/clean
-test/clean: test/CMakeFiles/config_test.dir/clean
 
 .PHONY : test/clean
 
@@ -276,44 +276,6 @@ test/clean: test/CMakeFiles/config_test.dir/clean
 test/preinstall:
 
 .PHONY : test/preinstall
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/httpServer_test.dir
-
-# All Build rule for target.
-test/CMakeFiles/httpServer_test.dir/all: src/Base/CMakeFiles/ITACHI_BASE.dir/all
-test/CMakeFiles/httpServer_test.dir/all: src/Net/CMakeFiles/ITACHI_NET.dir/all
-	$(MAKE) -f test/CMakeFiles/httpServer_test.dir/build.make test/CMakeFiles/httpServer_test.dir/depend
-	$(MAKE) -f test/CMakeFiles/httpServer_test.dir/build.make test/CMakeFiles/httpServer_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=45,46 "Built target httpServer_test"
-.PHONY : test/CMakeFiles/httpServer_test.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/httpServer_test.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/httpServer_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lqf/cpp/Itachi/build/CMakeFiles 21
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/httpServer_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lqf/cpp/Itachi/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/httpServer_test.dir/rule
-
-# Convenience name for target.
-httpServer_test: test/CMakeFiles/httpServer_test.dir/rule
-
-.PHONY : httpServer_test
-
-# clean rule for target.
-test/CMakeFiles/httpServer_test.dir/clean:
-	$(MAKE) -f test/CMakeFiles/httpServer_test.dir/build.make test/CMakeFiles/httpServer_test.dir/clean
-.PHONY : test/CMakeFiles/httpServer_test.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/httpServer_test.dir/clean
-
-.PHONY : clean
 
 #=============================================================================
 # Target rules for target test/CMakeFiles/tcpserver_test.dir
@@ -354,6 +316,44 @@ clean: test/CMakeFiles/tcpserver_test.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target test/CMakeFiles/httpServer_test.dir
+
+# All Build rule for target.
+test/CMakeFiles/httpServer_test.dir/all: src/Base/CMakeFiles/ITACHI_BASE.dir/all
+test/CMakeFiles/httpServer_test.dir/all: src/Net/CMakeFiles/ITACHI_NET.dir/all
+	$(MAKE) -f test/CMakeFiles/httpServer_test.dir/build.make test/CMakeFiles/httpServer_test.dir/depend
+	$(MAKE) -f test/CMakeFiles/httpServer_test.dir/build.make test/CMakeFiles/httpServer_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=45,46 "Built target httpServer_test"
+.PHONY : test/CMakeFiles/httpServer_test.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/httpServer_test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/httpServer_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lqf/cpp/Itachi/build/CMakeFiles 21
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/httpServer_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lqf/cpp/Itachi/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/httpServer_test.dir/rule
+
+# Convenience name for target.
+httpServer_test: test/CMakeFiles/httpServer_test.dir/rule
+
+.PHONY : httpServer_test
+
+# clean rule for target.
+test/CMakeFiles/httpServer_test.dir/clean:
+	$(MAKE) -f test/CMakeFiles/httpServer_test.dir/build.make test/CMakeFiles/httpServer_test.dir/clean
+.PHONY : test/CMakeFiles/httpServer_test.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/httpServer_test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target test/CMakeFiles/eventloop_test.dir
 
 # All Build rule for target.
@@ -388,6 +388,44 @@ test/CMakeFiles/eventloop_test.dir/clean:
 
 # clean rule for target.
 clean: test/CMakeFiles/eventloop_test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/config_test.dir
+
+# All Build rule for target.
+test/CMakeFiles/config_test.dir/all: src/Base/CMakeFiles/ITACHI_BASE.dir/all
+test/CMakeFiles/config_test.dir/all: src/Net/CMakeFiles/ITACHI_NET.dir/all
+	$(MAKE) -f test/CMakeFiles/config_test.dir/build.make test/CMakeFiles/config_test.dir/depend
+	$(MAKE) -f test/CMakeFiles/config_test.dir/build.make test/CMakeFiles/config_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=41,42 "Built target config_test"
+.PHONY : test/CMakeFiles/config_test.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/config_test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/config_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lqf/cpp/Itachi/build/CMakeFiles 21
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/config_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lqf/cpp/Itachi/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/config_test.dir/rule
+
+# Convenience name for target.
+config_test: test/CMakeFiles/config_test.dir/rule
+
+.PHONY : config_test
+
+# clean rule for target.
+test/CMakeFiles/config_test.dir/clean:
+	$(MAKE) -f test/CMakeFiles/config_test.dir/build.make test/CMakeFiles/config_test.dir/clean
+.PHONY : test/CMakeFiles/config_test.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/config_test.dir/clean
 
 .PHONY : clean
 
@@ -502,44 +540,6 @@ test/CMakeFiles/logger_test.dir/clean:
 
 # clean rule for target.
 clean: test/CMakeFiles/logger_test.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/config_test.dir
-
-# All Build rule for target.
-test/CMakeFiles/config_test.dir/all: src/Base/CMakeFiles/ITACHI_BASE.dir/all
-test/CMakeFiles/config_test.dir/all: src/Net/CMakeFiles/ITACHI_NET.dir/all
-	$(MAKE) -f test/CMakeFiles/config_test.dir/build.make test/CMakeFiles/config_test.dir/depend
-	$(MAKE) -f test/CMakeFiles/config_test.dir/build.make test/CMakeFiles/config_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lqf/cpp/Itachi/build/CMakeFiles --progress-num=41,42 "Built target config_test"
-.PHONY : test/CMakeFiles/config_test.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/config_test.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/config_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lqf/cpp/Itachi/build/CMakeFiles 21
-	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/config_test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lqf/cpp/Itachi/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/config_test.dir/rule
-
-# Convenience name for target.
-config_test: test/CMakeFiles/config_test.dir/rule
-
-.PHONY : config_test
-
-# clean rule for target.
-test/CMakeFiles/config_test.dir/clean:
-	$(MAKE) -f test/CMakeFiles/config_test.dir/build.make test/CMakeFiles/config_test.dir/clean
-.PHONY : test/CMakeFiles/config_test.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/config_test.dir/clean
 
 .PHONY : clean
 

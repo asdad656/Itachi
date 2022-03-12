@@ -111,21 +111,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/httpServer_test.dir/rule:
-	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/httpServer_test.dir/rule
-.PHONY : test/CMakeFiles/httpServer_test.dir/rule
-
-# Convenience name for target.
-httpServer_test: test/CMakeFiles/httpServer_test.dir/rule
-
-.PHONY : httpServer_test
-
-# fast build rule for target.
-httpServer_test/fast:
-	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/httpServer_test.dir/build.make test/CMakeFiles/httpServer_test.dir/build
-.PHONY : httpServer_test/fast
-
-# Convenience name for target.
 test/CMakeFiles/tcpserver_test.dir/rule:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tcpserver_test.dir/rule
 .PHONY : test/CMakeFiles/tcpserver_test.dir/rule
@@ -141,6 +126,21 @@ tcpserver_test/fast:
 .PHONY : tcpserver_test/fast
 
 # Convenience name for target.
+test/CMakeFiles/httpServer_test.dir/rule:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/httpServer_test.dir/rule
+.PHONY : test/CMakeFiles/httpServer_test.dir/rule
+
+# Convenience name for target.
+httpServer_test: test/CMakeFiles/httpServer_test.dir/rule
+
+.PHONY : httpServer_test
+
+# fast build rule for target.
+httpServer_test/fast:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/httpServer_test.dir/build.make test/CMakeFiles/httpServer_test.dir/build
+.PHONY : httpServer_test/fast
+
+# Convenience name for target.
 test/CMakeFiles/eventloop_test.dir/rule:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/eventloop_test.dir/rule
 .PHONY : test/CMakeFiles/eventloop_test.dir/rule
@@ -154,6 +154,21 @@ eventloop_test: test/CMakeFiles/eventloop_test.dir/rule
 eventloop_test/fast:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/eventloop_test.dir/build.make test/CMakeFiles/eventloop_test.dir/build
 .PHONY : eventloop_test/fast
+
+# Convenience name for target.
+test/CMakeFiles/config_test.dir/rule:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/config_test.dir/rule
+.PHONY : test/CMakeFiles/config_test.dir/rule
+
+# Convenience name for target.
+config_test: test/CMakeFiles/config_test.dir/rule
+
+.PHONY : config_test
+
+# fast build rule for target.
+config_test/fast:
+	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/config_test.dir/build.make test/CMakeFiles/config_test.dir/build
+.PHONY : config_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/buffer_test.dir/rule:
@@ -199,21 +214,6 @@ logger_test: test/CMakeFiles/logger_test.dir/rule
 logger_test/fast:
 	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/logger_test.dir/build.make test/CMakeFiles/logger_test.dir/build
 .PHONY : logger_test/fast
-
-# Convenience name for target.
-test/CMakeFiles/config_test.dir/rule:
-	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/config_test.dir/rule
-.PHONY : test/CMakeFiles/config_test.dir/rule
-
-# Convenience name for target.
-config_test: test/CMakeFiles/config_test.dir/rule
-
-.PHONY : config_test
-
-# fast build rule for target.
-config_test/fast:
-	cd /home/lqf/cpp/Itachi/build && $(MAKE) -f test/CMakeFiles/config_test.dir/build.make test/CMakeFiles/config_test.dir/build
-.PHONY : config_test/fast
 
 buffer_test.o: buffer_test.cpp.o
 
@@ -412,13 +412,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... httpServer_test"
 	@echo "... tcpserver_test"
+	@echo "... httpServer_test"
 	@echo "... eventloop_test"
+	@echo "... config_test"
 	@echo "... buffer_test"
 	@echo "... threapool_test"
 	@echo "... logger_test"
-	@echo "... config_test"
 	@echo "... buffer_test.o"
 	@echo "... buffer_test.i"
 	@echo "... buffer_test.s"

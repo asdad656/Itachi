@@ -3,7 +3,7 @@
  * @page: www.Jackey.top
  * @Date: 2022-03-09 16:15:37
  * @LastEditors: lqf
- * @LastEditTime: 2022-03-11 21:13:10
+ * @LastEditTime: 2022-03-12 12:58:22
  * @Description: 
  */
 #include "EventLoop.h"
@@ -36,11 +36,7 @@ namespace Itachi
         bzero(addr, sizeof(sockaddr_in));
         addr->sin_family = AF_INET;
         addr->sin_port = htons(tcp_listenPort->getVar());
-        // addr->sin_port = htons(8080);
-        // LOG_DEBUG<<"tco construct addr is :"<<tcp_listenaddr->getVar().c_str()<<"  port is :"<<tcp_listenPort->getVar();
         inet_aton(tcp_listenaddr->getVar().c_str(), &(addr->sin_addr));
-        // addr->sin_addr.s_addr=htonl(INADDR_ANY);
-        // LOG_DEBUG<<""
         m_adaptor.reset(new Aadaptor(m_AdaptorLoop.get(), addr));
     }
 
@@ -57,7 +53,6 @@ namespace Itachi
                                                                                                 m_threadPool(new ThreadPool_eventLoop),
                                                                                                 m_name(name),
                                                                                                 m_nextId(0)
-    //m_adaptor(new Aadaptor(m_AdaptorLoop.get()))
     {
         sockaddr_in *addr = new sockaddr_in;
         addr->sin_family = AF_INET;
@@ -73,7 +68,6 @@ namespace Itachi
         m_adaptor->setReadCallBack(std::bind(&TcpServer::newConnectionCallBasck, this,
                                              std::placeholders::_1, std::placeholders::_2));
         m_threadPool->start();
-        // m_adaptor->listen();
         m_AdaptorLoop->runInLoop(
             std::bind(&Aadaptor::listen, m_adaptor.get()));
         m_AdaptorLoop->loop();
